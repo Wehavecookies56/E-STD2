@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - inventory
+  - keyDes
+  - description
+  - armour
+  - armourModel
+  - key
+  - axe
+  - keyModel
+  - axeModel
+  - bookModel
+  - candleModel
+  - featherModel
+  - book
+  - candle
+  - feather
+  - blackBox
+  - blackBoxModel
+  - heresJhonny
+  - jhonnysDad
+  - doorParts
+  - jhonnyDoor
+  - PathfindingNode
+  - plate
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - UIheart
+  - UIbrain
+  - items
+  - UIkey
+  - UIaxe
+  - UIarmour
+  - UIbook
+  - UIcandle
+  - UIfeather
+  - UIBlackBox
+  - PlayerLightCollider
+  - PlayerLightColliderPLAYER
+  - NoCollision
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

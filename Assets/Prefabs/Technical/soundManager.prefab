@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4336663508772593310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4336663508772593308}
+  - component: {fileID: 4336663508772593309}
+  m_Layer: 0
+  m_Name: soundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4336663508772593308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4336663508772593310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7294598, y: 3.2565858, z: -8.968478}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4336663508772593309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4336663508772593310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba86559f198530458ee4c2079371f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonAudio:
+  - {fileID: 8753152808844396365, guid: df7614ce30167c3498580fb9bea58290, type: 3}
+  - {fileID: 3037933396565659469, guid: a281eac45c6d8294cb79cca45bafd7d7, type: 3}
+  - {fileID: 5397397899119942192, guid: 8bbd25aedb6f5da41b216f63332c22c8, type: 3}
+  - {fileID: 3475704565029277171, guid: dd1de6ae9487a524681751a88a1d17fe, type: 3}
+  - {fileID: 8623648511141328542, guid: 7e34aa867b2f50b4b9e71be589a51e85, type: 3}
+  - {fileID: 8061952795994667461, guid: 733e5e73054bcde41bd6cb6db5ba7b36, type: 3}
+  - {fileID: 6413242685192791262, guid: b693cf0768d007145a6d60a988fbf1dd, type: 3}
+  boyPriestAudio:
+  - {fileID: 2896576596934981341, guid: 66b7ad358f57b154697514b648d1576c, type: 3}
+  - {fileID: 8025850080262237344, guid: 5263e9205c2e44d4d91c180fb042359c, type: 3}
+  - {fileID: 1836301767690469392, guid: 45d99414cca6daa47bed251fddab0d32, type: 3}
+  oldManPriestAudio:
+  - {fileID: 3829673889983125519, guid: a2b6c8be6d0232540b7ada39f508da16, type: 3}
+  - {fileID: 2214133508329147919, guid: f332bbf4ae3834d4fbb8e76d0110dd9e, type: 3}
+  - {fileID: 7621945647515833542, guid: c6615c1144ab66f4aa62bc47dd95add2, type: 3}
+  - {fileID: 7430719376725102917, guid: ed7f1411cee72cc4e8e494d4edf50cd1, type: 3}
+  - {fileID: 5227282638189071543, guid: 00b0710f2c4bb814ab27b78fb344a0f9, type: 3}
+  - {fileID: 6913113851181647237, guid: d1f78b7914437c041b70d5f2844c7fe0, type: 3}
+  - {fileID: 7126900209445549047, guid: 11b294ca367b46a459a065cb9b24190c, type: 3}
+  lawyerAndPriestAudio:
+  - {fileID: 3443021470563732445, guid: dcdd14f281554c140981d670d0be9210, type: 3}
+  - {fileID: 7580286613774509946, guid: fc9fc684144470a498c51d51b5a3ac8c, type: 3}
+  - {fileID: 303037941121572473, guid: 911a7964f457f6d449bb465449f24915, type: 3}
+  - {fileID: 6570708341925339611, guid: f306b5d3fd8290147981137883bb8ef8, type: 3}
+  - {fileID: 8661740617391359125, guid: e780fbb27b6f0fe4abe939ba845987d8, type: 3}
+  PriestAudio:
+  - {fileID: 199121013930811340, guid: 352bfc6e12b7c29459a711d10f619895, type: 3}
+  - {fileID: 5582117004164191095, guid: 2b7b2ae2b285f2d40b81114cdda60d06, type: 3}
+  - {fileID: 1582029857369934858, guid: 12af11d9b5cbebc43a8bd38dedca8d72, type: 3}
+  enviromentAudio:
+  - {fileID: 4308796202935116310, guid: 123ba648c6079d94eb92bb230fac16fd, type: 3}
+  - {fileID: 6493110290495298268, guid: 4bd7e463e3f213848854fcfd96416d16, type: 3}
+  - {fileID: 3494675884546282179, guid: f74e40edf4fa8504aa7737de76b8c798, type: 3}
+  - {fileID: 8866965034634858032, guid: 05b03fb2a23a96a4f8c714150924c77f, type: 3}
+  - {fileID: 1734685977874819795, guid: e030476323889a44f8889133638b0caf, type: 3}
+  - {fileID: 3189827216669775731, guid: f38d67467dcba874ab55ee76bd59c9df, type: 3}
+  - {fileID: 3682717767210143551, guid: 809a549c9aa06b14b9204275e94ec421, type: 3}
+  - {fileID: 5520691999307422460, guid: ef16b860540c249468f364b456390c69, type: 3}
+  backroundSounds:
+  - {fileID: 6197542631747236478, guid: 875968cde2588d1489f83a7501d87c22, type: 3}
+  - {fileID: 4316142323740016632, guid: 81f2174cf0e29434f9c53d0c36ccef82, type: 3}
+  footstepsSound:
+  - {fileID: 1700986237711956823, guid: 1f16bf54653ca874fac5ffae41598940, type: 3}
+  MaxFootstepVolume: 0.2

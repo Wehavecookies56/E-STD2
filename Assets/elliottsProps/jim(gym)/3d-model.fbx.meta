@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 53aafb4bd612e1b428c35af93a50eaf1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 32-tooth chainring_001
+    100002: //RootNode
+    100004: 42-tooth chainring_001
+    100006: Arch30_007_001
+    100008: BBracket_001
+    100010: Componente#5_001
+    100012: crankarm_001
+    100014: crankarm_002
+    100016: DIA0.5_001
+    100018: Group_001
+    100020: Group_002
+    100022: Group_003
+    100024: Group_004
+    100026: Group_005
+    100028: Group_006
+    100030: Group_007
+    100032: Group_009
+    100034: Group_011
+    100036: Group_012
+    100038: Group_013
+    100040: Group_014
+    100042: Group_015
+    100044: Group_016
+    100046: Group_018
+    100048: Group_019
+    100050: Group_020
+    100052: Group_022
+    100054: Group_024
+    100056: Group_026
+    100058: Group_028
+    100060: Group_029
+    100062: Group_030
+    100064: Group_031
+    100066: Group_032
+    100068: Group_033
+    100070: Group_034
+    100072: Group_035
+    100074: Group_036
+    100076: Group_037
+    100078: Group_038
+    100080: spider_001
+    400000: 32-tooth chainring_001
+    400002: //RootNode
+    400004: 42-tooth chainring_001
+    400006: Arch30_007_001
+    400008: BBracket_001
+    400010: Componente#5_001
+    400012: crankarm_001
+    400014: crankarm_002
+    400016: DIA0.5_001
+    400018: Group_001
+    400020: Group_002
+    400022: Group_003
+    400024: Group_004
+    400026: Group_005
+    400028: Group_006
+    400030: Group_007
+    400032: Group_009
+    400034: Group_011
+    400036: Group_012
+    400038: Group_013
+    400040: Group_014
+    400042: Group_015
+    400044: Group_016
+    400046: Group_018
+    400048: Group_019
+    400050: Group_020
+    400052: Group_022
+    400054: Group_024
+    400056: Group_026
+    400058: Group_028
+    400060: Group_029
+    400062: Group_030
+    400064: Group_031
+    400066: Group_032
+    400068: Group_033
+    400070: Group_034
+    400072: Group_035
+    400074: Group_036
+    400076: Group_037
+    400078: Group_038
+    400080: spider_001
+    2100000: Color_D10
+    2100002: '[Color_002]1'
+    2100004: '[Color_008]1'
+    2100006: '[Color_003]1'
+    2100008: Color_D19
+    2100010: Color_001
+    2100012: skp_front_default
+    2100014: '[Color_005]1'
+    2100016: '[Color_001]1'
+    2100018: _Charcoal_1
+    2100020: _Charcoal_2
+    2100022: Color_A01
+    2100024: Color_008
+    2100026: Home-Screen
+    2100028: _DimGray_1
+    2100030: _LightGray_1
+    2100032: '[Color_A07]1'
+    2100034: _Burnt Umber_1
+    2100036: Color_007
+    2100038: Color_E02
+    2300000: 32-tooth chainring_001
+    2300002: 42-tooth chainring_001
+    2300004: Arch30_007_001
+    2300006: BBracket_001
+    2300008: Componente#5_001
+    2300010: crankarm_001
+    2300012: crankarm_002
+    2300014: DIA0.5_001
+    2300016: Group_001
+    2300018: Group_002
+    2300020: Group_003
+    2300022: Group_004
+    2300024: Group_005
+    2300026: Group_006
+    2300028: Group_007
+    2300030: Group_009
+    2300032: Group_011
+    2300034: Group_012
+    2300036: Group_013
+    2300038: Group_014
+    2300040: Group_015
+    2300042: Group_016
+    2300044: Group_018
+    2300046: Group_019
+    2300048: Group_020
+    2300050: Group_022
+    2300052: Group_024
+    2300054: Group_026
+    2300056: Group_028
+    2300058: Group_029
+    2300060: Group_030
+    2300062: Group_031
+    2300064: Group_032
+    2300066: Group_033
+    2300068: Group_034
+    2300070: Group_035
+    2300072: Group_036
+    2300074: Group_037
+    2300076: Group_038
+    2300078: spider_001
+    3300000: 32-tooth chainring_001
+    3300002: 42-tooth chainring_001
+    3300004: Arch30_007_001
+    3300006: BBracket_001
+    3300008: Componente#5_001
+    3300010: crankarm_001
+    3300012: crankarm_002
+    3300014: DIA0.5_001
+    3300016: Group_001
+    3300018: Group_002
+    3300020: Group_003
+    3300022: Group_004
+    3300024: Group_005
+    3300026: Group_006
+    3300028: Group_007
+    3300030: Group_009
+    3300032: Group_011
+    3300034: Group_012
+    3300036: Group_013
+    3300038: Group_014
+    3300040: Group_015
+    3300042: Group_016
+    3300044: Group_018
+    3300046: Group_019
+    3300048: Group_020
+    3300050: Group_022
+    3300052: Group_024
+    3300054: Group_026
+    3300056: Group_028
+    3300058: Group_029
+    3300060: Group_030
+    3300062: Group_031
+    3300064: Group_032
+    3300066: Group_033
+    3300068: Group_034
+    3300070: Group_035
+    3300072: Group_036
+    3300074: Group_037
+    3300076: Group_038
+    3300078: spider_001
+    4300000: Arch30_007_001
+    4300002: spider_001
+    4300004: 42-tooth chainring_001
+    4300006: crankarm_002
+    4300008: 32-tooth chainring_001
+    4300010: crankarm_001
+    4300012: BBracket_001
+    4300014: Group_038
+    4300016: Group_037
+    4300018: Group_036
+    4300020: Group_035
+    4300022: Group_034
+    4300024: Group_033
+    4300026: Group_032
+    4300028: Group_031
+    4300030: Group_030
+    4300032: Group_029
+    4300034: Group_028
+    4300036: Group_026
+    4300038: DIA0.5_001
+    4300040: Group_024
+    4300042: Group_022
+    4300044: Group_020
+    4300046: Group_019
+    4300048: Group_018
+    4300050: Group_016
+    4300052: Group_015
+    4300054: Group_014
+    4300056: Group_013
+    4300058: Group_012
+    4300060: Group_011
+    4300062: Group_009
+    4300064: Group_007
+    4300066: Group_006
+    4300068: Group_005
+    4300070: Group_004
+    4300072: Componente#5_001
+    4300074: Group_003
+    4300076: Group_002
+    4300078: Group_001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

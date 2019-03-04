@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: a5dd3cf19ca942b46a6315dc8443fd26
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: //RootNode
+    100004: Lamp
+    100006: Villa1_Door_A_cell
+    100008: Villa1_Door_A_cell.001
+    100010: Villa1_Door_A_cell.002
+    100012: Villa1_Door_A_cell.003
+    100014: Villa1_Door_A_cell.004
+    100016: Villa1_Door_A_cell.005
+    100018: Villa1_Door_A_cell.006
+    100020: Villa1_Door_A_cell.007
+    100022: Villa1_Door_A_cell.008
+    100024: Villa1_Door_A_cell.009
+    100026: Villa1_Door_A_cell.010
+    100028: Villa1_Door_A_cell.011
+    100030: Villa1_Door_A_cell.012
+    100032: Villa1_Door_A_cell.013
+    100034: Villa1_Door_A_cell.014
+    100036: Villa1_Door_A_cell.015
+    100038: Villa1_Door_A_cell.016
+    100040: Villa1_Door_A_cell.017
+    100042: Villa1_Door_A_cell.018
+    400000: Camera
+    400002: //RootNode
+    400004: Lamp
+    400006: Villa1_Door_A_cell
+    400008: Villa1_Door_A_cell.001
+    400010: Villa1_Door_A_cell.002
+    400012: Villa1_Door_A_cell.003
+    400014: Villa1_Door_A_cell.004
+    400016: Villa1_Door_A_cell.005
+    400018: Villa1_Door_A_cell.006
+    400020: Villa1_Door_A_cell.007
+    400022: Villa1_Door_A_cell.008
+    400024: Villa1_Door_A_cell.009
+    400026: Villa1_Door_A_cell.010
+    400028: Villa1_Door_A_cell.011
+    400030: Villa1_Door_A_cell.012
+    400032: Villa1_Door_A_cell.013
+    400034: Villa1_Door_A_cell.014
+    400036: Villa1_Door_A_cell.015
+    400038: Villa1_Door_A_cell.016
+    400040: Villa1_Door_A_cell.017
+    400042: Villa1_Door_A_cell.018
+    2000000: Camera
+    2100000: No Name
+    2300000: Villa1_Door_A_cell
+    2300002: Villa1_Door_A_cell.001
+    2300004: Villa1_Door_A_cell.002
+    2300006: Villa1_Door_A_cell.003
+    2300008: Villa1_Door_A_cell.004
+    2300010: Villa1_Door_A_cell.005
+    2300012: Villa1_Door_A_cell.006
+    2300014: Villa1_Door_A_cell.007
+    2300016: Villa1_Door_A_cell.008
+    2300018: Villa1_Door_A_cell.009
+    2300020: Villa1_Door_A_cell.010
+    2300022: Villa1_Door_A_cell.011
+    2300024: Villa1_Door_A_cell.012
+    2300026: Villa1_Door_A_cell.013
+    2300028: Villa1_Door_A_cell.014
+    2300030: Villa1_Door_A_cell.015
+    2300032: Villa1_Door_A_cell.016
+    2300034: Villa1_Door_A_cell.017
+    2300036: Villa1_Door_A_cell.018
+    3300000: Villa1_Door_A_cell
+    3300002: Villa1_Door_A_cell.001
+    3300004: Villa1_Door_A_cell.002
+    3300006: Villa1_Door_A_cell.003
+    3300008: Villa1_Door_A_cell.004
+    3300010: Villa1_Door_A_cell.005
+    3300012: Villa1_Door_A_cell.006
+    3300014: Villa1_Door_A_cell.007
+    3300016: Villa1_Door_A_cell.008
+    3300018: Villa1_Door_A_cell.009
+    3300020: Villa1_Door_A_cell.010
+    3300022: Villa1_Door_A_cell.011
+    3300024: Villa1_Door_A_cell.012
+    3300026: Villa1_Door_A_cell.013
+    3300028: Villa1_Door_A_cell.014
+    3300030: Villa1_Door_A_cell.015
+    3300032: Villa1_Door_A_cell.016
+    3300034: Villa1_Door_A_cell.017
+    3300036: Villa1_Door_A_cell.018
+    4300000: Villa1_Door_A_cell.018
+    4300002: Villa1_Door_A_cell.017
+    4300004: Villa1_Door_A_cell.016
+    4300006: Villa1_Door_A_cell.015
+    4300008: Villa1_Door_A_cell.014
+    4300010: Villa1_Door_A_cell.013
+    4300012: Villa1_Door_A_cell.012
+    4300014: Villa1_Door_A_cell.011
+    4300016: Villa1_Door_A_cell.010
+    4300018: Villa1_Door_A_cell.009
+    4300020: Villa1_Door_A_cell.008
+    4300022: Villa1_Door_A_cell.007
+    4300024: Villa1_Door_A_cell.006
+    4300026: Villa1_Door_A_cell.005
+    4300028: Villa1_Door_A_cell.004
+    4300030: Villa1_Door_A_cell.003
+    4300032: Villa1_Door_A_cell.002
+    4300034: Villa1_Door_A_cell.001
+    4300036: Villa1_Door_A_cell
+    10800000: Lamp
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
