@@ -4,19 +4,31 @@ using UnityEngine;
 
 public class ratsTrigger : MonoBehaviour
 {
+    private float timer = 5;
+    private bool go = false;
+
+    private void Update()
+    {
+        if(go)
+        {
+            if(timer <= 0)
+            {
+                soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.PRARE1, GameObject.FindGameObjectWithTag("Player").transform);
+                gameObject.SetActive(false);
+            }
+            else { timer -= Time.deltaTime; }
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.demonSounds.RATS, gameObject.transform);
-            StartCoroutine(waitThenPray());
-            gameObject.SetActive(false);
+            go = true;
+            Destroy(gameObject.GetComponent<BoxCollider>());
+            
         }
     }
 
-    IEnumerator waitThenPray()
-    {
-        yield return new WaitForSeconds(5);
-        soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.PRARE1, GameObject.FindGameObjectWithTag("Player").transform);
-    }
+    
 }

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class fadeoutAudio : MonoBehaviour
 {
+    public void Start()
+    {
+        StartCoroutine(stopTheAudio());
+    }
+
     IEnumerator stopTheAudio()
     {
         yield return new WaitForSeconds(10);
