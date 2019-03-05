@@ -16,6 +16,7 @@ public class StartGame : MonoBehaviour
     private void Start()
     {
         player.transform.parent.GetComponent<PlayerMovement>().enabled = false;
+        Cursor.visible = false;
     }
 
     void Update()
