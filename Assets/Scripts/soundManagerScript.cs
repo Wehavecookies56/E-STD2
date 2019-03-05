@@ -81,32 +81,32 @@ public class soundManagerScript : MonoBehaviour
     }
     //=====================================================================
 
-    public void dialogPlay(boyAndPriest sound, Transform position)
+    public GameObject dialogPlay(boyAndPriest sound, Transform position)
     {
         GameObject instance = Instantiate(boyPriestAudio[(int)sound]);
         instance.transform.position = transform.position;
-        instance = null;
+        return instance;
     }
 
-    public void dialogPlay(lawyerAndPriest sound, Transform position)
+    public GameObject dialogPlay(lawyerAndPriest sound, Transform position)
     {
         GameObject instance = Instantiate(lawyerAndPriestAudio[(int)sound]);
         instance.transform.position = transform.position;
-        instance = null;
+        return instance;
     }
 
-    public void dialogPlay(oldManAndPriest sound, Transform position)
+    public GameObject dialogPlay(oldManAndPriest sound, Transform position)
     {
         GameObject instance = Instantiate(oldManPriestAudio[(int)sound]);
         instance.transform.position = transform.position;
-        instance = null;
+        return instance;
     }
 
-    public void dialogPlay(Priest sound, Transform position)
+    public GameObject dialogPlay(Priest sound, Transform position)
     {
         GameObject instance = Instantiate(PriestAudio[(int)sound]);
         instance.transform.position = transform.position;
-        instance = null;
+        return instance;
     }
     //============================================================================
     public void startLoop(backgroundSounds sound, Transform parent)

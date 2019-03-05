@@ -71,6 +71,9 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[counter].transform.GetChild(0).CompareTag("blackBox"))
                     slots[counter].transform.GetChild(0).GetComponent<onClickBlackBox>().onClick();
 
+                if (slots[counter].transform.GetChild(0).CompareTag("crystalBall"))
+                    slots[counter].transform.GetChild(0).GetComponent<onCrystalBallClick>().onClick();
+
             }
         }
 
