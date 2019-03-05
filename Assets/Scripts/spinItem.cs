@@ -91,5 +91,17 @@ public class spinItem : MonoBehaviour
                 GameObject.FindGameObjectWithTag("blackBoxModel").transform.Rotate(0, 0, 0, Space.World);
             }
         }
+
+        if (gameObject.tag == "crystalBall")
+        {
+            if (go == true)
+            {
+                GameObject.FindGameObjectWithTag("crystalBallModel").transform.Rotate(0, 1, 0, Space.World);
+            }
+            else
+            {
+                GameObject.FindGameObjectWithTag("crystalBallModel").transform.Rotate(0, 0, 0, Space.World);
+            }
+        }
     }
 }

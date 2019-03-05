@@ -27,6 +27,7 @@ TagManager:
   - jhonnyDoor
   - PathfindingNode
   - plate
+  - crystalBall
   layers:
   - Default
   - TransparentFX
@@ -50,7 +51,7 @@ TagManager:
   - PlayerLightCollider
   - PlayerLightColliderPLAYER
   - NoCollision
-  - 
+  - UIcrystalBall
   - 
   - 
   - 
