@@ -28,6 +28,7 @@ TagManager:
   - PathfindingNode
   - plate
   - crystalBall
+  - crystalBallModel
   layers:
   - Default
   - TransparentFX
