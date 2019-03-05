@@ -135,10 +135,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9644fddd9b40254796f6018c69c5185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorParts: {fileID: 0}
   playerLookCamera: {fileID: 4364931474502045280}
   inv: {fileID: 0}
   distance: 5
   lastLookedAt: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -169,6 +173,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraGO: {fileID: 4364931474502045293}
   liftSlot: {fileID: 6022683404142059294}
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
   pickupDistance: 3
   throwStrength: 250
 --- !u!1 &4364931474502045293
@@ -466,7 +473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6022683404142059294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.4, z: 1.48}
+  m_LocalPosition: {x: -0, y: -0.4, z: 1.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4364931474502045280}
