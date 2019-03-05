@@ -82,7 +82,7 @@ public class playerInteract : MonoBehaviour {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Old Man")) {
                 npcTalk t = item.GetComponent<npcTalk>();
                 t.playDialog((soundManagerScript.oldManAndPriest)t.currentLine);
-                if (t.currentLine+1 == t.lineCount) {
+                if (t.currentLine == t.lineCount) {
                     item.GetComponent<TestAI>().enabled = true;
                 }
             }
