@@ -14,6 +14,7 @@ public class mirrorOnClick : MonoBehaviour
     private void Start()
     {
         startPos = candle.transform;
+        candle.SetActive(false);
         
     }
 
@@ -21,6 +22,7 @@ public class mirrorOnClick : MonoBehaviour
     {
         if(go)
         {
+            candle.SetActive(true);
             candle.transform.position = Vector3.Lerp(startPos.position, endPos.position, 0.1f);
 
             if (Vector3.Distance(candle.transform.position, endPos.position)<0.02f)
