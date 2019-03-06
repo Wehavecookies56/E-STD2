@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour
     public GameObject startPos;
     public GameObject startCam;
     public GameObject player;
+    public GameObject dot;
     public GameObject[] lightning;
     private bool go = false;
     private float timer = 19;
@@ -17,6 +18,7 @@ public class StartGame : MonoBehaviour
     {
         player.transform.parent.GetComponent<PlayerMovement>().enabled = false;
         Cursor.visible = false;
+        dot.SetActive(false);
     }
 
     void Update()
@@ -44,6 +46,7 @@ public class StartGame : MonoBehaviour
             {
                 player.transform.parent.GetComponent<PlayerMovement>().enabled = true;
                 go = false;
+                dot.SetActive(true);
                 gameObject.SetActive(false);
             }
             else { timer -= Time.deltaTime; }
