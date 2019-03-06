@@ -11,9 +11,12 @@ public class playerLiftObjects : MonoBehaviour
     public float pickupDistance;
     public float throwStrength;
     
+    //joint 
     private ConfigurableJoint joint;
     private float defaultBreakForce;
     private float grabHeight = 0.05f;
+    private GameObject pickedUpObject;
+    private float lerpSpeed = 5f;
 
     //input vars
     private const float liftButtonRequredTime = 0.8f;
@@ -27,7 +30,7 @@ public class playerLiftObjects : MonoBehaviour
 
     void Update()
     {
-        //Debug.DrawRay(cameraGO.transform.position, cameraGO.transform.TransformDirection(Vector3.forward * pickupDistance), Color.green, 0.1f);
+        Debug.DrawRay(cameraGO.transform.position, cameraGO.transform.TransformDirection(Vector3.forward * pickupDistance), Color.green, 0.1f);
 
         //if lift object button is pressed
         if (Input.GetButton("Fire1"))
@@ -40,45 +43,18 @@ public class playerLiftObjects : MonoBehaviour
                 //reset button timer
                 liftButtonTimer = 0f;
 
-                //check if a joint exists
-                if (joint == null)
-                {
-                    //if no joint, add a new one and update reference and set properties
-                    liftSlot.AddComponent<ConfigurableJoint>();
-                    joint = liftSlot.GetComponent<ConfigurableJoint>();
-                    joint.xMotion = ConfigurableJointMotion.Limited;
-                    joint.yMotion = ConfigurableJointMotion.Limited;
-                    joint.zMotion = ConfigurableJointMotion.Limited;
-                    joint.breakForce = defaultBreakForce;
-                }
-
-                //if no joint currently attached
-                if (joint.connectedBody == null)
+                //if no object is picked up
+                if (pickedUpObject == null)
                 {
                     //cast a ray at what the player is looking (within range)
-                    RaycastHit[] hits;
-                    hits = Physics.RaycastAll(cameraGO.transform.position, cameraGO.transform.TransformDirection(Vector3.forward), pickupDistance, layer);
-
-                    //check all hit colliders
-                    foreach (RaycastHit hit in hits)
-                    {
+                    RaycastHit hit;
+                    if (Physics.Raycast(cameraGO.transform.position, cameraGO.transform.TransformDirection(Vector3.forward), out hit, pickupDistance, layer))
                         //if hit object has a rigidbody..
                         if (hit.rigidbody != null)
                         {
-                            //..move to appropriate location..
-                            hit.rigidbody.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-                            hit.rigidbody.transform.position = new Vector3(liftSlot.transform.position.x, liftSlot.transform.position.y - grabHeight, liftSlot.transform.position.z);
-                            //..and attach to the joint
-                            joint.connectedBody = hit.rigidbody;
-                            //only do this to the first object
-                            break;
+                            pickedUpObject = hit.rigidbody.gameObject;
+                            pickedUpObject.GetComponent<Rigidbody>().useGravity = false;
                         }
-                    }
-                }
-                else //if already holding an object
-                {
-                    //"let go" of object
-                    joint.connectedBody = null;
                 }
             }
         }
@@ -88,15 +64,17 @@ public class playerLiftObjects : MonoBehaviour
             liftButtonTimer = 0f;
         }
 
-        //if joint exists and has a connected body
-        if(joint != null && joint.connectedBody != null)
+        if (pickedUpObject != null)
         {
-            //if throw button pressed
-            if(Input.GetButtonDown("Fire1"))
+            pickedUpObject.transform.position = Vector3.Lerp(pickedUpObject.transform.position, liftSlot.transform.position, lerpSpeed * Time.deltaTime);
+            pickedUpObject.transform.rotation = Quaternion.Lerp(pickedUpObject.transform.rotation, liftSlot.transform.rotation, lerpSpeed * Time.deltaTime);
+
+            if (Input.GetButtonDown("Fire1"))
             {
                 //launch object forward and disconnect from joint
-                joint.connectedBody.gameObject.GetComponent<Rigidbody>().AddForce(cameraGO.transform.TransformDirection(Vector3.forward * throwStrength));
-                joint.connectedBody = null;
+                pickedUpObject.GetComponent<Rigidbody>().useGravity = true;
+                pickedUpObject.GetComponent<Rigidbody>().AddForce(cameraGO.transform.TransformDirection(Vector3.forward * throwStrength));
+                pickedUpObject = null;
             }
         }
     }
