@@ -20,7 +20,29 @@ public class inventorySelectScript : MonoBehaviour
     public GameObject axePrefab;
 
     private void Update()
-    {     
+    {
+        string[] temp = Input.GetJoystickNames();
+
+        if (temp.Length > 0)
+        {
+
+            for (int i = 0; i < temp.Length; ++i)
+            {
+                //Check if the string is empty or not
+                if (!string.IsNullOrEmpty(temp[i]))
+                {
+                    //Not empty, controller temp[i] is connected
+                    Cursor.lockState = CursorLockMode.Locked;
+                }
+                else
+                {
+                    //If it is empty, controller i is disconnected
+                    //where i indicates the controller number
+                    counter = -1;
+                }
+            }
+        }
+
         if (Input.GetAxis("JoystickDpadY") < -0.3f)
         {
             
@@ -48,6 +70,7 @@ public class inventorySelectScript : MonoBehaviour
 
         if(Input.GetButtonDown("Fire1"))
         {
+            if(counter > 0)
             if (slots[counter].transform.childCount != 0)
             {
                 if(slots[counter].transform.GetChild(0).CompareTag("axe"))

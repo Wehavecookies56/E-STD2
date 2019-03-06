@@ -22,6 +22,7 @@ public class uiControler : MonoBehaviour
     public float lerpSpeed = 0.1f;
 
     public GameObject menu;
+    public GameObject contolerMenu;
     public GameObject inventory;
 
     private void Start()
@@ -71,6 +72,14 @@ public class uiControler : MonoBehaviour
             inventory.SetActive(true);
             Time.timeScale = 0;
         }
+
+        if(Input.GetButtonDown("startButton"))
+        {
+            contolerMenu.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        
     }
 
     //button to exit menu

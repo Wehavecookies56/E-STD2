@@ -19,11 +19,14 @@ public class StartGame : MonoBehaviour
         player.transform.parent.GetComponent<PlayerMovement>().enabled = false;
         Cursor.visible = false;
         dot.SetActive(false);
+
+       
     }
 
     void Update()
-    {
-        if(go == false)
+    {   
+
+        if (go == false)
         {
             if (Input.anyKeyDown == true)
             {
