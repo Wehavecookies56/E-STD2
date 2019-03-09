@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(AStarNetBuilder))]
 public class CustomInspector : Editor
 {
@@ -21,3 +21,4 @@ public class CustomInspector : Editor
         }
     }
 }
+#endif
