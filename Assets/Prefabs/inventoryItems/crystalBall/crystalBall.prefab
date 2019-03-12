@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1651473381371239747}
   - component: {fileID: 1651473381371239745}
   - component: {fileID: 1651473381371239746}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4712,7 +4712,7 @@ GameObject:
   - component: {fileID: 1651473381764766536}
   - component: {fileID: 1651473381764766579}
   - component: {fileID: 1651473381764766540}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: crystalBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4817,4 +4817,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d12f666683f7a94fb8b00ff0af0ef82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryItemPartner: {fileID: 0}
+  inventoryItemPartner: {fileID: 8463394374911197827, guid: 11d5b65fef7c7cd44a9aac808dbfc543,
+    type: 3}
