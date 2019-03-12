@@ -7,5 +7,6 @@ public class onAxeClick : MonoBehaviour
     public void onClick()
     {
         GameObject.FindGameObjectWithTag("description").GetComponent<descriptionManager>().activateDescription(descriptionManager.descriptionType.AXE);
+        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
     }
 }

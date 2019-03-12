@@ -39,7 +39,7 @@ public class inventorySelectScript : MonoBehaviour
                 {
                     //If it is empty, controller i is disconnected
                     //where i indicates the controller number
-                    Cursor.lockState = CursorLockMode.None;
+                    //Cursor.lockState = CursorLockMode.None;
                     counter = -1;
                 }
             }
@@ -72,11 +72,11 @@ public class inventorySelectScript : MonoBehaviour
 
         if(Input.GetButtonDown("Fire1"))
         {
-            if(counter > 0)
+            if (counter > 0)
             if (slots[counter].transform.childCount != 0)
             {
-                if(slots[counter].transform.GetChild(0).CompareTag("axe"))
-                slots[counter].transform.GetChild(0).GetComponent<onAxeClick>().onClick();
+                if (slots[counter].transform.GetChild(0).CompareTag("axe"))
+                    slots[counter].transform.GetChild(0).GetComponent<onAxeClick>().onClick();
 
                 if (slots[counter].transform.GetChild(0).CompareTag("key"))
                     slots[counter].transform.GetChild(0).GetComponent<onkeyClick>().onClick();
@@ -99,12 +99,14 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[counter].transform.GetChild(0).CompareTag("crystalBall"))
                     slots[counter].transform.GetChild(0).GetComponent<onCrystalBallClick>().onClick();
 
+         
             }
         }
 
         if(Input.GetButtonDown("Fire3"))
         {
             Time.timeScale = 1;
+            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
             gameObject.SetActive(false);
         }
 

@@ -89,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
         Quaternion camRotation = Quaternion.Euler(pitch, 0, 0);
         fpscamera.localRotation = camRotation;
     }
+
+
 }
 
 
