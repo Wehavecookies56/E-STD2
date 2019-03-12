@@ -5,10 +5,13 @@ using UnityEngine;
 public class toggleTerrain : MonoBehaviour {
 
     public bool enable;
-    public GameObject terrain;
+    public GameObject[] Objects;
 
     private void OnTriggerEnter(Collider other) {
-        terrain.SetActive(enable);
+        foreach (GameObject go in Objects)
+        {
+            go.SetActive(enable);
+        }
     }
 
 }
