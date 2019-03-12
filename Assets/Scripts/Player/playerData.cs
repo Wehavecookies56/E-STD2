@@ -7,12 +7,12 @@ public class playerData : MonoBehaviour {
     public float Health { get; set; } = 10;
     public float Sanity { get; set; } = 10;
     //Traits are readonly
-    public int Strength { get; } = 2;
-    public int Agility { get; } = 3;
-    public int Intelligence { get; } = 3;
-    public int Willpower { get; } = 8;
-    public int Perception { get; } = 4;
-    public int Charisma { get; } = 6;
+    public int Strength { get; set; } = 2;
+    public int Agility { get; set; } = 3;
+    public int Intelligence { get; set; } = 3;
+    public int Willpower { get; set; } = 8;
+    public int Perception { get; set; } = 4;
+    public int Charisma { get; set; } = 6;
 
     public static playerData INSTANCE = null;
 

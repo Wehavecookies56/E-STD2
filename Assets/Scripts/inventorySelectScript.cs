@@ -18,6 +18,9 @@ public class inventorySelectScript : MonoBehaviour
 
     //axe prefab for drop
     public GameObject axePrefab;
+    //drop book
+    public GameObject bookPrefab;
+
 
     private void Update()
     {
@@ -38,6 +41,7 @@ public class inventorySelectScript : MonoBehaviour
                 {
                     //If it is empty, controller i is disconnected
                     //where i indicates the controller number
+                    Cursor.lockState = CursorLockMode.None;
                     counter = -1;
                 }
             }
@@ -265,6 +269,15 @@ public class inventorySelectScript : MonoBehaviour
                 {
                     Destroy(slots[i].transform.GetChild(0).gameObject);
 
+                    for (int ii = 0; ii < slots.Length; ii++)
+                    {
+                        if (slots[ii].transform.childCount != 0)
+                        {
+                            slots[ii].GetComponentInChildren<spinItem>().go = false;
+                        }
+
+                        slots[ii].GetComponent<Image>().sprite = notPressed;
+                    }
                     break;
                 }
             }
@@ -283,12 +296,38 @@ public class inventorySelectScript : MonoBehaviour
                     Destroy((slots[i].transform.GetChild(0).gameObject));
                     GameObject player = GameObject.FindGameObjectWithTag("Player");
                     Vector3 pos = new Vector3(player.transform.position.x-3f, player.transform.position.y, player.transform.position.z);
-                    Instantiate(axePrefab, pos, Quaternion.identity); //drop le axe
-                    //dropped axe cant be picked up
+                    GameObject newAxe = Instantiate(axePrefab, pos, Quaternion.identity); //drop le axe
+                    playerData.INSTANCE.Strength += 1;
+                    newAxe.GetComponent<Rigidbody>().AddForce(Vector3.left*300);
+                    //add fire sound like a burn
+                    //add an ouch dialog
                     break;  
                 }
             }
 
         }
     }
+
+    public void dropBook()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].transform.childCount != 0)
+            {
+                if (slots[i].transform.GetChild(0).gameObject.CompareTag("book"))
+                {
+                    Destroy((slots[i].transform.GetChild(0).gameObject));
+                    GameObject player = GameObject.FindGameObjectWithTag("Player");
+                    Vector3 pos = new Vector3(player.transform.position.x - 3f, player.transform.position.y, player.transform.position.z);
+                    Instantiate(bookPrefab, pos, Quaternion.identity); //drop le axe
+                    playerData.INSTANCE.Intelligence -= 2;
+                    //dropped axe cant be picked up
+                    break;
+                }
+            }
+
+        }
+    }
+
+
 }
