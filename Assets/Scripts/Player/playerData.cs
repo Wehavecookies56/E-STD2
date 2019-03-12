@@ -4,8 +4,22 @@ using UnityEngine;
 
 public class playerData : MonoBehaviour {
     //Default values are set to the values on the character sheet
-    public float Health { get; set; } = 10;
+    private float health = 10;
+    public float Health {
+        get
+        {
+            return health;
+        }
+
+        set
+        {
+            health = value;
+            soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.HURT, GameObject.FindGameObjectWithTag("Player").transform);
+               
+        }
+    }
     public float Sanity { get; set; } = 10;
+ 
     //Traits are readonly
     public int Strength { get; set; } = 2;
     public int Agility { get; set; } = 3;

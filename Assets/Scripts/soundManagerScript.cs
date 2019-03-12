@@ -24,10 +24,10 @@ public class soundManagerScript : MonoBehaviour
     public GameObject[] lawyerAndPriestAudio;
 
     //priestSounds
-    public enum Priest { PRARE1, PRARE2, JHONNY };
+    public enum Priest { PRARE1, PRARE2, JHONNY, HURT };
     public GameObject[] PriestAudio;
 
-    public enum enviromentSounds { DOOROPEN, THUNDER1, THUNDER2, GHOSTSCREAM, POTBREAK, THUNDER3, THUNDER4, WINDOW };
+    public enum enviromentSounds { DOOROPEN, THUNDER1, THUNDER2, GHOSTSCREAM, POTBREAK, THUNDER3, THUNDER4, WINDOW, CHESTOPEN, AXEIMPACT };
     public GameObject[] enviromentAudio;
 
     public enum backgroundSounds { HORRORLOOP, RAINLOOP };
