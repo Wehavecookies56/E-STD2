@@ -9,7 +9,6 @@ public class soundManagerScript : MonoBehaviour
 
     //demon sounds
     public enum demonSounds { CONTRACT, BREAKME, IAMTHEFLOOR, INSIST, HA, THANKYOU, WHATINEED, RATS };
-
     public GameObject[] demonAudio;
 
     //boy and priest
@@ -33,6 +32,10 @@ public class soundManagerScript : MonoBehaviour
 
     public enum backgroundSounds { HORRORLOOP, RAINLOOP };
     public GameObject[] backroundSounds;
+
+    //UI sounds
+    public enum UIsounds { SCROLLOPEN, SCROLLCLOSED, GETITEM, BUTTONCLICKED};
+    public GameObject[] Uisounds;
 
     public enum footsteps { WOOD };
     public GameObject[] footstepsSound;
@@ -69,6 +72,13 @@ public class soundManagerScript : MonoBehaviour
     public void playOnce(enviromentSounds sound, Transform position)
     {
         GameObject instance = Instantiate(enviromentAudio[(int)sound]);
+        instance.transform.position = transform.position;
+        instance = null;
+    }
+
+    public void playOnce(UIsounds sound, Transform position)
+    {
+        GameObject instance = Instantiate(Uisounds[(int)sound]);
         instance.transform.position = transform.position;
         instance = null;
     }

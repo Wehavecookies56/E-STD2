@@ -7,5 +7,6 @@ public class onCrystalBallClick : MonoBehaviour
     public void onClick()
     {
         GameObject.FindGameObjectWithTag("description").GetComponent<descriptionManager>().activateDescription(descriptionManager.descriptionType.CRYSTALBALL);
+        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
     }
 }

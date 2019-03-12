@@ -9,6 +9,7 @@ public class mainMenuButtons : MonoBehaviour
     public void returnButton()
     {
         Time.timeScale = 1;
+        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
         gameObject.SetActive(false);
     }
 
