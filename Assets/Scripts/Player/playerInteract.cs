@@ -108,7 +108,7 @@ public class playerInteract : MonoBehaviour {
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
         {
-            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Door"))
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Door") || (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest")))
             {
 
                 if (item.GetComponent<DoorRotate>().needskey)
@@ -135,7 +135,15 @@ public class playerInteract : MonoBehaviour {
                 else
                 {
                     item.GetComponent<DoorRotate>().opening = true;
-                    soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
+                    if (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest"))
+                    {
+                       // soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.CHESTOPEN, item.transform);
+                    }
+                    else
+                    {
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
+                    }
+                  
                     item.layer = 1 << LayerMask.NameToLayer("Default");
                     item.GetComponent<BoxCollider>().isTrigger = true;
                 }

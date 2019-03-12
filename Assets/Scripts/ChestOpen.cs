@@ -6,6 +6,7 @@ public class ChestOpen : MonoBehaviour
 {
     public float anglestop;
     public float speed = 1;
+    internal bool opening = false;
 
 
     // Use this for initialization
@@ -17,28 +18,38 @@ public class ChestOpen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (speed < 0)
+       // if (opening)
         {
-            if (transform.eulerAngles.x > anglestop)
+            if (speed < 0)
             {
-                transform.Rotate(new Vector3(Time.deltaTime * speed, 0, 0));
+                if (transform.eulerAngles.y > anglestop)
+                {
+                    transform.Rotate(new Vector3(0, Time.deltaTime * speed, 0));
+                }
+                else
+                {
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, anglestop, transform.eulerAngles.z);
+                    opening = false;
+                    Destroy(gameObject.GetComponent<ChestOpen>());
+                }
             }
             else
             {
-                transform.eulerAngles = new Vector3(anglestop, transform.eulerAngles.y, transform.eulerAngles.z);
+                if (transform.eulerAngles.y < anglestop)
+                {
+                    transform.Rotate(new Vector3(0, Time.deltaTime * speed, 0));
+                }
+                else
+                {
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, anglestop, transform.eulerAngles.z);
+                    opening = false;
+                    Destroy(gameObject.GetComponent<ChestOpen>());
+                    gameObject.GetComponent<BoxCollider>().isTrigger = false;
+                }
             }
+
         }
-        else
-        {
-            if (transform.eulerAngles.x < anglestop)
-            {
-                transform.Rotate(new Vector3(Time.deltaTime * speed, 0, 0));
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(anglestop, transform.eulerAngles.y, transform.eulerAngles.z);
-            }
-        }
+
     }
 }
 
