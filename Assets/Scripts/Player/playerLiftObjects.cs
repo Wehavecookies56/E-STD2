@@ -12,21 +12,12 @@ public class playerLiftObjects : MonoBehaviour
     public float throwStrength;
     
     //joint 
-    private ConfigurableJoint joint;
-    private float defaultBreakForce;
-    private float grabHeight = 0.05f;
     private GameObject pickedUpObject;
     private float lerpSpeed = 5f;
 
     //input vars
     private const float liftButtonRequredTime = 0.8f;
     private float liftButtonTimer = 0f;
-
-    private void Start()
-    {
-        joint = liftSlot.GetComponent<ConfigurableJoint>();
-        defaultBreakForce = joint.breakForce;
-    }
 
     void Update()
     {
