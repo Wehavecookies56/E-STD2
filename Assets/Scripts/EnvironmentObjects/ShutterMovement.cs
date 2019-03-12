@@ -25,7 +25,7 @@ public class ShutterMovement : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q)) ToggleState(); //TODO test input
+        //if (Input.GetKeyDown(KeyCode.Q)) ToggleState(); //TODO test input
         //check current state
         switch (state)
         {
@@ -66,7 +66,7 @@ public class ShutterMovement : MonoBehaviour
         }
     }
 
-    internal void ToggleState()
+    public void ToggleState()
     {
         if(state == State.Idle)
         {
