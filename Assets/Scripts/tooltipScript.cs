@@ -37,6 +37,10 @@ public class tooltipScript : MonoBehaviour {
             action = action.Substring(0, 1).ToUpper() + action.Substring(1, action.Length-1);
             GetComponent<CanvasGroup>().alpha = 1;
             text.GetComponent<Text>().text = action + "\n" + player.GetComponent<playerInteract>().lastLookedAt.name;
+            if (player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>() != null) {
+                action = player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().actionText;
+                text.GetComponent<Text>().text = action + "\n" + player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().bottomText;
+            }
             if (lastUsed == InputDevice.CONTROLLER) {
                 buttonPrompt.GetComponent<Image>().sprite = Resources.Load<Sprite>("a button");
             } else {
