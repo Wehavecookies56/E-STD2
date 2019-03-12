@@ -18,8 +18,7 @@ public class inventorySelectScript : MonoBehaviour
 
     //axe prefab for drop
     public GameObject axePrefab;
-    //drop book
-    public GameObject bookPrefab;
+    public GameObject featherUi;
 
 
     private void Update()
@@ -28,7 +27,6 @@ public class inventorySelectScript : MonoBehaviour
 
         if (temp.Length > 0)
         {
-
             for (int i = 0; i < temp.Length; ++i)
             {
                 //Check if the string is empty or not
@@ -259,6 +257,34 @@ public class inventorySelectScript : MonoBehaviour
         }
     }
 
+    public void deletefeather()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].transform.childCount != 0)
+            {
+                if (slots[i].transform.GetChild(0).gameObject.CompareTag("feather"))
+                {
+                    Destroy(slots[i].transform.GetChild(0).gameObject);
+
+                    for (int ii = 0; ii < slots.Length; ii++)
+                    {
+                        if (slots[ii].transform.childCount != 0)
+                        {
+                            slots[ii].GetComponentInChildren<spinItem>().go = false;
+                        }
+
+                        slots[ii].GetComponent<Image>().sprite = notPressed;
+                    }
+
+                    featherUi.GetComponent<Animator>().SetTrigger("go");
+                    break;
+                }
+            }
+
+        }
+    }
+
     public void deleteArmour()
     {
         for (int i = 0; i < slots.Length; i++)
@@ -317,11 +343,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag("book"))
                 {
                     Destroy((slots[i].transform.GetChild(0).gameObject));
-                    GameObject player = GameObject.FindGameObjectWithTag("Player");
-                    Vector3 pos = new Vector3(player.transform.position.x - 3f, player.transform.position.y, player.transform.position.z);
-                    Instantiate(bookPrefab, pos, Quaternion.identity); //drop le axe
                     playerData.INSTANCE.Intelligence -= 2;
-                    //dropped axe cant be picked up
                     break;
                 }
             }
