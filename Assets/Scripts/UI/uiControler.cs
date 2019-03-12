@@ -65,18 +65,21 @@ public class uiControler : MonoBehaviour
         {
             menu.SetActive(true);
             Time.timeScale = 0;
+            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
         }
 
         if(Input.GetKeyDown(KeyCode.Tab) || Input.GetButtonDown("Jump"))
         {
             inventory.SetActive(true);
             Time.timeScale = 0;
+            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
         }
 
         if(Input.GetButtonDown("startButton"))
         {
             contolerMenu.SetActive(true);
             Time.timeScale = 0;
+            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
         }
 
         
@@ -86,6 +89,7 @@ public class uiControler : MonoBehaviour
     public void exitInventory()
     {
         inventory.SetActive(false);
+        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
         Time.timeScale = 1;
     }
 }

@@ -23,7 +23,8 @@ public class InventoryItemPickUp : MonoBehaviour
                 inventory.isFull[i] = true;
                 Instantiate(inventoryItemPartner, inventory.slots[i].transform, false);
                 Destroy(gameObject);
-                //itembuffs
+
+                soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.GETITEM, gameObject.transform);
                
                 switch (gameObject.name)
                 {

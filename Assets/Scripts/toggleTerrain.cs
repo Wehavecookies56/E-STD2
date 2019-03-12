@@ -8,10 +8,11 @@ public class toggleTerrain : MonoBehaviour {
     public GameObject[] Objects;
 
     private void OnTriggerEnter(Collider other) {
-        foreach (GameObject go in Objects)
-        {
-            go.SetActive(enable);
-        }
+        if(other.gameObject.name == "Player")
+            foreach (GameObject go in Objects)
+            {
+                go.SetActive(enable);
+            }  
     }
 
 }

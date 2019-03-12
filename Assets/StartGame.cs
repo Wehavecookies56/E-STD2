@@ -10,6 +10,7 @@ public class StartGame : MonoBehaviour
     public GameObject startCam;
     public GameObject player;
     public GameObject dot;
+    public GameObject minimap;
     public GameObject[] lightning;
     private bool go = false;
     private float timer = 19;
@@ -19,7 +20,7 @@ public class StartGame : MonoBehaviour
         player.transform.parent.GetComponent<PlayerMovement>().enabled = false;
         Cursor.visible = false;
         dot.SetActive(false);
-
+        minimap.SetActive(false);
        
     }
 
@@ -50,6 +51,7 @@ public class StartGame : MonoBehaviour
                 player.transform.parent.GetComponent<PlayerMovement>().enabled = true;
                 go = false;
                 dot.SetActive(true);
+                minimap.SetActive(true);
                 gameObject.SetActive(false);
             }
             else { timer -= Time.deltaTime; }
