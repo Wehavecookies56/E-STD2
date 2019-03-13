@@ -232,6 +232,23 @@ public class inventorySelectScript : MonoBehaviour
         return false;
     }
 
+    public bool isThereFeather()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].transform.childCount != 0)
+            {
+                if (slots[i].transform.GetChild(0).gameObject.CompareTag("feather"))
+                {
+                    return true;
+                }
+            }
+
+        }
+
+        return false;
+    }
+
     public void deleteKey()
     {
         for (int i = 0; i < slots.Length; i++)

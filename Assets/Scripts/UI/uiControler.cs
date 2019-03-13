@@ -14,6 +14,7 @@ public class uiControler : MonoBehaviour
     public GameObject sanityPannel;
     public GameObject sanityDrain;
     private Color sanityColour;
+    public GameObject minimap;
     
 
     public float hardIntesity = 0.6f;
@@ -80,6 +81,18 @@ public class uiControler : MonoBehaviour
             contolerMenu.SetActive(true);
             Time.timeScale = 0;
             soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+        }
+
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            if(minimap.activeSelf == false)
+            {
+                minimap.SetActive(true);
+            }
+            else
+            {
+                minimap.SetActive(false);
+            }
         }
 
         
