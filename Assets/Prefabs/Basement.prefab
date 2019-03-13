@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
-  terrain: {fileID: 0}
+  Objects: []
 --- !u!1 &6028229670440428395
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 0
-  terrain: {fileID: 0}
+  Objects: []
 --- !u!1001 &6028229669333777306
 PrefabInstance:
   m_ObjectHideFlags: 0
