@@ -137,7 +137,7 @@ public class playerInteract : MonoBehaviour {
                     item.GetComponent<DoorRotate>().opening = true;
                     if (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest"))
                     {
-                       // soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.CHESTOPEN, item.transform);
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.CHESTOPEN, item.transform);
                     }
                     else
                     {
