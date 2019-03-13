@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 175b2b87af3f5284da1f5d92d65b80f9, type: 3}
   m_Name: Curtains
   m_EditorClassIdentifier: 
-  objectName: 
+  objectName: Curtains
   type: 0
