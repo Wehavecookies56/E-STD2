@@ -17,8 +17,11 @@ public class breakVase : MonoBehaviour {
             StartCoroutine(disableCollision());
             soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.POTBREAK, transform);
             playerData.INSTANCE.Sanity -= 1;
-            GameObject newKey = Instantiate(key);
-            newKey.transform.position = transform.position;
+            if(key != null)
+            {
+                GameObject newKey = Instantiate(key);
+                newKey.transform.position = transform.position;
+            }                      
         }
     }
 

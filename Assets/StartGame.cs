@@ -31,7 +31,7 @@ public class StartGame : MonoBehaviour
         {
             if (Input.anyKeyDown == true)
             {
-                cutCam.GetComponent<cutsceneHandler>().StartCutscene(startPos);
+                text.GetComponent<Animator>().SetTrigger("go");
                 for (int i = 0; i < lightning.Length; i++)
                 {
                     lightning[i].GetComponent<LightningTriggerer>().CreateLightning();
@@ -39,7 +39,7 @@ public class StartGame : MonoBehaviour
                 go = true;
                 startCam.SetActive(false);
                 player.SetActive(true);
-                gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                cutCam.GetComponent<cutsceneHandler>().StartCutscene(startPos);
             }
         }
        
@@ -53,8 +53,10 @@ public class StartGame : MonoBehaviour
                 dot.SetActive(true);
                 minimap.SetActive(true);
                 gameObject.SetActive(false);
+
             }
             else { timer -= Time.deltaTime; }
+
         }
     }
 

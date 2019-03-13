@@ -131,6 +131,7 @@ public class playerInteract : MonoBehaviour {
                     {
                         GameObject.FindGameObjectWithTag("heresJhonny").GetComponent<cutsceneHandler>().StartCutscene(GameObject.FindGameObjectWithTag("jhonnysDad"));
                         soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.JHONNY, GameObject.FindGameObjectWithTag("Player").transform);
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.AXEIMPACT, item.transform);
                         doorParts.SetActive(true);
                         GameObject.FindGameObjectWithTag("jhonnyDoor").SetActive(false);
                     }
