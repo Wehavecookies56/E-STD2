@@ -108,6 +108,9 @@ public class playerInteract : MonoBehaviour {
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
         {
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Curtains")) {
+                item.GetComponent<ShutterMovement>().ToggleState();
+            }
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Door") || (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest")))
             {
 
