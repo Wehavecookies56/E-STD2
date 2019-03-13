@@ -14,7 +14,7 @@ public class DoorRotate : MonoBehaviour
     void FixedUpdate()
     {
 
-       //if (opening)
+       if (opening)
         {
             if (speed < 0)
             {
