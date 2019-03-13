@@ -14,30 +14,30 @@ public class DoorRotate : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (opening)
+       if (opening)
         {
             if (speed < 0)
             {
-                if (transform.eulerAngles.y > anglestop)
+                if (transform.localEulerAngles.y > anglestop)
                 {
                     transform.Rotate(new Vector3(0, Time.deltaTime * speed, 0));
                 }
                 else
                 {
-                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, anglestop, transform.eulerAngles.z);
+                    transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, anglestop, transform.localEulerAngles.z);
                     opening = false;
                     Destroy(gameObject.GetComponent<DoorRotate>());
                 }
             }
             else
             {
-                if (transform.eulerAngles.y < anglestop)
+                if (transform.localEulerAngles.y < anglestop)
                 {
                     transform.Rotate(new Vector3(0, Time.deltaTime * speed, 0));
                 }
                 else
                 {
-                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, anglestop, transform.eulerAngles.z);
+                    transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, anglestop, transform.localEulerAngles.z);
                     opening = false;
                     Destroy(gameObject.GetComponent<DoorRotate>());
                     gameObject.GetComponent<BoxCollider>().isTrigger = false;
