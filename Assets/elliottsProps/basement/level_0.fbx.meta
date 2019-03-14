@@ -59,6 +59,8 @@ ModelImporter:
     100106: wall_top
     100108: Wood
     100110: wood
+    100112: Camera
+    100114: Lamp
     400000: _Wall_Column_End
     400002: ANIM_handle
     400004: big_column
@@ -115,6 +117,9 @@ ModelImporter:
     400106: wall_top
     400108: Wood
     400110: wood
+    400112: Camera
+    400114: Lamp
+    2000000: Camera
     2100000: Old Metal-2
     2100002: Fabric
     2100004: Stone-2
@@ -228,7 +233,98 @@ ModelImporter:
     4300064: corner_full
     4300066: Column_3
     7400000: C4D Animation Take
+    7400002: Pieces_3_2|ANIM_handle|C4D Animation Take|Layer0
+    7400004: Pieces_3_2|Handle|C4D Animation Take|Layer0
+    7400006: Pieces_3_2|Pieces_1_2|C4D Animation Take|Layer0
+    7400008: Pieces_3_2|Pieces_1|C4D Animation Take|Layer0
+    7400010: Pieces_3_2|Pieces_2_2|C4D Animation Take|Layer0
+    7400012: Pieces_3_2|Pieces_2|C4D Animation Take|Layer0
+    7400014: Pieces_3_2|Pieces_3_2|C4D Animation Take|Layer0
+    7400016: Pieces_3_2|Pieces_3|C4D Animation Take|Layer0
+    7400018: Pieces_3_2|Pieces_4|C4D Animation Take|Layer0
+    7400020: Pieces_3_2|Pieces_5|C4D Animation Take|Layer0
+    7400022: Pieces_2_2|ANIM_handle|C4D Animation Take|Layer0
+    7400024: Pieces_2_2|Handle|C4D Animation Take|Layer0
+    7400026: Pieces_2_2|Pieces_1_2|C4D Animation Take|Layer0
+    7400028: Pieces_2_2|Pieces_1|C4D Animation Take|Layer0
+    7400030: Pieces_2_2|Pieces_2_2|C4D Animation Take|Layer0
+    7400032: Pieces_2_2|Pieces_2|C4D Animation Take|Layer0
+    7400034: Pieces_2_2|Pieces_3_2|C4D Animation Take|Layer0
+    7400036: Pieces_2_2|Pieces_3|C4D Animation Take|Layer0
+    7400038: Pieces_2_2|Pieces_4|C4D Animation Take|Layer0
+    7400040: Pieces_2_2|Pieces_5|C4D Animation Take|Layer0
+    7400042: Pieces_1_2|ANIM_handle|C4D Animation Take|Layer0
+    7400044: Pieces_1_2|Handle|C4D Animation Take|Layer0
+    7400046: Pieces_1_2|Pieces_1_2|C4D Animation Take|Layer0
+    7400048: Pieces_1_2|Pieces_1|C4D Animation Take|Layer0
+    7400050: Pieces_1_2|Pieces_2_2|C4D Animation Take|Layer0
+    7400052: Pieces_1_2|Pieces_2|C4D Animation Take|Layer0
+    7400054: Pieces_1_2|Pieces_3_2|C4D Animation Take|Layer0
+    7400056: Pieces_1_2|Pieces_3|C4D Animation Take|Layer0
+    7400058: Pieces_1_2|Pieces_4|C4D Animation Take|Layer0
+    7400060: Pieces_1_2|Pieces_5|C4D Animation Take|Layer0
+    7400062: Pieces_5|ANIM_handle|C4D Animation Take|Layer0
+    7400064: Pieces_5|Handle|C4D Animation Take|Layer0
+    7400066: Pieces_5|Pieces_1_2|C4D Animation Take|Layer0
+    7400068: Pieces_5|Pieces_1|C4D Animation Take|Layer0
+    7400070: Pieces_5|Pieces_2_2|C4D Animation Take|Layer0
+    7400072: Pieces_5|Pieces_2|C4D Animation Take|Layer0
+    7400074: Pieces_5|Pieces_3_2|C4D Animation Take|Layer0
+    7400076: Pieces_5|Pieces_3|C4D Animation Take|Layer0
+    7400078: Pieces_5|Pieces_4|C4D Animation Take|Layer0
+    7400080: Pieces_5|Pieces_5|C4D Animation Take|Layer0
+    7400082: Pieces_4|ANIM_handle|C4D Animation Take|Layer0
+    7400084: Pieces_4|Handle|C4D Animation Take|Layer0
+    7400086: Pieces_4|Pieces_1_2|C4D Animation Take|Layer0
+    7400088: Pieces_4|Pieces_1|C4D Animation Take|Layer0
+    7400090: Pieces_4|Pieces_2_2|C4D Animation Take|Layer0
+    7400092: Pieces_4|Pieces_2|C4D Animation Take|Layer0
+    7400094: Pieces_4|Pieces_3_2|C4D Animation Take|Layer0
+    7400096: Pieces_4|Pieces_3|C4D Animation Take|Layer0
+    7400098: Pieces_4|Pieces_4|C4D Animation Take|Layer0
+    7400100: Pieces_4|Pieces_5|C4D Animation Take|Layer0
+    7400102: Pieces_3|ANIM_handle|C4D Animation Take|Layer0
+    7400104: Pieces_3|Handle|C4D Animation Take|Layer0
+    7400106: Pieces_3|Pieces_1_2|C4D Animation Take|Layer0
+    7400108: Pieces_3|Pieces_1|C4D Animation Take|Layer0
+    7400110: Pieces_3|Pieces_2_2|C4D Animation Take|Layer0
+    7400112: Pieces_3|Pieces_2|C4D Animation Take|Layer0
+    7400114: Pieces_3|Pieces_3_2|C4D Animation Take|Layer0
+    7400116: Pieces_3|Pieces_3|C4D Animation Take|Layer0
+    7400118: Pieces_3|Pieces_4|C4D Animation Take|Layer0
+    7400120: Pieces_3|Pieces_5|C4D Animation Take|Layer0
+    7400122: Pieces_2|ANIM_handle|C4D Animation Take|Layer0
+    7400124: Pieces_2|Handle|C4D Animation Take|Layer0
+    7400126: Pieces_2|Pieces_1_2|C4D Animation Take|Layer0
+    7400128: Pieces_2|Pieces_1|C4D Animation Take|Layer0
+    7400130: Pieces_2|Pieces_2_2|C4D Animation Take|Layer0
+    7400132: Pieces_2|Pieces_2|C4D Animation Take|Layer0
+    7400134: Pieces_2|Pieces_3_2|C4D Animation Take|Layer0
+    7400136: Pieces_2|Pieces_3|C4D Animation Take|Layer0
+    7400138: Pieces_2|Pieces_4|C4D Animation Take|Layer0
+    7400140: Pieces_2|Pieces_5|C4D Animation Take|Layer0
+    7400142: Pieces_1|ANIM_handle|C4D Animation Take|Layer0
+    7400144: Pieces_1|Handle|C4D Animation Take|Layer0
+    7400146: Pieces_1|Pieces_1_2|C4D Animation Take|Layer0
+    7400148: Pieces_1|Pieces_1|C4D Animation Take|Layer0
+    7400150: Pieces_1|Pieces_2_2|C4D Animation Take|Layer0
+    7400152: Pieces_1|Pieces_2|C4D Animation Take|Layer0
+    7400154: Pieces_1|Pieces_3_2|C4D Animation Take|Layer0
+    7400156: Pieces_1|Pieces_3|C4D Animation Take|Layer0
+    7400158: Pieces_1|Pieces_4|C4D Animation Take|Layer0
+    7400160: Pieces_1|Pieces_5|C4D Animation Take|Layer0
+    7400162: ANIM_handle|ANIM_handle|C4D Animation Take|Layer0
+    7400164: ANIM_handle|Handle|C4D Animation Take|Layer0
+    7400166: ANIM_handle|Pieces_1_2|C4D Animation Take|Layer0
+    7400168: ANIM_handle|Pieces_1|C4D Animation Take|Layer0
+    7400170: ANIM_handle|Pieces_2_2|C4D Animation Take|Layer0
+    7400172: ANIM_handle|Pieces_2|C4D Animation Take|Layer0
+    7400174: ANIM_handle|Pieces_3_2|C4D Animation Take|Layer0
+    7400176: ANIM_handle|Pieces_3|C4D Animation Take|Layer0
+    7400178: ANIM_handle|Pieces_4|C4D Animation Take|Layer0
+    7400180: ANIM_handle|Pieces_5|C4D Animation Take|Layer0
     9500000: //RootNode
+    10800000: Lamp
   externalObjects:
   - first:
       type: UnityEngine:Material
