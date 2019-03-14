@@ -5,19 +5,13 @@ using UnityEngine;
 public class boyScript : MonoBehaviour {
 
     Animator anim;
-    Rigidbody rb;
 
     void Start() {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
     }
 
-    void Update() {
-        
+    public void moveOffChair() {
+        transform.Translate(0, 0, 1);
     }
 
-    public void stand() {
-        anim.SetTrigger("stand");
-
-    }
 }

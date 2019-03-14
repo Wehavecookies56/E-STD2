@@ -89,6 +89,11 @@ public class playerInteract : MonoBehaviour {
 
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Boy")) {
                 npcTalk t = item.GetComponent<npcTalk>();
+                if (t.currentLine + 1 == t.lineCount) {
+                    item.GetComponent<TestAI>().enabled = true;
+                    item.GetComponent<Animator>().SetBool("running", true);
+                    item.GetComponent<Rigidbody>().isKinematic = false;
+                }
                 t.playDialog((soundManagerScript.boyAndPriest)t.currentLine);
             }
         }
