@@ -64,23 +64,39 @@ public class uiControler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            menu.SetActive(true);
-            Time.timeScale = 0;
-            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+            if(menu.activeSelf == false)
+            {
+                menu.SetActive(true);
+                Time.timeScale = 0;
+                soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+            }  
         }
 
         if(Input.GetKeyDown(KeyCode.Tab) || Input.GetButtonDown("Jump"))
         {
-            inventory.SetActive(true);
-            Time.timeScale = 0;
-            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+            if(inventory.activeSelf == false)
+            {
+                if (contolerMenu.activeSelf == false)
+                {
+                    if (menu.activeSelf == false)
+                    {
+                        inventory.SetActive(true);
+                        Time.timeScale = 0;
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+                    }
+                }               
+            }            
         }
 
         if(Input.GetButtonDown("startButton"))
         {
-            contolerMenu.SetActive(true);
-            Time.timeScale = 0;
-            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+            if(contolerMenu.activeSelf == false)
+            {
+                contolerMenu.SetActive(true);
+                Time.timeScale = 0;
+                soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+            }
+           
         }
 
         if(Input.GetKeyDown(KeyCode.M))
@@ -93,9 +109,7 @@ public class uiControler : MonoBehaviour
             {
                 minimap.SetActive(false);
             }
-        }
-
-        
+        }       
     }
 
     //button to exit menu
