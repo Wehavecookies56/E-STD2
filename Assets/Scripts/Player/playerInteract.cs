@@ -73,6 +73,10 @@ public class playerInteract : MonoBehaviour {
                 item.GetComponent<BoxCollider>().enabled = false;
             }
         }
+        if (item.GetComponent<objectScript>().data.Type == ObjectType.FLIP) {
+            item.GetComponent<Animator>().SetTrigger("flip");
+
+        }
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.TALK) {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Morpheus")) {
