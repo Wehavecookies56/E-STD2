@@ -8,28 +8,57 @@ ModelImporter:
     100004: skull
     100006: //RootNode
     100008: uteeth
+    100010: default
     400000: jaw
     400002: lteeth
     400004: skull
     400006: //RootNode
     400008: uteeth
+    400010: default
     2100000: jawMat
     2100002: lteethMat
     2100004: skullMat
     2100006: uteethMat
+    2100008: Dflt0
+    2100010: Dflt3
+    2100012: Dflt1
+    2100014: Dflt2
     2300000: jaw
     2300002: lteeth
     2300004: skull
     2300006: uteeth
+    2300008: default
     3300000: jaw
     3300002: lteeth
     3300004: skull
     3300006: uteeth
+    3300008: default
     4300000: jaw
     4300002: lteeth
     4300004: skull
     4300006: uteeth
+    4300008: default
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dflt0
+    second: {fileID: 2100000, guid: b89422a022df1ca4c88f96d005b47a69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dflt1
+    second: {fileID: 2100000, guid: b89422a022df1ca4c88f96d005b47a69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dflt2
+    second: {fileID: 2100000, guid: b89422a022df1ca4c88f96d005b47a69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dflt3
+    second: {fileID: 2100000, guid: b89422a022df1ca4c88f96d005b47a69, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
