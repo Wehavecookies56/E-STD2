@@ -8,6 +8,7 @@ public class TestAI : MonoBehaviour
     public GameObject DEBUGPOSOBJ;
 
     public float speed;
+    public float rotationSpeed = 1.0f;
 
     public GameObject startNode;
     public GameObject endNode;
@@ -50,7 +51,9 @@ public class TestAI : MonoBehaviour
         {
             //move towards the first node in the path
             rb.MovePosition(Vector3.MoveTowards(rb.position, movementPath[0].transform.position, Time.deltaTime * speed));
-            transform.LookAt(movementPath[0].transform.position);
+            //lerp look at the next vector (not the most efficient way to do this but it works)
+            //TODO transform.LookAt(movementPath[0].transform.position); OLD SOLUTION
+            transform.LookAt(Vector3.Lerp( transform.position + transform.forward, new Vector3(movementPath[0].transform.position.x, transform.position.y, movementPath[0].transform.position.z), rotationSpeed * Time.deltaTime));
 
             //check if the node has been reached
             if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(movementPath[0].transform.position.x, 0, movementPath[0].transform.position.z)) < pathfindingNodeContactPadding)
