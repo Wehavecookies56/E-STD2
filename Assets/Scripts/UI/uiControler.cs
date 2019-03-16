@@ -101,14 +101,8 @@ public class uiControler : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.M))
         {
-            if(minimap.activeSelf == false)
-            {
-                minimap.SetActive(true);
-            }
-            else
-            {
-                minimap.SetActive(false);
-            }
+            //toggles image of the minimap state
+            minimap.transform.GetChild(0).GetComponent<RawImage>().enabled = !minimap.transform.GetChild(0).GetComponent<RawImage>().enabled;
         }       
     }
 
