@@ -67,7 +67,10 @@ public class TestAI : MonoBehaviour
             GoToLocation(new Vector3(Random.Range(-7f, 6f), 0, Random.Range(-9f, 7f)));
             //debug option to place an object over the endNode
             if (DEBUGPOSOBJ != null)
-                DEBUGPOSOBJ.transform.position = endNode.transform.position; DEBUGPOSOBJ.transform.Translate(0, 3f, 0);
+            {
+                DEBUGPOSOBJ.transform.position = endNode.transform.position;
+                DEBUGPOSOBJ.transform.Translate(0, 3f, 0);
+            }
         }
     }
 
