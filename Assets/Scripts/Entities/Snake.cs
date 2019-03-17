@@ -66,7 +66,7 @@ public class Snake : MonoBehaviour
                 dir = snakeExit.transform.position - transform.position;
                 lookRot = Quaternion.LookRotation(dir);
                 lookRot.x = 0; lookRot.z = 0;
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(lookRot.eulerAngles.x, lookRot.eulerAngles.y - 90.0f, lookRot.z), rotationSpeed * Time.deltaTime);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(lookRot.eulerAngles.x, lookRot.eulerAngles.y - 90.0f, lookRot.z), rotationSpeed * 2 * Time.deltaTime); //multiplied by 2 for a faster effect
                 //check
                 if (Vector3.Distance(transform.position, snakeExit.transform.position) < distancePadding)
                 {
@@ -75,7 +75,7 @@ public class Snake : MonoBehaviour
                 break;
             case States.EXITING:
                 //move
-                transform.position = Vector3.MoveTowards(transform.position, snakeExit2.transform.position, movementSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, snakeExit2.transform.position, (movementSpeed / 2) * Time.deltaTime); //half the movement speed for slower effect
                 //look
                 dir = snakeExit2.transform.position - transform.position;
                 lookRot = Quaternion.LookRotation(dir);
