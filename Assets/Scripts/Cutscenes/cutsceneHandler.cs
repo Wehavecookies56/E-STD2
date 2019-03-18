@@ -9,6 +9,8 @@ public class cutsceneHandler : MonoBehaviour
     public Camera playerCamera;
     //camera used for the cutscene, object that will be moved
     public Camera cutsceneCamera;
+    //used to disable and enable the minimap during cutscenes
+    public GameObject minimap;
     //tracks wether to run cutscene code or not in Update()
     private bool isInCutsceneMode = false;
 
@@ -46,7 +48,12 @@ public class cutsceneHandler : MonoBehaviour
             currentPointTime = 0;
             currentPoints.RemoveAt(currentPoints.Count - 1);
             //check if reached end
-            if (currentPoints.Count < 1) ToggleMode();
+            if (currentPoints.Count < 1)
+            {
+                //enable the minimap objects
+                minimap.SetActive(true);
+                ToggleMode();
+            }
         }
     }
 
@@ -56,6 +63,8 @@ public class cutsceneHandler : MonoBehaviour
 
         //enable cutscene mode
         ToggleMode();
+        //disable the minimap objects
+        minimap.SetActive(false);
 
         //compile the list of nodes from the parent object
         currentPoints.Clear();
