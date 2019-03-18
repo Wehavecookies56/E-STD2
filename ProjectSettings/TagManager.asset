@@ -29,6 +29,8 @@ TagManager:
   - plate
   - crystalBall
   - crystalBallModel
+  - crystalballcam
+  - crystalballui
   layers:
   - Default
   - TransparentFX
