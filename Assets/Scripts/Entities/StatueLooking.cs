@@ -9,7 +9,9 @@ public class StatueLooking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if inverse of player (or any other active camera) is looking at statue
         if (!(transform.GetChild(0).GetComponent<MeshRenderer>().isVisible))
-            transform.LookAt(player.transform);
+            //look at player but ignore y
+            transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, transform.position.z));
     }
 }
