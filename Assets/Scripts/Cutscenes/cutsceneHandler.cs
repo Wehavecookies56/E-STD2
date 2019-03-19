@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class cutsceneHandler : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class cutsceneHandler : MonoBehaviour
     //camera used for the cutscene, object that will be moved
     public Camera cutsceneCamera;
     //used to disable and enable the minimap during cutscenes
-    public GameObject minimap;
+    public RawImage minimap;
+    public float colourChangeSpeed;
     //tracks wether to run cutscene code or not in Update()
     private bool isInCutsceneMode = false;
 
@@ -21,8 +23,29 @@ public class cutsceneHandler : MonoBehaviour
 
     private void Update()
     {
-       // if (Input.GetKeyDown(KeyCode.C)) StartCutscene(GameObject.Find("SampleCutsceneNodes")); //TODO test line, REMOVE BEFORE RELEASE
-        if (!isInCutsceneMode) return; //if not in cutscene mode, don't run anything to do with cutscenes
+        if (!isInCutsceneMode) //if not in cutscene mode..
+            if (minimap.color.a == 1.0f) return; //..and minimap full opacity, don't run anything to do with cutscenes
+            else //if minimap not fully opaque..
+            {
+                //..increase opacity by colourChangeSpeed over time
+                minimap.color = new Color(
+                minimap.color.r,
+                minimap.color.g,
+                minimap.color.b,
+                Mathf.Clamp01(minimap.color.a + colourChangeSpeed * Time.deltaTime));
+                return;
+            }
+
+        //if minimap is visible..
+        if (minimap.color.a != 0.0f)
+        {
+            //..reduce opacity by colourChangeSpeed over time
+            minimap.color = new Color(
+            minimap.color.r,
+            minimap.color.g,
+            minimap.color.b,
+            Mathf.Clamp01(minimap.color.a - colourChangeSpeed * Time.deltaTime));
+        }
 
         //if final node has been reached
         if(currentPoints.Count < 1)
@@ -50,8 +73,8 @@ public class cutsceneHandler : MonoBehaviour
             //check if reached end
             if (currentPoints.Count < 1)
             {
-                //enable the minimap objects
-                minimap.SetActive(true);
+                //enable the minimap objects |REPLACED WITH COLOUR OVER TIME METHOD|
+                //minimap.SetActive(true);
                 ToggleMode();
             }
         }
@@ -63,8 +86,8 @@ public class cutsceneHandler : MonoBehaviour
 
         //enable cutscene mode
         ToggleMode();
-        //disable the minimap objects
-        minimap.SetActive(false);
+        //disable the minimap objects |REPLACED WITH COLOUR OVER TIME METHOD|
+        //minimap.SetActive(false);
 
         //compile the list of nodes from the parent object
         currentPoints.Clear();
