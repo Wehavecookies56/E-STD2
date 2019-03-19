@@ -21,7 +21,6 @@ TagManager:
   - feather
   - blackBox
   - blackBoxModel
-  - heresJhonny
   - jhonnysDad
   - doorParts
   - jhonnyDoor
@@ -31,6 +30,7 @@ TagManager:
   - crystalBallModel
   - crystalballcam
   - crystalballui
+  - CutsceneCamera
   layers:
   - Default
   - TransparentFX

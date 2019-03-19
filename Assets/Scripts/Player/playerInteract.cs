@@ -138,7 +138,7 @@ public class playerInteract : MonoBehaviour {
                 {
                     if (inv.GetComponent<inventorySelectScript>().isThereAxe())
                     {
-                        GameObject.FindGameObjectWithTag("heresJhonny").GetComponent<cutsceneHandler>().StartCutscene(GameObject.FindGameObjectWithTag("jhonnysDad"));
+                        GameObject.FindGameObjectWithTag("CutsceneCamera").GetComponent<cutsceneHandler>().StartCutscene(GameObject.FindGameObjectWithTag("jhonnysDad"));
                         soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.JHONNY, GameObject.FindGameObjectWithTag("Player").transform);
                         soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.AXEIMPACT, item.transform);
                         doorParts.SetActive(true);
