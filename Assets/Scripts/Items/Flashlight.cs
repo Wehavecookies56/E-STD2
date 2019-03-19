@@ -42,14 +42,15 @@ public class Flashlight : MonoBehaviour
     
     void Update()
     {
-        //TODO test input, need to be moved to player scripts
-        if(Input.GetButtonDown("Fire2"))
-        {
-            ToggleLight();
-        }
 
         if (parent != null)
         {
+            //if player is holding the flashlight and presses the flashlight toggle button
+            if(Input.GetButtonDown("Fire2"))
+            {
+                ToggleLight();
+            }
+
             //move to the parents position
             transform.position = parent.transform.position;
 
