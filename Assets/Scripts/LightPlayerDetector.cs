@@ -46,4 +46,5 @@ public class LightPlayerDetector : MonoBehaviour
         //if player leaves light, mark it as disabled
         isActive = false;
     }
+    
 }
