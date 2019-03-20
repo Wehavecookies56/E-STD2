@@ -10,6 +10,7 @@ public class playerLiftObjects : MonoBehaviour
     public LayerMask layer;
     public float pickupDistance;
     public float throwStrength;
+    public float maxLiftWeight;
     
     //joint 
     private GameObject pickedUpObject;
@@ -43,8 +44,11 @@ public class playerLiftObjects : MonoBehaviour
                         //if hit object has a rigidbody..
                         if (hit.rigidbody != null)
                         {
-                            pickedUpObject = hit.rigidbody.gameObject;
-                            pickedUpObject.GetComponent<Rigidbody>().useGravity = false;
+                            if (hit.rigidbody.mass < maxLiftWeight)
+                            {
+                                pickedUpObject = hit.rigidbody.gameObject;
+                                pickedUpObject.GetComponent<Rigidbody>().useGravity = false;
+                            }
                         }
                 }
             }

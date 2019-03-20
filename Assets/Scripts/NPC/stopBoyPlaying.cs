@@ -8,13 +8,31 @@ public class stopBoyPlaying : MonoBehaviour {
     public GameObject pianoSound;
     Animator anim;
 
+    private float rotSpeed = 100f;
+    private bool isRotating = false;
+
+    private float startingRot;
+
     void Start() {
         anim = boy.GetComponent<Animator>();
+        startingRot = boy.transform.rotation.eulerAngles.y;
+    }
+
+    private void Update()
+    {
+        if(isRotating)
+        {
+            boy.transform.Rotate(Vector3.up, rotSpeed * Time.deltaTime);
+            if(startingRot - boy.transform.rotation.eulerAngles.y < 180 && startingRot - boy.transform.rotation.eulerAngles.y > 0)
+            {
+                isRotating = false;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
-            boy.transform.Rotate(0, -180, 0);
+            isRotating = true;
             anim.SetTrigger("stand");
             Destroy(pianoSound);
         }

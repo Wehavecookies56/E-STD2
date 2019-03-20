@@ -16,6 +16,7 @@ public class breakVase : MonoBehaviour {
             unbroken.SetActive(false);
             StartCoroutine(disableCollision());
             soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.POTBREAK, transform);
+            //soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.STATURELAUGH, transform);
             playerData.INSTANCE.Sanity -= 1;
             if(key != null)
             {
