@@ -55,7 +55,6 @@ public class StartGame : MonoBehaviour
                 player.transform.parent.GetComponent<PlayerMovement>().enabled = true;
                 go = false;
                 dot.SetActive(true);
-                minimap.SetActive(true);
                 gameObject.SetActive(false);
 
             }
