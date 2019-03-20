@@ -72,7 +72,7 @@ public class inventorySelectScript : MonoBehaviour
 
         if(Input.GetButtonDown("Fire1"))
         {
-            if (counter > 0)
+            if (counter > -1)
             if (slots[counter].transform.childCount != 0)
             {
                 if (slots[counter].transform.GetChild(0).CompareTag("axe"))
@@ -103,12 +103,14 @@ public class inventorySelectScript : MonoBehaviour
             }
         }
 
+        /*
         if(Input.GetButtonDown("Fire3"))
         {
             Time.timeScale = 1;
             soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
+        */
 
         switchControl();
 

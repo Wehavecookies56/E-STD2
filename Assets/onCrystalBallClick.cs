@@ -14,6 +14,7 @@ public class onCrystalBallClick : MonoBehaviour
         {
             //GameObject instance = GameObject.FindGameObjectWithTag("crystalballcam").transform.GetChild(0).GetComponent<GameObject>();
             //instance.SetActive(true);
+            Time.timeScale = 1;
             GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().alpha = 1;
             GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().blocksRaycasts = true;
           counter = 0;

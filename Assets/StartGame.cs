@@ -14,6 +14,8 @@ public class StartGame : MonoBehaviour
     public GameObject[] lightning;
     private bool go = false;
     private float timer = 19;
+    public GameObject door1;
+    public GameObject door2;
 
     private void Start()
     {
@@ -31,6 +33,8 @@ public class StartGame : MonoBehaviour
         {
             if (Input.anyKeyDown == true)
             {
+                door1.GetComponent<Animator>().enabled = true;
+                door2.GetComponent<Animator>().enabled = true;
                 text.GetComponent<Animator>().SetTrigger("go");
                 for (int i = 0; i < lightning.Length; i++)
                 {

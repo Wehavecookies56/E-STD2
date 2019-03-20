@@ -84,8 +84,14 @@ public class uiControler : MonoBehaviour
                         Time.timeScale = 0;
                         soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
                     }
+                   
                 }               
-            }            
+            }
+            else
+            {
+                Time.timeScale = 1;
+                inventory.SetActive(false);
+            }
         }
 
         if(Input.GetButtonDown("startButton"))
@@ -95,6 +101,11 @@ public class uiControler : MonoBehaviour
                 contolerMenu.SetActive(true);
                 Time.timeScale = 0;
                 soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+            }
+            else
+            {
+                contolerMenu.SetActive(false);
+                Time.timeScale = 1;
             }
            
         }
@@ -109,9 +120,9 @@ public class uiControler : MonoBehaviour
     //button to exit menu
     public void exitInventory()
     {
-        inventory.SetActive(false);
-        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
-        Time.timeScale = 1;
+        //inventory.SetActive(false);
+        //soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
+        //Time.timeScale = 1;
     }
 }
 
