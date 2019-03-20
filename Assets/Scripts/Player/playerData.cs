@@ -20,7 +20,7 @@ public class playerData : MonoBehaviour {
     }
     public float Sanity { get; set; } = 10;
  
-    //Traits are readonly
+    //Traits
     public int Strength { get; set; } = 2;
     public int Agility { get; set; } = 3;
     public int Intelligence { get; set; } = 3;
