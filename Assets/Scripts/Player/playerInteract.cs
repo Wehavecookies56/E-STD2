@@ -116,6 +116,12 @@ public class playerInteract : MonoBehaviour {
                 item.GetComponent<mirrorOnClick>().OnClick();
             }
 
+            if(item.GetComponent<objectScript>().data.ObjectName.Equals("Skull"))
+            {
+                playerData.INSTANCE.Sanity--;
+                item.GetComponent<BoxCollider>().enabled = false;
+            }
+
         }
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
