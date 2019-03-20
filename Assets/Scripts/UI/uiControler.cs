@@ -39,6 +39,7 @@ public class uiControler : MonoBehaviour
         if (playerData.INSTANCE.Health <= 0)
         {
             deathPannel.SetActive(true);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().enabled = false;
         }
 
         //hurt ui
@@ -122,13 +123,6 @@ public class uiControler : MonoBehaviour
         }       
     }
 
-    //button to exit menu
-    public void exitInventory()
-    {
-        //inventory.SetActive(false);
-        //soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
-        //Time.timeScale = 1;
-    }
 }
 
 
