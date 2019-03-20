@@ -31,6 +31,8 @@ TagManager:
   - crystalballcam
   - crystalballui
   - CutsceneCamera
+  - crystalBallLights
+  - crystalBallLights2
   layers:
   - Default
   - TransparentFX

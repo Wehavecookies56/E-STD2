@@ -19,6 +19,8 @@ public class cryustalballGoAway : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         Time.timeScale = 1;
+        GameObject.FindGameObjectWithTag("crystalBallLights").GetComponent<LightPlayerDetector>().enabled = true;
+        GameObject.FindGameObjectWithTag("crystalBallLights2").GetComponent<LightPlayerDetector>().enabled = true;
         gameObject.SetActive(false);
         //GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().alpha = 0;
         //GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().blocksRaycasts = false;

@@ -17,7 +17,9 @@ public class onCrystalBallClick : MonoBehaviour
             Time.timeScale = 1;
             GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().alpha = 1;
             GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().blocksRaycasts = true;
-          counter = 0;
+            GameObject.FindGameObjectWithTag("crystalBallLights").GetComponent<LightPlayerDetector>().enabled = false;
+            GameObject.FindGameObjectWithTag("crystalBallLights2").GetComponent<LightPlayerDetector>().enabled = false;
+            counter = 0;
         }
         else
         {
