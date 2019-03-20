@@ -70,6 +70,11 @@ public class uiControler : MonoBehaviour
                 Time.timeScale = 0;
                 soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
             }  
+            else
+            {
+                menu.SetActive(false);
+                Time.timeScale = 1;
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.Tab) || Input.GetButtonDown("Jump"))
