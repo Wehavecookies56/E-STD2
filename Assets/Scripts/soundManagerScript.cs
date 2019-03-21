@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class soundManagerScript : MonoBehaviour
 {
@@ -45,6 +46,49 @@ public class soundManagerScript : MonoBehaviour
 
     private GameObject sanityAudio;
 
+    public GameObject subtitleObject;
+    List<string> oldManAndPriestSubtitles = new List<string> {
+        "Old Man: Have you seen a boy around here?",
+        "Estder D. Donovan: We have.",
+        "Old Man: Where is he?",
+        "Estder D. Donovan: I don't think I should tell you.",
+        "Old Man: I need him for my experiements.",
+        "Estder D. Donovan: You are on the wrong path, God is watching.",
+        "Old Man: Okay. No matter, whatever happens do not wear the armour."
+    };
+
+    List<string> lawyerAndPriestSubtitles = new List<string> {
+        "Morpheus: What is a priest doing here?",
+        "Estder D. Donovan: I'm here in the name of the lord.",
+        "Morpheus: Have you found anything of interest?",
+        "Estder D. Donovan: No.",
+        "Morpheus: Okay, I'll look around. If I find anything I'll let you know."
+    };
+
+    List<string> boyAndPriestSubtitles = new List<string> {
+        "Boy: Oh I'm sorry.",
+        "Estder D. Donovan: It's fine my child all is forgiven.",
+        "Boy: Screw you!"
+    };
+
+    List<string> priestSubtitles = new List<string> {
+        "Estder D. Donovan: Ave Maria, Gratia plena, Dominus tecum, Benedicta tu in mulieribus, Amen.",
+        "Estder D. Donovan: Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto.",
+        "Estder D. Donovan: HERE'S JOHNNY!",
+        "(Estder D. Donovan Hurt)"
+    };
+
+    List<string> demonSubtitles = new List<string> {
+        "Demon: Here a contract in exchange for your power.",
+        "Gold Plate: Break me.",
+        "Book: I am the floor.",
+        "Demon: I insist.",
+        "Demon: Ha.",
+        "Mirror: Thank you.",
+        "Mirror: You don't have what I need.",
+        "(Rat noises)"
+    };
+
     private void Awake()
     {
         if (audioPlayer == null)
@@ -87,6 +131,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(demonAudio[(int)sound]);
         instance.transform.position = transform.position;
+        subtitleObject.GetComponent<Text>().text = demonSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         instance = null;
     }
     //=====================================================================
@@ -95,6 +141,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(boyPriestAudio[(int)sound]);
         instance.transform.position = transform.position;
+        subtitleObject.GetComponent<Text>().text = boyAndPriestSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
@@ -102,6 +150,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(lawyerAndPriestAudio[(int)sound]);
         instance.transform.position = transform.position;
+        subtitleObject.GetComponent<Text>().text = lawyerAndPriestSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
@@ -109,6 +159,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(oldManPriestAudio[(int)sound]);
         instance.transform.position = transform.position;
+        subtitleObject.GetComponent<Text>().text = oldManAndPriestSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
@@ -116,6 +168,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(PriestAudio[(int)sound]);
         instance.transform.position = transform.position;
+        subtitleObject.GetComponent<Text>().text = priestSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
     //============================================================================
