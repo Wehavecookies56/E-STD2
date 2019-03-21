@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform fpscamera;
     float pitch = 0f;
 
+    bool onLadder;
+
     [Range(1, 150)]
     public float mouseSensitivity = 10f;
 
@@ -61,10 +63,15 @@ public class PlayerMovement : MonoBehaviour
     void UpdateMovement()
     {
         Vector3 move = new Vector3(xInput, 0, zInput);
+        if (onLadder) {
+            move = new Vector3(xInput, zInput, 0);
+            yspeed = 0;
+        }
         move = Vector3.ClampMagnitude(move, speed);
         move = transform.TransformVector(move);
 
-        if (cc.isGrounded)
+
+        if (cc.isGrounded && !onLadder)
         {
             yspeed = gravity * Time.deltaTime;
             /* if (Input.GetButtonDown("Jump"))
@@ -76,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
                 yspeed = gravity * Time.deltaTime;
             }*/
         }
-        else
+        else if (!onLadder)
         {
             yspeed += gravity * Time.deltaTime;
         }
@@ -90,6 +97,18 @@ public class PlayerMovement : MonoBehaviour
         fpscamera.localRotation = camRotation;
     }
 
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.name.Equals("Ladder")) {
+            onLadder = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.name.Equals("Ladder")) {
+            onLadder = false;
+        }
+    }
 
 }
 
