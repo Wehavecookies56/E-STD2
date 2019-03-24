@@ -7,6 +7,6 @@ public class activateSpirit : MonoBehaviour
     public GameObject spirit;
 
     private void OnTriggerEnter(Collider other) {
-        spirit.SetActive(true);
+        spirit.GetComponent<Animator>().SetTrigger("reach");
     }
 }
