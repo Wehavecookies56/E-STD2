@@ -62,6 +62,9 @@ public class playerInteract : MonoBehaviour {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Book")) {
                 soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.demonSounds.IAMTHEFLOOR, item.transform);
             }
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Black Box")) {
+                GameObject.Find("Basement Open").GetComponent<basementOpenEvent>().doEvent();
+            }
             item.GetComponent<InventoryItemPickUp>().pickUpItem();
         }
 
