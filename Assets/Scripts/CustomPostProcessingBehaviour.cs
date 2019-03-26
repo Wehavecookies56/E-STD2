@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Written by Dan Sheshtanov
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
@@ -7,6 +8,7 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
 {
     public float autoFocusSpeed;
     public float maxFocusDist;
+    public LayerMask autoFocusLayerMask;
 
     private PostProcessProfile ppp;
     private DepthOfField dof;
@@ -21,7 +23,7 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
     {
         //fire a ray to get the distance to an object being looked at
         RaycastHit hit;
-        Physics.Raycast(transform.position, transform.forward, out hit, 100);
+        Physics.Raycast(transform.position, transform.forward, out hit, 100, autoFocusLayerMask);
         float dist = hit.distance;
         Debug.DrawRay(transform.position, transform.forward * dist);
         //make sure depth of field is active

@@ -26,7 +26,16 @@ public class DoorRotate : MonoBehaviour
                 {
                     transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, anglestop, transform.localEulerAngles.z);
                     opening = false;
+
+                    //Path construction
+                    if(GetComponent<PathfindingNodeConnector>() != null)
+                    {
+                        GetComponent<PathfindingNodeConnector>().ConnectPathNodes();
+                    }
+                    //Path construction end
+
                     Destroy(gameObject.GetComponent<DoorRotate>());
+                    gameObject.GetComponent<BoxCollider>().isTrigger = false;
                 }
             }
             else
@@ -39,6 +48,14 @@ public class DoorRotate : MonoBehaviour
                 {
                     transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, anglestop, transform.localEulerAngles.z);
                     opening = false;
+
+                    //Path construction
+                    if (GetComponent<PathfindingNodeConnector>() != null)
+                    {
+                        GetComponent<PathfindingNodeConnector>().ConnectPathNodes();
+                    }
+                    //Path construction end
+
                     Destroy(gameObject.GetComponent<DoorRotate>());
                     gameObject.GetComponent<BoxCollider>().isTrigger = false;
                 }

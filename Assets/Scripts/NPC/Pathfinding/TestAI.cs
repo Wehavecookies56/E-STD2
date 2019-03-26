@@ -64,7 +64,7 @@ public class TestAI : MonoBehaviour
         }
         else //TODO test - force to go to a new node
         {
-            GoToLocation(new Vector3(Random.Range(-7f, 6f), 0, Random.Range(-9f, 7f)));
+            GoToLocation(new Vector3(Random.Range(6.7f, 6.75f), 0, Random.Range(-110.4f, -110.6f)));
             //debug option to place an object over the endNode
             if (DEBUGPOSOBJ != null)
             {

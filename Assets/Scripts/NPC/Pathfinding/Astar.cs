@@ -77,7 +77,7 @@ public class Astar : MonoBehaviour
         }
     }
 
-    private Node FindNodeWithID(int id)
+    internal Node FindNodeWithID(int id)
     {
         foreach (Node n in nodes) //parse all nodes
         {
@@ -121,8 +121,8 @@ public class Astar : MonoBehaviour
         #endregion
 
         #region algorithm
-        //keep searching until current node matches end node
-        while (n != endNode)
+        //keep searching until current node matches end node or no more nodes to check
+        while (n != endNode || openList.Count < 1)
         {
             //add current node to list of visited nodes (closeList) and remove it from frontier (openList)
             closedList.Add(n);
@@ -164,6 +164,10 @@ public class Astar : MonoBehaviour
             if (n == endNode)
                 break;
 
+            //if no more possible nodes left to check
+            if(openList.Count == 0)
+                break;
+
             //find the cheapest f-cost node in openNodes
             Node lowestCostNode = openList[0];
             foreach (Node node in openList)
@@ -179,7 +183,15 @@ public class Astar : MonoBehaviour
 
         #region resolution
         //recursive function to compile a path of node GameObjects to be followed by AI
-        path = AddNodeToPath(n, path);
+        path = AddNodeToPath(n, path, endNode);
+
+        //check if correct path was created
+        if(path[0] != endGO)
+        {
+            //if wrong path, return an empty list
+            return new List<GameObject>();
+        }
+
         //reverse order of the path as it's added to list back to front
         path.Reverse();
         #endregion
@@ -195,11 +207,11 @@ public class Astar : MonoBehaviour
         return n;
     }
 
-    private List<GameObject> AddNodeToPath(Node n, List<GameObject> path)
+    private List<GameObject> AddNodeToPath(Node n, List<GameObject> path, Node endNode)
     {
         path.Add(n.physicalNode); //add node to path
         if (n.parentNode != null) //if this node doesn't have a parent it must be the start node
-            AddNodeToPath(n.parentNode, path); //if it does have a parent, recursively add that node to the path
+            AddNodeToPath(n.parentNode, path, endNode); //if it does have a parent, recursively add that node to the path
         return path; //back out of all calls and return the full path
     }
 

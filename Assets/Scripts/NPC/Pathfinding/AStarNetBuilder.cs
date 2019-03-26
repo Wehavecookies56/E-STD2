@@ -6,6 +6,7 @@ using UnityEditor;
 
 public class AStarNetBuilder : MonoBehaviour
 {
+    public LayerMask layer;
     private int connectionCounter = 0;
 
     internal void BuildNetwork()
@@ -37,7 +38,7 @@ public class AStarNetBuilder : MonoBehaviour
 
                 //cast a ray to the other child
                 RaycastHit hit;
-                Physics.Raycast(transform.GetChild(nI).transform.position,  transform.GetChild(nJ).transform.position - transform.GetChild(nI).transform.position, out hit);
+                Physics.Raycast(transform.GetChild(nI).transform.position,  transform.GetChild(nJ).transform.position - transform.GetChild(nI).transform.position, out hit, layer);
                 Debug.DrawRay(transform.GetChild(nI).transform.position, transform.GetChild(nJ).transform.position - transform.GetChild(nI).transform.position, Color.blue, 4f);
 
                 //check if other child was hit
