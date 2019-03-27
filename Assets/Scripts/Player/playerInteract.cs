@@ -85,14 +85,14 @@ public class playerInteract : MonoBehaviour {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Morpheus")) {
                 npcTalk t = item.GetComponent<npcTalk>();
                 if (t.currentLine + 1 == t.lineCount) {
-                    item.GetComponent<TestAI>().enabled = true;
+                    item.GetComponent<AIController>().BeginPatrolling();
                 }
                 t.playDialog((soundManagerScript.lawyerAndPriest)t.currentLine);
             }
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Old Man")) {
                 npcTalk t = item.GetComponent<npcTalk>();
                 if (t.currentLine + 1 == t.lineCount) {
-                    item.GetComponent<TestAI>().enabled = true;
+                    item.GetComponent<AIController>().BeginPatrolling();
                 }
                 t.playDialog((soundManagerScript.oldManAndPriest)t.currentLine);
             }
@@ -100,7 +100,7 @@ public class playerInteract : MonoBehaviour {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Boy")) {
                 npcTalk t = item.GetComponent<npcTalk>();
                 if (t.currentLine + 1 == t.lineCount) {
-                    item.GetComponent<TestAI>().enabled = true;
+                    item.GetComponent<AIController>().BeginPatrolling();
                     item.GetComponent<Animator>().SetBool("running", true);
                     item.GetComponent<Rigidbody>().isKinematic = false;
                 }
