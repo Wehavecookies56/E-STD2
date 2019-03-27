@@ -20,18 +20,18 @@ public class basementOpenEvent : MonoBehaviour {
     Animator boyAnim;
     Animator lawyerAnim;
 
-    TestAI oldManAI;
-    TestAI boyAI;
-    TestAI lawyerAI;
+    AIMovement oldManAI;
+    AIMovement boyAI;
+    AIMovement lawyerAI;
 
     void Start() {
         oldManAnim = oldMan.GetComponent<Animator>();
         boyAnim = boy.GetComponent<Animator>();
         lawyerAnim = lawyer.GetComponent<Animator>();
 
-        oldManAI = oldMan.GetComponent<TestAI>();
-        boyAI = boy.GetComponent<TestAI>();
-        lawyerAI = lawyer.GetComponent<TestAI>();
+        oldManAI = oldMan.GetComponent<AIMovement>();
+        boyAI = boy.GetComponent<AIMovement>();
+        lawyerAI = lawyer.GetComponent<AIMovement>();
     }
 
     public void doEvent() {
