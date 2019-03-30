@@ -33,6 +33,7 @@ TagManager:
   - CutsceneCamera
   - crystalBallLights
   - crystalBallLights2
+  - dust
   layers:
   - Default
   - TransparentFX

@@ -125,6 +125,14 @@ public class playerInteract : MonoBehaviour {
                 item.GetComponent<BoxCollider>().enabled = false;
             }
 
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Hanging man"))
+            {
+                item.SetActive(false);
+                playerData.INSTANCE.Sanity -= 2;
+                GameObject.FindGameObjectWithTag("dust").transform.GetChild(0).gameObject.SetActive(true);
+            }
+
+
         }
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
