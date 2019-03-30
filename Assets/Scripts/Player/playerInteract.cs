@@ -129,7 +129,9 @@ public class playerInteract : MonoBehaviour {
             {
                 item.SetActive(false);
                 playerData.INSTANCE.Sanity -= 2;
+                playerData.INSTANCE.Health -= 1;
                 GameObject.FindGameObjectWithTag("dust").transform.GetChild(0).gameObject.SetActive(true);
+                //add coughthing sound 
             }
 
 
