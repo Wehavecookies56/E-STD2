@@ -12,6 +12,7 @@ public class goodEndingScript : MonoBehaviour
     public GameObject door;
     public GameObject door2;
     public GameObject weather;
+    public Color fogColour;
 
 
     // Start is called before the first frame update
@@ -21,6 +22,8 @@ public class goodEndingScript : MonoBehaviour
         //doors open
         //chaange skybox
         RenderSettings.skybox = sunny;
+        //change fog colour
+        RenderSettings.fogColor = fogColour;
         door.SetActive(false);
         door2.SetActive(false);
         soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.GOODENDING, transform);
