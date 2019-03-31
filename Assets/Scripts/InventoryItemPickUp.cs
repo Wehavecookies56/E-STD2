@@ -26,10 +26,15 @@ public class InventoryItemPickUp : MonoBehaviour
 
                 soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.GETITEM, gameObject.transform);
                
+
                 switch (gameObject.name)
                 {
                     case "Book":
                         playerData.INSTANCE.Intelligence += 2;
+                        break;
+
+                    case "blackBox":
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.SCREAM, gameObject.transform);
                         break;
                 }
                 break;
