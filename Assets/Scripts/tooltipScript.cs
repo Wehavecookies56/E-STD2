@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public enum InputDevice {
     KEYBOARD, CONTROLLER
@@ -17,6 +18,7 @@ public class tooltipScript : MonoBehaviour {
     GameObject buttonPrompt;
 
     GameObject player;
+    public bool display = true;
 
     // Start is called before the first frame update
     void Start() {
@@ -32,19 +34,26 @@ public class tooltipScript : MonoBehaviour {
         if (player.GetComponent<playerInteract>().lastLookedAt == null) {
             GetComponent<CanvasGroup>().alpha = 0;
         } else {
-            string action = player.GetComponent<playerInteract>().lastLookedAt.GetComponent<objectScript>().data.Type.ToString();
-            action = action.ToLower();
-            action = action.Substring(0, 1).ToUpper() + action.Substring(1, action.Length-1);
-            GetComponent<CanvasGroup>().alpha = 1;
-            text.GetComponent<Text>().text = action + "\n" + player.GetComponent<playerInteract>().lastLookedAt.name;
             if (player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>() != null) {
-                action = player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().actionText;
-                text.GetComponent<Text>().text = action + "\n" + player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().bottomText;
-            }
-            if (lastUsed == InputDevice.CONTROLLER) {
-                buttonPrompt.GetComponent<Image>().sprite = Resources.Load<Sprite>("a button");
+                display = player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().display;
             } else {
-                buttonPrompt.GetComponent<Image>().sprite = Resources.Load<Sprite>("e key");
+                display = true;
+            }
+            if (display) {
+                string action = player.GetComponent<playerInteract>().lastLookedAt.GetComponent<objectScript>().data.Type.ToString();
+                action = action.ToLower();
+                action = action.Substring(0, 1).ToUpper() + action.Substring(1, action.Length - 1);
+                GetComponent<CanvasGroup>().alpha = 1;
+                text.GetComponent<Text>().text = action + "\n" + player.GetComponent<playerInteract>().lastLookedAt.name;
+                if (player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>() != null) {
+                    action = player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().actionText;
+                    text.GetComponent<Text>().text = action + "\n" + player.GetComponent<playerInteract>().lastLookedAt.GetComponent<tooltipOverride>().bottomText;
+                }
+                if (lastUsed == InputDevice.CONTROLLER) {
+                    buttonPrompt.GetComponent<Image>().sprite = Resources.Load<Sprite>("a button");
+                } else {
+                    buttonPrompt.GetComponent<Image>().sprite = Resources.Load<Sprite>("e key");
+                }
             }
         }
     }

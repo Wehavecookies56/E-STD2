@@ -137,6 +137,13 @@ public class playerInteract : MonoBehaviour {
 
         }
 
+        if (item.GetComponent<objectScript>().data.Type == ObjectType.BURN) {
+            if (item.GetComponent<tooltipOverride>().display) {
+                inv.GetComponent<inventorySelectScript>().dropBook();
+                item.GetComponent<BookBurnTooltipScript>().goodEnding();
+            }
+        }
+
         if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
         {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Curtains")) {
