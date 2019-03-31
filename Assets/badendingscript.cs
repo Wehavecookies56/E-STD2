@@ -3,37 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class goodEndingScript : MonoBehaviour
+public class badendingscript : MonoBehaviour
 {
-    public Material sunny;
+    public Material redsky;
     public GameObject cutCam;
     public GameObject nodes;
     public GameObject door;
     public GameObject door2;
-    public GameObject weather;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
         cutCam.GetComponent<cutsceneHandler>().StartCutscene(nodes);
         //doors open
         //chaange skybox
-        RenderSettings.skybox = sunny;
+        RenderSettings.skybox = redsky;
         door.SetActive(false);
         door2.SetActive(false);
-        soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.GOODENDING, transform);
-        //turn off weather
-        weather.SetActive(false);
+        StartCoroutine(waitThenSpek());
         StartCoroutine(restartGame());
+        
+    }
+
+    IEnumerator waitThenSpek()
+    {
+        yield return new WaitForSeconds(11);
+        soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.BADENDINGN, transform);
     }
 
     IEnumerator restartGame()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(30);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
-    
 }
