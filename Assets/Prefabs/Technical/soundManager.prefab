@@ -43,6 +43,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba86559f198530458ee4c2079371f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Chantaudio:
+  - {fileID: 5599961479899397936, guid: 6334a0a789cfb8b42a84adfdfaaafc34, type: 3}
+  - {fileID: 8023625501558779412, guid: 88de31ac535b685418d2df8e324e6338, type: 3}
+  - {fileID: 214360192567687860, guid: 576835093e9bc0e47ab19f2f15bd8727, type: 3}
+  - {fileID: 2572135187101030467, guid: cecfc33003df02f49960b1f216ace3ba, type: 3}
+  - {fileID: 7971546868323024813, guid: b4c641e3b54d0174e83526dd8753860a, type: 3}
+  - {fileID: 3894392850476407235, guid: eceb71f02672a9d44ab0e65d1f03284a, type: 3}
+  MeetingSounds:
+  - {fileID: 1284739273309260287, guid: 6da6fdf22ab5e8a42bafa4649d75940d, type: 3}
+  - {fileID: 5952385800116942444, guid: 82393acdf8c202a4dbe66b31d89b9082, type: 3}
   demonAudio:
   - {fileID: 8753152808844396365, guid: df7614ce30167c3498580fb9bea58290, type: 3}
   - {fileID: 3037933396565659469, guid: a281eac45c6d8294cb79cca45bafd7d7, type: 3}
@@ -75,6 +85,9 @@ MonoBehaviour:
   - {fileID: 5582117004164191095, guid: 2b7b2ae2b285f2d40b81114cdda60d06, type: 3}
   - {fileID: 1582029857369934858, guid: 12af11d9b5cbebc43a8bd38dedca8d72, type: 3}
   - {fileID: 3783016468890932673, guid: 297a6565b1d8e4745be9fd69140892d6, type: 3}
+  - {fileID: 3933385493188584258, guid: a73d9c4729378b848abc9149fbac6e5e, type: 3}
+  - {fileID: 6510661203658924699, guid: fe679d0227689e84da238589531c6091, type: 3}
+  - {fileID: 3844851425921590423, guid: 228b50b617c3bce42b1ad07e52b65646, type: 3}
   enviromentAudio:
   - {fileID: 4308796202935116310, guid: 123ba648c6079d94eb92bb230fac16fd, type: 3}
   - {fileID: 6493110290495298268, guid: 4bd7e463e3f213848854fcfd96416d16, type: 3}
@@ -87,6 +100,7 @@ MonoBehaviour:
   - {fileID: 5443511211996596621, guid: f92a306a324973f45858cb5fe57fa7e4, type: 3}
   - {fileID: 640680808020880456, guid: 901c2b96720bf9d4cbabc0a0542c7caf, type: 3}
   - {fileID: 8866965034634858032, guid: 85bfb2784f698e3429180a16eabe15df, type: 3}
+  - {fileID: 8271328425557423015, guid: fd54ece7729967b429d1825cb01e0119, type: 3}
   backroundSounds:
   - {fileID: 6197542631747236478, guid: 875968cde2588d1489f83a7501d87c22, type: 3}
   - {fileID: 4316142323740016632, guid: 81f2174cf0e29434f9c53d0c36ccef82, type: 3}
@@ -98,3 +112,4 @@ MonoBehaviour:
   footstepsSound:
   - {fileID: 1700986237711956823, guid: 1f16bf54653ca874fac5ffae41598940, type: 3}
   MaxFootstepVolume: 0.2
+  subtitleObject: {fileID: 0}

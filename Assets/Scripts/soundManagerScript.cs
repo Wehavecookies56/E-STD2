@@ -8,6 +8,14 @@ public class soundManagerScript : MonoBehaviour
 {
     public static soundManagerScript audioPlayer { get; private set; }
 
+    //chant
+    public enum chantSounds { BOY1, BOY2, BOY3, BOY4, BOY5, BOY6 };
+    public GameObject[] Chantaudio;
+
+    //meeting in basement
+    public enum basemnetMeetingSounds { OLDMAN1, LAWYER2 };
+    public GameObject[] MeetingSounds;
+
     //demon sounds
     public enum demonSounds { CONTRACT, BREAKME, IAMTHEFLOOR, INSIST, HA, THANKYOU, WHATINEED, RATS };
     public GameObject[] demonAudio;
@@ -25,7 +33,7 @@ public class soundManagerScript : MonoBehaviour
     public GameObject[] lawyerAndPriestAudio;
 
     //priestSounds
-    public enum Priest { PRARE1, PRARE2, JHONNY, HURT };
+    public enum Priest { PRARE1, PRARE2, JHONNY, HURT, BADENDINGN, GOODENDING, CRAZYENDING };
     public GameObject[] PriestAudio;
 
     public enum enviromentSounds { DOOROPEN, THUNDER1, THUNDER2, GHOSTSCREAM, POTBREAK, THUNDER3, THUNDER4, WINDOW, CHESTOPEN, AXEIMPACT, SNAKEHISS, STATUELAUGH };
@@ -172,6 +180,25 @@ public class soundManagerScript : MonoBehaviour
         subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
+
+    public GameObject dialogPlay(basemnetMeetingSounds sound, Transform position)
+    {
+        GameObject instance = Instantiate(MeetingSounds[(int)sound]);
+        instance.transform.position = transform.position;
+       // subtitleObject.GetComponent<Text>().text = priestSubtitles[(int)sound];
+       // subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
+        return instance;
+    }
+
+    public GameObject dialogPlay(chantSounds sound, Transform position)
+    {
+        GameObject instance = Instantiate(Chantaudio[(int)sound]);
+        instance.transform.position = transform.position;
+        // subtitleObject.GetComponent<Text>().text = priestSubtitles[(int)sound];
+        // subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
+        return instance;
+    }
+
     //============================================================================
     public void startLoop(backgroundSounds sound, Transform parent)
     {
