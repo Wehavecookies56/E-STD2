@@ -36,7 +36,7 @@ public class soundManagerScript : MonoBehaviour
     public enum Priest { PRARE1, PRARE2, JHONNY, HURT, BADENDINGN, GOODENDING, CRAZYENDING };
     public GameObject[] PriestAudio;
 
-    public enum enviromentSounds { DOOROPEN, THUNDER1, THUNDER2, GHOSTSCREAM, POTBREAK, THUNDER3, THUNDER4, WINDOW, CHESTOPEN, AXEIMPACT, SNAKEHISS, STATUELAUGH };
+    public enum enviromentSounds { DOOROPEN, THUNDER1, THUNDER2, GHOSTSCREAM, POTBREAK, THUNDER3, THUNDER4, WINDOW, CHESTOPEN, AXEIMPACT, SNAKEHISS, STATUELAUGH, SCREAM };
     public GameObject[] enviromentAudio;
 
     public enum backgroundSounds { HORRORLOOP, RAINLOOP };
