@@ -17,7 +17,6 @@ public class badEndingCthuluh : MonoBehaviour
             if(once)
             {
                 gameObject.GetComponent<Animator>().SetTrigger("roar");
-                soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.demonSounds.CTHULHUROAR, transform);
                 speed = 0;
                 once = false;
             }
