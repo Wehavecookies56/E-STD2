@@ -6,6 +6,7 @@ public class stopBoyPlaying : MonoBehaviour {
 
     public GameObject boy;
     public GameObject pianoSound;
+    public Objectives objectives;
     Animator anim;
 
     private float rotSpeed = 100f;
@@ -34,6 +35,8 @@ public class stopBoyPlaying : MonoBehaviour {
         if (other.gameObject.CompareTag("Player")) {
             isRotating = true;
             anim.SetTrigger("stand");
+            objectives.CompleteObjective(Objectives.ObjectivesEnum.FindBoy);
+            objectives.ActivateObjective(Objectives.ObjectivesEnum.TalkToBoy);
             Destroy(pianoSound);
         }
     }

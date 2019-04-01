@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ratsTrigger : MonoBehaviour
 {
+    public Objectives objectives;
     private float timer = 5;
     private bool go = false;
 
@@ -25,8 +26,8 @@ public class ratsTrigger : MonoBehaviour
         {
             soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.demonSounds.RATS, gameObject.transform);
             go = true;
+            objectives.ActivateObjective(Objectives.ObjectivesEnum.TalkToOldMan);
             Destroy(gameObject.GetComponent<BoxCollider>());
-            
         }
     }
 

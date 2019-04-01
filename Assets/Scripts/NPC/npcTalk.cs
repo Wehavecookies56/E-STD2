@@ -6,6 +6,7 @@ using UnityEngine;
 public class npcTalk : MonoBehaviour {
     public int currentLine = 0;
     public int lineCount = 1;
+    public Objectives objectives;
 
     public bool finished = false;
 
@@ -45,6 +46,23 @@ public class npcTalk : MonoBehaviour {
             gameObject.layer = 0;
             currentVoiceLine = null;
             finished = true;
+
+            //handle objectives
+            if (gameObject.name == "Old Man")
+            {
+                objectives.ActivateObjective(Objectives.ObjectivesEnum.FindBoy);
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.TalkToOldMan);
+            }
+            else if (gameObject.name == "Boy")
+            {
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.TalkToBoy);
+                objectives.ActivateObjective(Objectives.ObjectivesEnum.InspectPiano);
+            }
+            else if (gameObject.name == "Morpheus")
+            {
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.TalkToLawyer);
+            }
+
         } else {
             currentLine++;
         }

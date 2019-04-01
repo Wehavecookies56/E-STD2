@@ -17,6 +17,7 @@ public class playerInteract : MonoBehaviour {
     //Raycast distance
     public float distance = 500;
     public GameObject lastLookedAt;
+    public Objectives objectives;
 
     public LayerMask mask;
 
@@ -62,8 +63,20 @@ public class playerInteract : MonoBehaviour {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Book")) {
                 soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.demonSounds.IAMTHEFLOOR, item.transform);
             }
-            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Black Box")) {
+            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Black Box")) {
                 GameObject.Find("Basement Open").GetComponent<basementOpenEvent>().doEvent();
+            }
+            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("armour"))
+            {
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.InspectPiano);
+            }
+            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Key"))
+            {
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.FindKey);
+            }
+            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("axe"))
+            {
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.FindAxe);
             }
             item.GetComponent<InventoryItemPickUp>().pickUpItem();
         }
@@ -78,7 +91,7 @@ public class playerInteract : MonoBehaviour {
         }
         if (item.GetComponent<objectScript>().data.Type == ObjectType.FLIP) {
             item.GetComponent<Animator>().SetTrigger("flip");
-
+            objectives.CompleteObjective(Objectives.ObjectivesEnum.FlipCoin);
         }
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.TALK) {
@@ -162,6 +175,7 @@ public class playerInteract : MonoBehaviour {
                         item.GetComponent<BoxCollider>().isTrigger = true;
                         inv.GetComponent<inventorySelectScript>().deleteKey();
                     }
+                    else { objectives.ActivateObjective(Objectives.ObjectivesEnum.FindKey); }
                 }
                 else if(item.GetComponent<DoorRotate>().needsAxe)
                 {
@@ -172,7 +186,9 @@ public class playerInteract : MonoBehaviour {
                         soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.AXEIMPACT, item.transform);
                         doorParts.SetActive(true);
                         GameObject.FindGameObjectWithTag("jhonnyDoor").SetActive(false);
+                        objectives.CompleteObjective(Objectives.ObjectivesEnum.DestroyDoor);
                     }
+                    else { objectives.ActivateObjective(Objectives.ObjectivesEnum.DestroyDoor); }
                 }
                 else
                 {
@@ -180,6 +196,7 @@ public class playerInteract : MonoBehaviour {
                     if (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest"))
                     {
                         soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.CHESTOPEN, item.transform);
+                        objectives.ActivateObjective(Objectives.ObjectivesEnum.FlipCoin);
                     }
                     else
                     {

@@ -16,6 +16,7 @@ public class StartGame : MonoBehaviour
     private float timer = 19;
     public GameObject door1;
     public GameObject door2;
+    public Objectives objectives;
 
     private void Start()
     {
@@ -57,7 +58,7 @@ public class StartGame : MonoBehaviour
                 dot.SetActive(true);
                 minimap.SetActive(true);
                 gameObject.SetActive(false);
-
+                objectives.ActivateObjective(Objectives.ObjectivesEnum.ExploreManor); //add "ExploreManor" objective
             }
             else { timer -= Time.deltaTime; }
 

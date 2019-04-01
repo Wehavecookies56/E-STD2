@@ -8,6 +8,7 @@ public class mirrorOnClick : MonoBehaviour
     public GameObject candle;
     private Transform startPos;
     public Transform endPos;
+    public Objectives objectives;
     private bool go = false;
     private bool speak = true;
 
@@ -42,6 +43,7 @@ public class mirrorOnClick : MonoBehaviour
         if(inventory.GetComponent<inventorySelectScript>().isThereArmour())
         {
             go = true;
+            objectives.CompleteObjective(Objectives.ObjectivesEnum.FindMirrorItem);
             inventory.GetComponent<inventorySelectScript>().deleteArmour();
             
         }
@@ -51,6 +53,7 @@ public class mirrorOnClick : MonoBehaviour
             {
                 soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.demonSounds.WHATINEED, transform);
                 speak = false;
+                objectives.ActivateObjective(Objectives.ObjectivesEnum.FindMirrorItem);
                 StartCoroutine(resetSpeak());
             }
             
