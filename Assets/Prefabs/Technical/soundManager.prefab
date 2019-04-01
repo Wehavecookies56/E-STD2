@@ -62,6 +62,7 @@ MonoBehaviour:
   - {fileID: 8061952795994667461, guid: 733e5e73054bcde41bd6cb6db5ba7b36, type: 3}
   - {fileID: 6413242685192791262, guid: b693cf0768d007145a6d60a988fbf1dd, type: 3}
   - {fileID: 1397944399530947742, guid: e7c1b8f0a749ace4ea5a426c9fafacbc, type: 3}
+  - {fileID: 3974418262559927974, guid: 8f5a0c6638762904c838c95c8a51fd3e, type: 3}
   boyPriestAudio:
   - {fileID: 2896576596934981341, guid: 66b7ad358f57b154697514b648d1576c, type: 3}
   - {fileID: 8025850080262237344, guid: 5263e9205c2e44d4d91c180fb042359c, type: 3}
@@ -101,6 +102,7 @@ MonoBehaviour:
   - {fileID: 640680808020880456, guid: 901c2b96720bf9d4cbabc0a0542c7caf, type: 3}
   - {fileID: 8866965034634858032, guid: 85bfb2784f698e3429180a16eabe15df, type: 3}
   - {fileID: 8271328425557423015, guid: fd54ece7729967b429d1825cb01e0119, type: 3}
+  - {fileID: 5857269867218310589, guid: 229fdd3519f0bc54c935784872dde1ec, type: 3}
   backroundSounds:
   - {fileID: 6197542631747236478, guid: 875968cde2588d1489f83a7501d87c22, type: 3}
   - {fileID: 4316142323740016632, guid: 81f2174cf0e29434f9c53d0c36ccef82, type: 3}

@@ -1,0 +1,4623 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &10510979266326623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9105657270929482014}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan03b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9105657270929482014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10510979266326623}
+  m_LocalRotation: {x: 0.00999495, y: -0.037818514, z: 0.17886251, w: 0.9830962}
+  m_LocalPosition: {x: -56.54453, y: 1.0658141e-13, z: 4.2632564e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3035542184938422595}
+  m_Father: {fileID: 328053429967444516}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 1.9014586, y: -4.0612025, z: 20.555553}
+--- !u!1 &92801590490009076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8102807291596714910}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Wing01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8102807291596714910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92801590490009076}
+  m_LocalRotation: {x: 0.69756806, y: 0.46010935, z: 0.5372795, w: 0.11414449}
+  m_LocalPosition: {x: 8.884231, y: 44.41876, z: 19.282555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5120733910372701923}
+  m_Father: {fileID: 44864224650978450}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 6.7802024, y: 155.20645, z: 149.06259}
+--- !u!1 &126419213465567021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7107401963183479073}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle04c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7107401963183479073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126419213465567021}
+  m_LocalRotation: {x: 0.99880177, y: 0.04893969, z: 2.9966915e-18, w: 6.1158975e-17}
+  m_LocalPosition: {x: 15.621706, y: -0.000002561297, z: 0.8312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5988715500443632727}
+  m_Father: {fileID: 420529012217471345}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 8.414412, y: -163.27193, z: 169.8496}
+--- !u!1 &126531623738198573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7970967557624607159}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Elbow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7970967557624607159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126531623738198573}
+  m_LocalRotation: {x: 0.005040213, y: 0.23560368, z: -0.020785503, w: 0.9716139}
+  m_LocalPosition: {x: 54.469467, y: -3.1246355, z: -2.81882}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2902228442585118930}
+  - {fileID: 4516554671779147545}
+  m_Father: {fileID: 6299277284862554342}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 8.757924, y: 44.10446, z: 0.4912809}
+--- !u!1 &137761361995873376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882264534061901377}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger03b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882264534061901377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137761361995873376}
+  m_LocalRotation: {x: 0.2312885, y: -0.11731284, z: 0.044899464, w: 0.9647421}
+  m_LocalPosition: {x: -9.801398, y: -12.704676, z: -10.354331}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4314979526838912855}
+  m_Father: {fileID: 9213465798387477119}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 27.18094, y: -13.362144, z: 2.085144}
+--- !u!1 &157606428930381296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5802330729736362089}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail08
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5802330729736362089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157606428930381296}
+  m_LocalRotation: {x: -0.52984756, y: 0.46825376, z: -0.46825376, w: 0.52984756}
+  m_LocalPosition: {x: -32.591084, y: -3.419487e-14, z: 8.675351e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 680724260976546381}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -7.062601, y: 90, z: -90}
+--- !u!1 &168962458299355743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328053429967444516}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan03a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328053429967444516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168962458299355743}
+  m_LocalRotation: {x: -0.060880117, y: -0.16811483, z: -0.33500844, w: 0.92509484}
+  m_LocalPosition: {x: -24.70996, y: 69.403076, z: -22.806576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9105657270929482014}
+  m_Father: {fileID: 434584005273154168}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -13.019316, y: -16.104132, z: -18.078474}
+--- !u!1 &209373305503796048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075631298722925515}
+  m_Layer: 0
+  m_Name: Cthulhu_Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2075631298722925515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209373305503796048}
+  m_LocalRotation: {x: -0.025705954, y: 0.999454, z: 0.019058982, w: 0.00822772}
+  m_LocalPosition: {x: 8.401653, y: 0.6376539, z: 0.48152593}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8037710014435077829}
+  - {fileID: 491565001609461974}
+  m_Father: {fileID: 7709963252388840987}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -2.2075872, y: 179.11313, z: -2.929556}
+--- !u!1 &219276997954448760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6292873591684754158}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger03c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6292873591684754158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219276997954448760}
+  m_LocalRotation: {x: 0, y: -0, z: -0.3321664, w: 0.9432208}
+  m_LocalPosition: {x: 18.502684, y: 0.0002725436, z: 0.00031746828}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1861599746212703189}
+  m_Father: {fileID: 2417461113618764438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.80064}
+--- !u!1 &262350473537387808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6811866681583595867}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Wing01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6811866681583595867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262350473537387808}
+  m_LocalRotation: {x: 0.10632139, y: -0.53888214, z: 0.67669183, w: 0.4902958}
+  m_LocalPosition: {x: 54.939884, y: -29.03789, z: -12.758229}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2232608738894707324}
+  - {fileID: 3741323651819413399}
+  - {fileID: 8289919248775608886}
+  m_Father: {fileID: 5120733910372701923}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 56.46745, y: -44.114445, z: 81.164696}
+--- !u!1 &268809441452026239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3322411445076885123}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Shoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3322411445076885123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268809441452026239}
+  m_LocalRotation: {x: 0, y: 0, z: 0.29083815, w: 0.95677227}
+  m_LocalPosition: {x: -21.16951, y: -1.4210855e-14, z: 3.3626195e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8449529623083721121}
+  m_Father: {fileID: 1737840943115616196}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.4775615, y: -11.63979, z: 46.48231}
+--- !u!1 &274353604738925778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6796201943116131457}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Thumb01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6796201943116131457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274353604738925778}
+  m_LocalRotation: {x: 0.0674263, y: 0.5968325, z: -0.11085585, w: 0.7918053}
+  m_LocalPosition: {x: -12.6717205, y: 0.33756804, z: 11.956856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7039711678485465450}
+  m_Father: {fileID: 7528971498994939315}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 13.833531, y: 73.33302, z: -5.618713}
+--- !u!1 &356703070062523714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9213465798387477119}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger03a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9213465798387477119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356703070062523714}
+  m_LocalRotation: {x: 0.63377064, y: 0.2621928, z: 0.39656276, w: 0.61018664}
+  m_LocalPosition: {x: -14.916371, y: -11.392678, z: -13.121275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 882264534061901377}
+  m_Father: {fileID: 7528971498994939315}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 34.435974, y: 85.88528, z: 98.21544}
+--- !u!1 &567177592740071447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8673883542044156563}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8673883542044156563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567177592740071447}
+  m_LocalRotation: {x: 0, y: 0, z: 0.19524595, w: 0.9807543}
+  m_LocalPosition: {x: -53.613346, y: 6.57252e-14, z: 2.842171e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4227385769124933513}
+  m_Father: {fileID: 2009464427882599749}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.8359879, y: -6.716444, z: 35.979153}
+--- !u!1 &568046243170436645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241468730130026404}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241468730130026404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568046243170436645}
+  m_LocalRotation: {x: 0, y: 0, z: 0.13362023, w: 0.9910326}
+  m_LocalPosition: {x: 23.871927, y: 0.98947597, z: 3.4473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7489541496712436730}
+  m_Father: {fileID: 1350510518220402543}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.4319217, y: -8.7489195, z: 28.324667}
+--- !u!1 &608213431025348116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804426665487776867}
+  m_Layer: 0
+  m_Name: Cthulhu_Mid_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &804426665487776867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608213431025348116}
+  m_LocalRotation: {x: 0.9998749, y: -0.015819076, z: -9.68639e-19, w: 6.122468e-17}
+  m_LocalPosition: {x: -31.355698, y: 1.2267964e-14, z: -4.2588083e-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 44864224650978450}
+  m_Father: {fileID: 5290505413771339322}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.8649758e-13, y: 180, z: -172.14764}
+--- !u!1 &728641190260613233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682262165944728941}
+  m_Layer: 0
+  m_Name: Cthulhu_Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682262165944728941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728641190260613233}
+  m_LocalRotation: {x: 0, y: 0, z: 0.19628617, w: 0.98054665}
+  m_LocalPosition: {x: -33.764053, y: -7.1054274e-15, z: 1.0805122e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3038542684520819652}
+  - {fileID: 7216717908667880501}
+  m_Father: {fileID: 2971905370701460877}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.45962453, y: 0.13762408, z: 16.8914}
+--- !u!1 &734667544314549981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4948033918361241208}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4948033918361241208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734667544314549981}
+  m_LocalRotation: {x: 0.98267514, y: 0.18533643, z: -1.1348583e-17, w: -6.01715e-17}
+  m_LocalPosition: {x: -4.1681333, y: -15.444, z: 2.755535}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3738056971615919424}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.032448698, y: -77.16934, z: 150.10739}
+--- !u!1 &803703482344157289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3405274572290648036}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle04a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3405274572290648036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803703482344157289}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99805206, w: 0.06238702}
+  m_LocalPosition: {x: -11.798681, y: 4.6518865, z: -11.155895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 420529012217471345}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -0.5923675, y: 9.16142, z: 174.76985}
+--- !u!1 &887777430399235674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7270203854819534940}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7270203854819534940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887777430399235674}
+  m_LocalRotation: {x: -0.04137174, y: -0.19311775, z: 0.9324934, w: 0.30240706}
+  m_LocalPosition: {x: -6.369473, y: 9.626334, z: 4.0436716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2857109398153286204}
+  m_Father: {fileID: 7062084812808181190}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 19.581041, y: -11.880053, z: 142.00713}
+--- !u!1 &918859447989066968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434584005273154168}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Wing01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434584005273154168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918859447989066968}
+  m_LocalRotation: {x: 0.10632139, y: -0.53888214, z: 0.67669183, w: 0.4902958}
+  m_LocalPosition: {x: -54.9397, y: 29.037857, z: 12.75828}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2035370125093464853}
+  - {fileID: 2009464427882599749}
+  - {fileID: 328053429967444516}
+  m_Father: {fileID: 8518679160465775637}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 56.46745, y: -44.114452, z: 83.60091}
+--- !u!1 &930610304922489838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7950312651063781269}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7950312651063781269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930610304922489838}
+  m_LocalRotation: {x: 0, y: -0, z: -0.11645581, w: 0.9931959}
+  m_LocalPosition: {x: -37.143566, y: 5.3290705e-15, z: 9.062406e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5764892002350930145}
+  m_Father: {fileID: 8879864867213166258}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -3.4223483, y: -9.9803505, z: -20.413803}
+--- !u!1 &982308840575159330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7995387171726468655}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle01d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7995387171726468655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982308840575159330}
+  m_LocalRotation: {x: 0, y: 0, z: 0.09409797, w: 0.995563}
+  m_LocalPosition: {x: -13.058538, y: 0.34461895, z: 5.887906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1647435226187677402}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.79881}
+--- !u!1 &1044940796034007673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2471450618380262004}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle03a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2471450618380262004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044940796034007673}
+  m_LocalRotation: {x: 0.9679539, y: 0.25112793, z: -1.537715e-17, w: -5.9270085e-17}
+  m_LocalPosition: {x: -8.039728, y: -10.443731, z: -7.121375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3573968613830549497}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 8.032787, y: 168.72173, z: 151.84062}
+--- !u!1 &1294180149180408883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3934764963637564694}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Knee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3934764963637564694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294180149180408883}
+  m_LocalRotation: {x: -0.6483717, y: -0.2832363, z: -0.11474826, w: 0.6972978}
+  m_LocalPosition: {x: 50.429317, y: -0.000046010577, z: -30.32741}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8925975564016564403}
+  m_Father: {fileID: 491565001609461974}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -75.21808, y: -96.37515, z: 55.795956}
+--- !u!1 &1308520735694448203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3738056971615919424}
+  m_Layer: 0
+  m_Name: CthulhuL_L_FaceTentacle01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3738056971615919424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308520735694448203}
+  m_LocalRotation: {x: 0.977059, y: 0.21296884, z: -1.304058e-17, w: -5.982761e-17}
+  m_LocalPosition: {x: -13.6895075, y: -5.1069836e-13, z: -2.6045616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1647435226187677402}
+  m_Father: {fileID: 4948033918361241208}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 8.202775e-16, y: -180, z: 171.94011}
+--- !u!1 &1345521314171958384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3574184680216246979}
+  - component: {fileID: 5887979563315051589}
+  - component: {fileID: 7866928665320252980}
+  m_Layer: 0
+  m_Name: badEndThulu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3574184680216246979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345521314171958384}
+  m_LocalRotation: {x: -0, y: -0.99999136, z: -0, w: -0.004165435}
+  m_LocalPosition: {x: -1.21, y: 1, z: -114.89}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_Children:
+  - {fileID: 7295081200299179750}
+  - {fileID: 7709963252388840987}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -180.47699, z: 0}
+--- !u!95 &5887979563315051589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345521314171958384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 720ecd3f73dd6f04aaaa1f9c3385b6e6, type: 3}
+  m_Controller: {fileID: 9100000, guid: c37dfec6559805c4b85fdea6d6692c5c, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &7866928665320252980
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345521314171958384}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &1355551439702851154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 178058085259721979}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Thumb01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &178058085259721979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355551439702851154}
+  m_LocalRotation: {x: 0.0674263, y: 0.5968325, z: -0.11085585, w: 0.7918053}
+  m_LocalPosition: {x: 12.672003, y: -0.33801258, z: -11.956612}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 828054661328805795}
+  m_Father: {fileID: 4516554671779147545}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 13.833531, y: 73.33302, z: -5.618713}
+--- !u!1 &1379339073961434213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1861599746212703189}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger03d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1861599746212703189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379339073961434213}
+  m_LocalRotation: {x: -0.49248728, y: -0.17979269, z: -0.09336416, w: 0.8464125}
+  m_LocalPosition: {x: 11.78552, y: -0.00033331264, z: -0.00040905154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6292873591684754158}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -60.142586, y: -25.254055, z: 2.1920462}
+--- !u!1 &1381308296659086089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768062605577080431}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1768062605577080431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381308296659086089}
+  m_LocalRotation: {x: 0, y: -0, z: -0.14063212, w: 0.99006194}
+  m_LocalPosition: {x: -36.171375, y: -1.7763568e-14, z: 6.2236293e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8879864867213166258}
+  m_Father: {fileID: 538902840706647987}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -4.459816, y: -16.911116, z: -15.348411}
+--- !u!1 &1480169936942196845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7489541496712436730}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle02c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7489541496712436730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480169936942196845}
+  m_LocalRotation: {x: 0.9985631, y: 0.053588312, z: 3.2813378e-18, w: 6.114436e-17}
+  m_LocalPosition: {x: 19.39284, y: 0.7701147, z: 6.1674}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1241468730130026404}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.7154466e-15, y: 180, z: 173.85628}
+--- !u!1 &1509901529377563453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3488972212936855125}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3488972212936855125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509901529377563453}
+  m_LocalRotation: {x: 0, y: 0, z: 0.21953169, w: 0.97560537}
+  m_LocalPosition: {x: 40.15304, y: 0.00026737136, z: -0.00009448578}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6574540441188676966}
+  m_Father: {fileID: 2232608738894707324}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25.363056}
+--- !u!1 &1556341885738095006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2971905370701460877}
+  m_Layer: 0
+  m_Name: Cthulhu_Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2971905370701460877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556341885738095006}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38710624, w: 0.9220351}
+  m_LocalPosition: {x: -39.62386, y: 5.3290705e-15, z: 9.9705766e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 682262165944728941}
+  m_Father: {fileID: 44864224650978450}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35.75285}
+--- !u!1 &1606954792203766682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5764892002350930145}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail05
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5764892002350930145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606954792203766682}
+  m_LocalRotation: {x: 0, y: -0, z: -0.057186447, w: 0.99836355}
+  m_LocalPosition: {x: -33.84884, y: 5.3290705e-15, z: 8.907388e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7489525825412886785}
+  m_Father: {fileID: 7950312651063781269}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -8.979415, y: -15.380877, z: -19.39635}
+--- !u!1 &1692856502950004526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9093400954486260581}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Toe02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9093400954486260581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692856502950004526}
+  m_LocalRotation: {x: -0.03991818, y: -0.019974353, z: 0.031418767, w: 0.9985091}
+  m_LocalPosition: {x: -31.2745, y: -2.7396755, z: -11.135592}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6583238768163110370}
+  m_Father: {fileID: 5625988272127854562}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -4.5001774, y: -2.4374447, z: 3.7002974}
+--- !u!1 &1787173153496585661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7528971498994939315}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Wrist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7528971498994939315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787173153496585661}
+  m_LocalRotation: {x: -0.011922639, y: 0.1251519, z: 0.103141055, w: 0.9866898}
+  m_LocalPosition: {x: -70.332664, y: -2.5481796, z: 0.11064475}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5558835800760866831}
+  - {fileID: 8085733244308820533}
+  - {fileID: 9213465798387477119}
+  - {fileID: 6796201943116131457}
+  m_Father: {fileID: 8449529623083721121}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 11.916187, y: 38.602974, z: 15.8210335}
+--- !u!1 &1814653815008859859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2702253649143032070}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2702253649143032070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814653815008859859}
+  m_LocalRotation: {x: 0, y: 0, z: 0.21953169, w: 0.97560537}
+  m_LocalPosition: {x: -40.15271, y: 2.4868996e-14, z: 7.1054274e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3613766914155972295}
+  m_Father: {fileID: 2035370125093464853}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25.363056}
+--- !u!1 &1815819294315065101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776017652269574402}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Toe02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776017652269574402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815819294315065101}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.308507, y: -13.441343, z: 2.0998132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7691499089444903673}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1846331594627406179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7077414156715541337}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Thumb01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7077414156715541337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846331594627406179}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.85064876, y: -14.479904, z: 0.37019247}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7039711678485465450}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -21.624556, y: -34.02563, z: 61.373528}
+--- !u!1 &1884977622251253633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7628119751292750069}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle03a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7628119751292750069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884977622251253633}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9691599, w: 0.24643283}
+  m_LocalPosition: {x: -8.140333, y: 10.365317, z: -7.121395}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1496165711170073860}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -3.4332027, y: -10.763836, z: 149.30217}
+--- !u!1 &2006825683717961148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5120965468584011036}
+  m_Layer: 0
+  m_Name: Cthulhu_L_ArmTentacle01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5120965468584011036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006825683717961148}
+  m_LocalRotation: {x: -0.16835229, y: -0.18005727, z: -0.14772959, w: 0.9578167}
+  m_LocalPosition: {x: -51.667828, y: -9.59217, z: -11.780166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1145266834811064315}
+  m_Father: {fileID: 8449529623083721121}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -22.067633, y: -18.573244, z: -13.883469}
+--- !u!1 &2046130751058445379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4314979526838912855}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger03c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4314979526838912855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046130751058445379}
+  m_LocalRotation: {x: 0, y: -0, z: -0.3321664, w: 0.9432208}
+  m_LocalPosition: {x: -18.503046, y: -1.8651747e-14, z: 5.595524e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7803169488064459823}
+  m_Father: {fileID: 882264534061901377}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.80064}
+--- !u!1 &2088565830301958476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3613766914155972295}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3613766914155972295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088565830301958476}
+  m_LocalRotation: {x: -0.053354416, y: -0.5466732, z: 0.7892123, w: -0.27467403}
+  m_LocalPosition: {x: -33.999077, y: -3.463896e-14, z: 1.5099033e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2702253649143032070}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 63.150066, y: 28.5847, z: -123.8231}
+--- !u!1 &2106687027967872840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8085733244308820533}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8085733244308820533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106687027967872840}
+  m_LocalRotation: {x: -0.03571394, y: -0.12216241, z: -0.32227978, w: 0.9380494}
+  m_LocalPosition: {x: -20.563877, y: -2.4330592, z: -9.199148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4033835796298315064}
+  m_Father: {fileID: 7528971498994939315}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -8.380354, y: -12.028259, z: -37.037266}
+--- !u!1 &2161505481140677674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5189822552194830979}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle04b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5189822552194830979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161505481140677674}
+  m_LocalRotation: {x: 0, y: 0, z: 0.057431027, w: 0.9983495}
+  m_LocalPosition: {x: -15.099094, y: 0.28765208, z: 4.3294144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3706945631635606990}
+  m_Father: {fileID: 4337930016850413272}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 3.0255828, y: -10.242312, z: 8.6071415}
+--- !u!1 &2206247225919220921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4337930016850413272}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle04a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4337930016850413272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206247225919220921}
+  m_LocalRotation: {x: 0.9977379, y: 0.06722427, z: -4.1162993e-18, w: -6.1093826e-17}
+  m_LocalPosition: {x: -11.753213, y: -4.7660546, z: -11.155895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5189822552194830979}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -1.7377295, y: 173.78397, z: 168.8628}
+--- !u!1 &2258880741123223879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2857109398153286204}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2857109398153286204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2258880741123223879}
+  m_LocalRotation: {x: 0, y: 0, z: 0.3920021, w: 0.9199643}
+  m_LocalPosition: {x: 19.412392, y: -0.00010346767, z: 0.0003611398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8669407294795455367}
+  m_Father: {fileID: 7270203854819534940}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.0000000251723, y: 0.000000009632444, z: 26.648245}
+--- !u!1 &2344740740636560521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7803169488064459823}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger03d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7803169488064459823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2344740740636560521}
+  m_LocalRotation: {x: -0.49248728, y: -0.17979269, z: -0.09336416, w: 0.8464125}
+  m_LocalPosition: {x: -11.785131, y: 2.220446e-15, z: 1.3211654e-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4314979526838912855}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -60.142586, y: -25.254055, z: 2.1920462}
+--- !u!1 &2468637289616490426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1350510518220402543}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1350510518220402543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2468637289616490426}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9833408, w: 0.1817715}
+  m_LocalPosition: {x: -6.8940845, y: 12.792487, z: -1.929895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1241468730130026404}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -2.9012666, y: -7.6655517, z: 153.85086}
+--- !u!1 &2474586030812103934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3706945631635606990}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle04c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3706945631635606990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2474586030812103934}
+  m_LocalRotation: {x: 0.99880177, y: 0.04893969, z: -2.9966915e-18, w: -6.1158975e-17}
+  m_LocalPosition: {x: -15.621786, y: -1.709116e-13, z: -0.8312275}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 920427296861504020}
+  m_Father: {fileID: 5189822552194830979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 8.257785, y: -177.28416, z: 167.20699}
+--- !u!1 &2540062428215199285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8925975564016564403}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Hind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8925975564016564403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540062428215199285}
+  m_LocalRotation: {x: 0.91427565, y: 0.40442553, z: -0.018213786, w: 0.014436193}
+  m_LocalPosition: {x: 38.556236, y: -25.551434, z: -0.000039761828}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6030540252962988301}
+  m_Father: {fileID: 3934764963637564694}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -2.2987957, y: 142.52519, z: 120.309494}
+--- !u!1 &2602580092712366089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2035370125093464853}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2035370125093464853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2602580092712366089}
+  m_LocalRotation: {x: -0.09676831, y: -0.19485095, z: 0.03507983, w: 0.9754171}
+  m_LocalPosition: {x: -46.46697, y: 1.4228758e-13, z: -21.798687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2702253649143032070}
+  m_Father: {fileID: 434584005273154168}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -10.084957, y: -23.140232, z: 27.047224}
+--- !u!1 &2723890703281230765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3122885115374340304}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger02c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3122885115374340304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2723890703281230765}
+  m_LocalRotation: {x: 0.016748786, y: 0.3971729, z: -0.038660467, w: 0.91677624}
+  m_LocalPosition: {x: 21.273632, y: -0.00005136864, z: 0.0007721121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1358122509734111033}
+  m_Father: {fileID: 8191306885361955292}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 3.5212977, y: 46.745506, z: -3.3072631}
+--- !u!1 &2866408307427845423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4516350605713526646}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle03c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4516350605713526646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866408307427845423}
+  m_LocalRotation: {x: 0, y: -0, z: -0.06564432, w: 0.9978431}
+  m_LocalPosition: {x: 18.534702, y: -1.2297962, z: 2.1926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4143844993893550632}
+  m_Father: {fileID: 1496165711170073860}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 9.17905, y: -3.2150464, z: -17.601673}
+--- !u!1 &2873404366890883958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7039711678485465450}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Thumb01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7039711678485465450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873404366890883958}
+  m_LocalRotation: {x: 0.08137716, y: 0.038942, z: -0.006828291, w: 0.99589896}
+  m_LocalPosition: {x: -14.060217, y: -8.551377, z: -1.8049085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7077414156715541337}
+  m_Father: {fileID: 6796201943116131457}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 9.27156, y: 4.417038, z: -16.189194}
+--- !u!1 &2956542373006116364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6659999596254067257}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6659999596254067257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956542373006116364}
+  m_LocalRotation: {x: 0, y: 0, z: 0.3920021, w: 0.9199643}
+  m_LocalPosition: {x: -19.412123, y: 1.2878587e-14, z: 7.993606e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8423662088312182430}
+  m_Father: {fileID: 3565710109458237299}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.158264}
+--- !u!1 &3064648115996810496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2417461113618764438}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger03b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2417461113618764438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3064648115996810496}
+  m_LocalRotation: {x: 0.2312885, y: -0.11731284, z: 0.044899464, w: 0.9647421}
+  m_LocalPosition: {x: 9.801353, y: 12.704429, z: 10.353976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6292873591684754158}
+  m_Father: {fileID: 6891261108773423509}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 27.18094, y: -13.362144, z: 2.085144}
+--- !u!1 &3195572717050121312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4516554671779147545}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Wrist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4516554671779147545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195572717050121312}
+  m_LocalRotation: {x: -0.011922639, y: 0.1251519, z: 0.103141055, w: 0.9866898}
+  m_LocalPosition: {x: 70.33269, y: 2.54886, z: -0.11057989}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7062084812808181190}
+  - {fileID: 2407017748291022059}
+  - {fileID: 6891261108773423509}
+  - {fileID: 178058085259721979}
+  m_Father: {fileID: 7970967557624607159}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -11.442091, y: 28.823408, z: 5.146639}
+--- !u!1 &3320245204327530178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7691499089444903673}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Toe02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7691499089444903673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320245204327530178}
+  m_LocalRotation: {x: -0.032531835, y: -0.021618474, z: 0.0044435672, w: 0.999227}
+  m_LocalPosition: {x: 31.27455, y: 2.7396872, z: 11.135543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 776017652269574402}
+  m_Father: {fileID: 6030540252962988301}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -3.7165632, y: -2.4979208, z: 0.5907457}
+--- !u!1 &3357523406209542534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8423662088312182430}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger01d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8423662088312182430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357523406209542534}
+  m_LocalRotation: {x: 0.011216679, y: -0.24351694, z: 0.92030555, w: -0.30595973}
+  m_LocalPosition: {x: -11.906427, y: 1.5099033e-14, z: -2.4424907e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6659999596254067257}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 26.190447, y: 10.898499, z: -140.6783}
+--- !u!1 &3414880583408450873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8518679160465775637}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Wing01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8518679160465775637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3414880583408450873}
+  m_LocalRotation: {x: -0.47380406, y: 0.5248902, z: -0.015468048, w: 0.70693755}
+  m_LocalPosition: {x: -39.331776, y: -1.0658141e-14, z: 4.693781e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 434584005273154168}
+  m_Father: {fileID: 1597516944157036453}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -18.726797, y: 96.45853, z: -39.871056}
+--- !u!1 &3493996821701706439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8191306885361955292}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8191306885361955292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3493996821701706439}
+  m_LocalRotation: {x: 0.47271198, y: 0.3050601, z: 0.3565855, w: 0.7458743}
+  m_LocalPosition: {x: 17.607155, y: 9.860426, z: 3.378127}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3122885115374340304}
+  m_Father: {fileID: 2407017748291022059}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 29.183443, y: 65.14538, z: 69.98776}
+--- !u!1 &3563628742864300328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3573968613830549497}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle03b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3573968613830549497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563628742864300328}
+  m_LocalRotation: {x: 0, y: 0, z: 0.21220975, w: 0.9772242}
+  m_LocalPosition: {x: -14.050639, y: 4.8835686e-13, z: 2.3996074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4463347878417646447}
+  m_Father: {fileID: 2471450618380262004}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -13.46363, y: 0.7347096, z: 25.267073}
+--- !u!1 &3636092044871545995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6574540441188676966}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6574540441188676966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3636092044871545995}
+  m_LocalRotation: {x: -0.053354416, y: -0.5466732, z: 0.7892123, w: -0.27467403}
+  m_LocalPosition: {x: 33.998615, y: -0.00010395829, z: -0.000041237516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3488972212936855125}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 63.150066, y: 28.5847, z: -123.8231}
+--- !u!1 &3662889131668518258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8879864867213166258}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8879864867213166258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662889131668518258}
+  m_LocalRotation: {x: 0, y: -0, z: -0.08174204, w: 0.99665356}
+  m_LocalPosition: {x: -32.786575, y: 1.2434498e-14, z: 7.296974e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7950312651063781269}
+  m_Father: {fileID: 1768062605577080431}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.39630222, y: -1.0469103, z: -9.283455}
+--- !u!1 &3734786864792170110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4406946529407706459}
+  m_Layer: 0
+  m_Name: Cthulhu_R_ArmTentacle01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4406946529407706459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3734786864792170110}
+  m_LocalRotation: {x: -0.11607286, y: 0.8088255, z: 0.46915993, w: -0.33498865}
+  m_LocalPosition: {x: -15.651319, y: -7.164461, z: 15.819841}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7686830572909571550}
+  m_Father: {fileID: 2902228442585118930}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -42.935204, y: -117.26078, z: -43.298645}
+--- !u!1 &3791493785757349575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358122509734111033}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger02d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358122509734111033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791493785757349575}
+  m_LocalRotation: {x: -0.5008898, y: -0.15485018, z: -0.13572453, w: 0.84066033}
+  m_LocalPosition: {x: 11.717637, y: 0.000030083751, z: -0.0003840961}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3122885115374340304}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -62.152027, y: -15.44304, z: -8.9994955}
+--- !u!1 &3798540027388728636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3580111378030470983}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3580111378030470983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798540027388728636}
+  m_LocalRotation: {x: 0, y: 0, z: 0.983562, w: 0.18057077}
+  m_LocalPosition: {x: -4.317708, y: 15.402906, z: 2.7555048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7098299932547339302}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 147.19556}
+--- !u!1 &3984570172454531769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680724260976546381}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680724260976546381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984570172454531769}
+  m_LocalRotation: {x: 0, y: -0, z: -0.00958272, w: 0.9999541}
+  m_LocalPosition: {x: -38.563354, y: 6.217249e-15, z: 1.0287694e-11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5802330729736362089}
+  m_Father: {fileID: 7489525825412886785}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -6.4762444, y: -11.721939, z: -9.274912}
+--- !u!1 &4041590512138647205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5452146011620342714}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle01d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5452146011620342714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4041590512138647205}
+  m_LocalRotation: {x: 0, y: 0, z: 0.09409797, w: 0.995563}
+  m_LocalPosition: {x: 13.058471, y: -0.3446223, z: -5.888}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6100548490759993040}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.79881}
+--- !u!1 &4152997627913114949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867717573709019333}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Toe01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867717573709019333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4152997627913114949}
+  m_LocalRotation: {x: 0.000000009061832, y: 0.00000085704016, z: -0.32200527, w: 0.9467379}
+  m_LocalPosition: {x: 29.877432, y: 0.76320434, z: -10.655686}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1567139647144846166}
+  m_Father: {fileID: 6030540252962988301}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.000038148974, y: 0.00013683243, z: -37.568436}
+--- !u!1 &4244527776256335106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6100548490759993040}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6100548490759993040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244527776256335106}
+  m_LocalRotation: {x: 0, y: -0, z: -0.0659911, w: 0.9978202}
+  m_LocalPosition: {x: 16.34364, y: 0.000025423944, z: -7.376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5452146011620342714}
+  m_Father: {fileID: 7098299932547339302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.653739, y: 3.7031798, z: 3.2887752}
+--- !u!1 &4280180773774671671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3741323651819413399}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3741323651819413399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4280180773774671671}
+  m_LocalRotation: {x: -0.018237976, y: -0.19634023, z: -0.11922106, w: 0.97309005}
+  m_LocalPosition: {x: 52.93652, y: -35.694447, z: 24.6963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4804863487898089479}
+  m_Father: {fileID: 6811866681583595867}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -4.721365, y: -22.274906, z: 18.037502}
+--- !u!1 &4283820530909595409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7432799007070584000}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7432799007070584000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283820530909595409}
+  m_LocalRotation: {x: 0, y: 0, z: 0.13362023, w: 0.9910326}
+  m_LocalPosition: {x: -23.871632, y: -0.98933107, z: -3.447338}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2797677767537759869}
+  m_Father: {fileID: 539406552084565112}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15.357683}
+--- !u!1 &4545903035206156791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7062084812808181190}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7062084812808181190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545903035206156791}
+  m_LocalRotation: {x: 0.13362701, y: -0.12960626, z: 0.9086325, w: -0.37380883}
+  m_LocalPosition: {x: 24.081648, y: -3.134628, z: -1.2394936}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7270203854819534940}
+  m_Father: {fileID: 4516554671779147545}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 7.794878, y: 20.053656, z: -133.89546}
+--- !u!1 &4739278770796778240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5604393287482876188}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Thumb01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5604393287482876188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739278770796778240}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8505163, y: 14.479715, z: -0.36997288}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 828054661328805795}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4743160161640960984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737840943115616196}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1737840943115616196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743160161640960984}
+  m_LocalRotation: {x: 0.19345252, y: -0.6801295, z: 0.3259315, w: 0.62750995}
+  m_LocalPosition: {x: -15.525926, y: 16.461224, z: -23.515491}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3322411445076885123}
+  m_Father: {fileID: 44864224650978450}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 31.57798, y: -69.67325, z: 12.1746435}
+--- !u!1 &4812620536903162146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44864224650978450}
+  m_Layer: 0
+  m_Name: Cthulhu_Chest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &44864224650978450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4812620536903162146}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38639376, w: 0.9223339}
+  m_LocalPosition: {x: -38.632816, y: -0.6549717, z: 1.2406054e-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1737840943115616196}
+  - {fileID: 1597516944157036453}
+  - {fileID: 2971905370701460877}
+  - {fileID: 4423525921521345464}
+  - {fileID: 8102807291596714910}
+  m_Father: {fileID: 804426665487776867}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 48.322063}
+--- !u!1 &4878027472346278952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5988715500443632727}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle04d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5988715500443632727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878027472346278952}
+  m_LocalRotation: {x: 0.9978432, y: 0.06564259, z: 4.0194493e-18, w: 6.110027e-17}
+  m_LocalPosition: {x: 25.854101, y: 0.1469739, z: -4.302}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4226157378367228801}
+  m_Father: {fileID: 7107401963183479073}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.1508822, y: -165.5276, z: 175.07135}
+--- !u!1 &5382882623365939501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3778242294300287303}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Toe01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3778242294300287303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382882623365939501}
+  m_LocalRotation: {x: 0.7069544, y: 0.7069544, z: -0.014678958, w: -0.014678958}
+  m_LocalPosition: {x: -19.42438, y: 7.4221535, z: -0.86753446}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 903583240921310351}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -177.62099, z: 90}
+--- !u!1 &5562640868684310212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903583240921310351}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Toe01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &903583240921310351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5562640868684310212}
+  m_LocalRotation: {x: -0.0073757027, y: -0.0009494829, z: -0.30023447, w: 0.9538365}
+  m_LocalPosition: {x: -29.877398, y: -0.7631641, z: 10.655704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3778242294300287303}
+  m_Father: {fileID: 5625988272127854562}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.83887213, y: 0.14999273, z: -34.945465}
+--- !u!1 &5601144532261302240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420529012217471345}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle04b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420529012217471345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601144532261302240}
+  m_LocalRotation: {x: 0, y: 0, z: 0.057431027, w: 0.9983495}
+  m_LocalPosition: {x: 15.099031, y: -0.28765982, z: -4.3294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7107401963183479073}
+  m_Father: {fileID: 3405274572290648036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.9174807}
+--- !u!1 &5734937628127596096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8289919248775608886}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan03a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8289919248775608886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5734937628127596096}
+  m_LocalRotation: {x: -0.060880117, y: -0.16811483, z: -0.33500844, w: 0.92509484}
+  m_LocalPosition: {x: 24.709806, y: -69.40259, z: 22.8066}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2270165817875089092}
+  m_Father: {fileID: 6811866681583595867}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -13.019316, y: -16.10413, z: -11.144348}
+--- !u!1 &5868565405309004062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5625988272127854562}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5625988272127854562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868565405309004062}
+  m_LocalRotation: {x: 0.002720109, y: -0.032166455, z: -0.31085432, w: 0.94990927}
+  m_LocalPosition: {x: -35.59538, y: 4.564654, z: 0.1639319}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 903583240921310351}
+  - {fileID: 9093400954486260581}
+  m_Father: {fileID: 3588072158115037700}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.84975326, y: -3.6010296, z: -36.214268}
+--- !u!1 &5875326682489898232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4595432394418301872}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan03c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4595432394418301872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875326682489898232}
+  m_LocalRotation: {x: 0, y: 0, z: 0.12791762, w: 0.9917848}
+  m_LocalPosition: {x: 59.523, y: -0.00014982205, z: -0.00075416383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2270165817875089092}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 14.69855}
+--- !u!1 &5908558344680073082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4033835796298315064}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4033835796298315064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908558344680073082}
+  m_LocalRotation: {x: 0.47271198, y: 0.3050601, z: 0.3565855, w: 0.7458743}
+  m_LocalPosition: {x: -17.607727, y: -9.859682, z: -3.3781464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8290164664248945658}
+  m_Father: {fileID: 8085733244308820533}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 29.183443, y: 65.14538, z: 69.98776}
+--- !u!1 &6021231168925443782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2407017748291022059}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2407017748291022059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6021231168925443782}
+  m_LocalRotation: {x: -0.03571394, y: -0.12216241, z: -0.32227978, w: 0.9380494}
+  m_LocalPosition: {x: 20.563673, y: 2.4318357, z: 9.199083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8191306885361955292}
+  m_Father: {fileID: 4516554671779147545}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -8.380354, y: -12.028259, z: -37.037266}
+--- !u!1 &6024430322394071391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3038542684520819652}
+  m_Layer: 0
+  m_Name: Cthulhu_Face
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3038542684520819652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024430322394071391}
+  m_LocalRotation: {x: 0.59499115, y: 0.38208055, z: 0.37919185, w: 0.5968363}
+  m_LocalPosition: {x: -14.801917, y: 1.7763568e-15, z: -1.3936913e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4948033918361241208}
+  - {fileID: 539406552084565112}
+  - {fileID: 2471450618380262004}
+  - {fileID: 4337930016850413272}
+  - {fileID: 3580111378030470983}
+  - {fileID: 1350510518220402543}
+  - {fileID: 7628119751292750069}
+  - {fileID: 3405274572290648036}
+  m_Father: {fileID: 682262165944728941}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 24.863691, y: 89.99999, z: 89.72225}
+--- !u!1 &6039320104232149244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496165711170073860}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle03b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496165711170073860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039320104232149244}
+  m_LocalRotation: {x: 0.000000010296732, y: 0.0000000022359936, z: 0.21220975, w: 0.9772242}
+  m_LocalPosition: {x: 14.051139, y: 0.00035048637, z: -2.3996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4516350605713526646}
+  m_Father: {fileID: 7628119751292750069}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.0000010575741, y: 0.00000048204805, z: 24.50376}
+--- !u!1 &6109693169905847049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4463347878417646447}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle03c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4463347878417646447
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109693169905847049}
+  m_LocalRotation: {x: 0, y: -0, z: -0.06564432, w: 0.9978431}
+  m_LocalPosition: {x: -18.53484, y: 1.2297027, z: -2.19254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8623270124739673948}
+  m_Father: {fileID: 3573968613830549497}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -6.4052687, y: 8.550531, z: -1.9590006}
+--- !u!1 &6160987587146985727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2797677767537759869}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle02c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2797677767537759869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6160987587146985727}
+  m_LocalRotation: {x: 0.9985631, y: 0.053588312, z: 3.2813378e-18, w: 6.114436e-17}
+  m_LocalPosition: {x: -19.392624, y: -0.77005845, z: -6.1673408}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7432799007070584000}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.0112162e-15, y: 180, z: 173.85628}
+--- !u!1 &6228160813623679059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2232608738894707324}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2232608738894707324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6228160813623679059}
+  m_LocalRotation: {x: -0.09676831, y: -0.19485095, z: 0.03507983, w: 0.9754171}
+  m_LocalPosition: {x: 46.466923, y: 0.000060314345, z: 21.7987}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3488972212936855125}
+  m_Father: {fileID: 6811866681583595867}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -10.084958, y: -23.140232, z: 24.757431}
+--- !u!1 &6269063114799958153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5120733910372701923}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Wing01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5120733910372701923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6269063114799958153}
+  m_LocalRotation: {x: -0.47380406, y: 0.5248902, z: -0.015468048, w: 0.70693755}
+  m_LocalPosition: {x: 39.33154, y: 0.0003099837, z: 0.00013931384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6811866681583595867}
+  m_Father: {fileID: 8102807291596714910}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -31.784822, y: 100.58037, z: -49.61078}
+--- !u!1 &6340599948326728315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712271681797236623}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger02d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &712271681797236623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340599948326728315}
+  m_LocalRotation: {x: -0.5008898, y: -0.15485018, z: -0.13572453, w: 0.84066033}
+  m_LocalPosition: {x: -11.717359, y: -1.9984014e-15, z: 2.1538327e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8290164664248945658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -62.152027, y: -15.44304, z: -8.9994955}
+--- !u!1 &6373333216571766760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 722604712764994667}
+  m_Layer: 0
+  m_Name: Cthulhu_R_ArmTentacle01d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &722604712764994667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6373333216571766760}
+  m_LocalRotation: {x: -0.05026773, y: 0.81556404, z: 0.44052577, w: 0.37184072}
+  m_LocalPosition: {x: 16.739916, y: -0.00038414967, z: -0.00010265795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7686830572909571550}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -49.107323, y: 120.813965, z: 22.03622}
+--- !u!1 &6440652329979632763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 538902840706647987}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &538902840706647987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6440652329979632763}
+  m_LocalRotation: {x: 0, y: 0, z: 0.93830556, w: 0.34580734}
+  m_LocalPosition: {x: 12.061901, y: -15.551914, z: 4.1396626e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1768062605577080431}
+  m_Father: {fileID: 5290505413771339322}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 11.297799, y: 4.734374, z: 128.54504}
+--- !u!1 &6494910841517658210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6583238768163110370}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Toe02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6583238768163110370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6494910841517658210}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.308537, y: 13.441318, z: -2.0997393}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9093400954486260581}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6549431011335510720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7295081200299179750}
+  - component: {fileID: 2876885288438031178}
+  m_Layer: 0
+  m_Name: Cthulhu_Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7295081200299179750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6549431011335510720}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -46.663548, y: -216.58739, z: -35.394173}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children:
+  - {fileID: 5568179459531403366}
+  m_Father: {fileID: 3574184680216246979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &2876885288438031178
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6549431011335510720}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f4e806364fc01ef4d82d1d6fb42e98fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 720ecd3f73dd6f04aaaa1f9c3385b6e6, type: 3}
+  m_Bones:
+  - {fileID: 7709963252388840987}
+  - {fileID: 5290505413771339322}
+  - {fileID: 804426665487776867}
+  - {fileID: 44864224650978450}
+  - {fileID: 2971905370701460877}
+  - {fileID: 682262165944728941}
+  - {fileID: 3038542684520819652}
+  - {fileID: 4948033918361241208}
+  - {fileID: 3738056971615919424}
+  - {fileID: 1647435226187677402}
+  - {fileID: 7995387171726468655}
+  - {fileID: 539406552084565112}
+  - {fileID: 7432799007070584000}
+  - {fileID: 2797677767537759869}
+  - {fileID: 2471450618380262004}
+  - {fileID: 3573968613830549497}
+  - {fileID: 4463347878417646447}
+  - {fileID: 8623270124739673948}
+  - {fileID: 4337930016850413272}
+  - {fileID: 5189822552194830979}
+  - {fileID: 3706945631635606990}
+  - {fileID: 920427296861504020}
+  - {fileID: 4957910969502098221}
+  - {fileID: 3580111378030470983}
+  - {fileID: 7098299932547339302}
+  - {fileID: 6100548490759993040}
+  - {fileID: 5452146011620342714}
+  - {fileID: 1350510518220402543}
+  - {fileID: 1241468730130026404}
+  - {fileID: 7489541496712436730}
+  - {fileID: 7628119751292750069}
+  - {fileID: 1496165711170073860}
+  - {fileID: 4516350605713526646}
+  - {fileID: 4143844993893550632}
+  - {fileID: 3405274572290648036}
+  - {fileID: 420529012217471345}
+  - {fileID: 7107401963183479073}
+  - {fileID: 5988715500443632727}
+  - {fileID: 4226157378367228801}
+  - {fileID: 7216717908667880501}
+  - {fileID: 1737840943115616196}
+  - {fileID: 3322411445076885123}
+  - {fileID: 8449529623083721121}
+  - {fileID: 7528971498994939315}
+  - {fileID: 5558835800760866831}
+  - {fileID: 3565710109458237299}
+  - {fileID: 6659999596254067257}
+  - {fileID: 8423662088312182430}
+  - {fileID: 8085733244308820533}
+  - {fileID: 4033835796298315064}
+  - {fileID: 8290164664248945658}
+  - {fileID: 712271681797236623}
+  - {fileID: 9213465798387477119}
+  - {fileID: 882264534061901377}
+  - {fileID: 4314979526838912855}
+  - {fileID: 7803169488064459823}
+  - {fileID: 6796201943116131457}
+  - {fileID: 7039711678485465450}
+  - {fileID: 7077414156715541337}
+  - {fileID: 5120965468584011036}
+  - {fileID: 1145266834811064315}
+  - {fileID: 7159224271565482956}
+  - {fileID: 3237036133621203180}
+  - {fileID: 1597516944157036453}
+  - {fileID: 8518679160465775637}
+  - {fileID: 434584005273154168}
+  - {fileID: 2035370125093464853}
+  - {fileID: 2702253649143032070}
+  - {fileID: 3613766914155972295}
+  - {fileID: 2009464427882599749}
+  - {fileID: 8673883542044156563}
+  - {fileID: 4227385769124933513}
+  - {fileID: 328053429967444516}
+  - {fileID: 9105657270929482014}
+  - {fileID: 3035542184938422595}
+  - {fileID: 4423525921521345464}
+  - {fileID: 6299277284862554342}
+  - {fileID: 7970967557624607159}
+  - {fileID: 4516554671779147545}
+  - {fileID: 7062084812808181190}
+  - {fileID: 7270203854819534940}
+  - {fileID: 2857109398153286204}
+  - {fileID: 8669407294795455367}
+  - {fileID: 2407017748291022059}
+  - {fileID: 8191306885361955292}
+  - {fileID: 3122885115374340304}
+  - {fileID: 1358122509734111033}
+  - {fileID: 6891261108773423509}
+  - {fileID: 2417461113618764438}
+  - {fileID: 6292873591684754158}
+  - {fileID: 1861599746212703189}
+  - {fileID: 178058085259721979}
+  - {fileID: 828054661328805795}
+  - {fileID: 5604393287482876188}
+  - {fileID: 2902228442585118930}
+  - {fileID: 4406946529407706459}
+  - {fileID: 7686830572909571550}
+  - {fileID: 722604712764994667}
+  - {fileID: 8102807291596714910}
+  - {fileID: 5120733910372701923}
+  - {fileID: 6811866681583595867}
+  - {fileID: 2232608738894707324}
+  - {fileID: 3488972212936855125}
+  - {fileID: 6574540441188676966}
+  - {fileID: 3741323651819413399}
+  - {fileID: 4804863487898089479}
+  - {fileID: 402622806987579194}
+  - {fileID: 8289919248775608886}
+  - {fileID: 2270165817875089092}
+  - {fileID: 4595432394418301872}
+  - {fileID: 538902840706647987}
+  - {fileID: 1768062605577080431}
+  - {fileID: 8879864867213166258}
+  - {fileID: 7950312651063781269}
+  - {fileID: 5764892002350930145}
+  - {fileID: 7489525825412886785}
+  - {fileID: 680724260976546381}
+  - {fileID: 5802330729736362089}
+  - {fileID: 2075631298722925515}
+  - {fileID: 8037710014435077829}
+  - {fileID: 7090891572056556639}
+  - {fileID: 3588072158115037700}
+  - {fileID: 5625988272127854562}
+  - {fileID: 903583240921310351}
+  - {fileID: 3778242294300287303}
+  - {fileID: 9093400954486260581}
+  - {fileID: 6583238768163110370}
+  - {fileID: 491565001609461974}
+  - {fileID: 3934764963637564694}
+  - {fileID: 8925975564016564403}
+  - {fileID: 6030540252962988301}
+  - {fileID: 1867717573709019333}
+  - {fileID: 1567139647144846166}
+  - {fileID: 7691499089444903673}
+  - {fileID: 776017652269574402}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 7709963252388840987}
+  m_AABB:
+    m_Center: {x: -62.510193, y: -61.283234, z: -5.4563293}
+    m_Extent: {x: 242.18088, y: 198.0344, z: 239.48267}
+  m_DirtyAABB: 0
+--- !u!1 &6600360934729805119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5558835800760866831}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5558835800760866831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6600360934729805119}
+  m_LocalRotation: {x: 0.13362701, y: -0.12960626, z: 0.9086325, w: -0.37380883}
+  m_LocalPosition: {x: -24.081696, y: 3.1339662, z: 1.2394428}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3565710109458237299}
+  m_Father: {fileID: 7528971498994939315}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 7.7948785, y: 20.053658, z: -133.89546}
+--- !u!1 &6609952005532759683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4957910969502098221}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle04e
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4957910969502098221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609952005532759683}
+  m_LocalRotation: {x: 0.9996478, y: 0.026539829, z: 1.6250959e-18, w: 6.1210776e-17}
+  m_LocalPosition: {x: -18.946415, y: -0.1586167, z: -1.6182104e-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 920427296861504020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 30.135101, y: -171.10326, z: 160.67}
+--- !u!1 &6736192227953343820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 402622806987579194}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan02c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402622806987579194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6736192227953343820}
+  m_LocalRotation: {x: 0, y: -0, z: -0.08912266, w: 0.9960207}
+  m_LocalPosition: {x: 39.97656, y: -0.00021072921, z: 0.00011554865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4804863487898089479}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.226273}
+--- !u!1 &6795863640148318265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6891261108773423509}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger03a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6891261108773423509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795863640148318265}
+  m_LocalRotation: {x: 0.63377064, y: 0.2621928, z: 0.39656276, w: 0.61018664}
+  m_LocalPosition: {x: 14.916782, y: 11.391987, z: 13.12166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2417461113618764438}
+  m_Father: {fileID: 4516554671779147545}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 34.435974, y: 85.88528, z: 98.21544}
+--- !u!1 &6903896460466330452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2009464427882599749}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2009464427882599749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903896460466330452}
+  m_LocalRotation: {x: -0.018237976, y: -0.19634023, z: -0.11922106, w: 0.97309005}
+  m_LocalPosition: {x: -52.93648, y: 35.69447, z: -24.696276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8673883542044156563}
+  m_Father: {fileID: 434584005273154168}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -4.7213645, y: -22.274904, z: 4.8260174}
+--- !u!1 &7044402684560203889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597516944157036453}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Wing01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1597516944157036453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7044402684560203889}
+  m_LocalRotation: {x: 0.46010935, y: -0.69756806, z: -0.11414449, w: 0.5372795}
+  m_LocalPosition: {x: 8.88455, y: 44.41844, z: -19.282593}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8518679160465775637}
+  m_Father: {fileID: 44864224650978450}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -6.0897317, y: -140.33916, z: -25.713804}
+--- !u!1 &7063570086479915078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3035542184938422595}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan03c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3035542184938422595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7063570086479915078}
+  m_LocalRotation: {x: 0, y: 0, z: 0.12791762, w: 0.9917848}
+  m_LocalPosition: {x: -59.522457, y: 1.9539925e-14, z: 4.2632564e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9105657270929482014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 14.69855}
+--- !u!1 &7072557196861864764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7216717908667880501}
+  m_Layer: 0
+  m_Name: Cthulhu_Lower_Jaw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7216717908667880501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072557196861864764}
+  m_LocalRotation: {x: 0, y: 0, z: 0.30461153, w: 0.9524767}
+  m_LocalPosition: {x: -5.1900945, y: -12.757774, z: -4.4270143e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9118100962668841884}
+  m_Father: {fileID: 682262165944728941}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.429243}
+--- !u!1 &7099916213692871712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3588072158115037700}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Hind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3588072158115037700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099916213692871712}
+  m_LocalRotation: {x: 0.95532787, y: 0.26125258, z: -0.06838415, w: -0.12008082}
+  m_LocalPosition: {x: -38.556297, y: 25.551464, z: -1.6593523e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5625988272127854562}
+  m_Father: {fileID: 7090891572056556639}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -12.979006, y: -168.20966, z: 135.29257}
+--- !u!1 &7155976419149282879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647435226187677402}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647435226187677402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7155976419149282879}
+  m_LocalRotation: {x: 0, y: -0, z: -0.0659911, w: 0.9978202}
+  m_LocalPosition: {x: -16.343237, y: 1.6271689e-12, z: 7.376053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7995387171726468655}
+  m_Father: {fileID: 3738056971615919424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.220833}
+--- !u!1 &7168098555961798767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5568179459531403366}
+  - component: {fileID: 4083487100799774224}
+  m_Layer: 0
+  m_Name: Wings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5568179459531403366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168098555961798767}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -47.1349, y: -218.77513, z: -35.75169}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7295081200299179750}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &4083487100799774224
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7168098555961798767}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 35503e9676b1ff949986bad6b9baeefa, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300002, guid: 720ecd3f73dd6f04aaaa1f9c3385b6e6, type: 3}
+  m_Bones:
+  - {fileID: 1597516944157036453}
+  - {fileID: 8518679160465775637}
+  - {fileID: 434584005273154168}
+  - {fileID: 2035370125093464853}
+  - {fileID: 2702253649143032070}
+  - {fileID: 3613766914155972295}
+  - {fileID: 2009464427882599749}
+  - {fileID: 8673883542044156563}
+  - {fileID: 4227385769124933513}
+  - {fileID: 328053429967444516}
+  - {fileID: 9105657270929482014}
+  - {fileID: 3035542184938422595}
+  - {fileID: 8102807291596714910}
+  - {fileID: 5120733910372701923}
+  - {fileID: 6811866681583595867}
+  - {fileID: 2232608738894707324}
+  - {fileID: 3488972212936855125}
+  - {fileID: 6574540441188676966}
+  - {fileID: 3741323651819413399}
+  - {fileID: 4804863487898089479}
+  - {fileID: 402622806987579194}
+  - {fileID: 8289919248775608886}
+  - {fileID: 2270165817875089092}
+  - {fileID: 4595432394418301872}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 8102807291596714910}
+  m_AABB:
+    m_Center: {x: 71.59462, y: -64.807816, z: 43.53192}
+    m_Extent: {x: 151.79628, y: 158.9865, z: 116.500275}
+  m_DirtyAABB: 0
+--- !u!1 &7298612438895685260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4143844993893550632}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle03d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4143844993893550632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7298612438895685260}
+  m_LocalRotation: {x: 0.9944188, y: 0.10550452, z: 6.4602884e-18, w: 6.089059e-17}
+  m_LocalPosition: {x: 24.550274, y: 2.6748588, z: 4.919}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4516350605713526646}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.6038737e-15, y: 180, z: 167.88751}
+--- !u!1 &7357013684481629786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8449529623083721121}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Elbow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8449529623083721121
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357013684481629786}
+  m_LocalRotation: {x: 0.005040213, y: 0.23560368, z: -0.020785503, w: 0.9716139}
+  m_LocalPosition: {x: -54.469242, y: 3.1249027, z: 2.8188193}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5120965468584011036}
+  - {fileID: 7528971498994939315}
+  m_Father: {fileID: 3322411445076885123}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.591758, y: 74.68087, z: -0.17407992}
+--- !u!1 &7463050280190876648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3565710109458237299}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3565710109458237299
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463050280190876648}
+  m_LocalRotation: {x: -0.04137174, y: -0.19311775, z: 0.9324934, w: 0.30240706}
+  m_LocalPosition: {x: 6.369627, y: -9.626304, z: -4.0437307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6659999596254067257}
+  m_Father: {fileID: 5558835800760866831}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 19.581041, y: -11.880053, z: 142.00713}
+--- !u!1 &7534144857722624533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3237036133621203180}
+  m_Layer: 0
+  m_Name: Cthulhu_L_ArmTentacle01d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3237036133621203180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7534144857722624533}
+  m_LocalRotation: {x: -0.05026773, y: 0.81556404, z: 0.44052577, w: 0.37184072}
+  m_LocalPosition: {x: -16.73966, y: -2.1316282e-14, z: 1.9095836e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7159224271565482956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -49.107323, y: 120.813965, z: 22.03622}
+--- !u!1 &7674672627424309472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9118100962668841884}
+  m_Layer: 0
+  m_Name: Cthulhu_Lower_Jaw_Tip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9118100962668841884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7674672627424309472}
+  m_LocalRotation: {x: 0, y: -0, z: -0.30461153, w: 0.9524767}
+  m_LocalPosition: {x: -29.7809, y: -7e-45, z: -7.61613e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7216717908667880501}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.469585}
+--- !u!1 &7761989561223769078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7686830572909571550}
+  m_Layer: 0
+  m_Name: Cthulhu_R_ArmTentacle01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7686830572909571550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7761989561223769078}
+  m_LocalRotation: {x: 0, y: 0, z: 0.080888666, w: 0.9967232}
+  m_LocalPosition: {x: 24.782827, y: 0.0002462575, z: -0.0002714647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 722604712764994667}
+  m_Father: {fileID: 4406946529407706459}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.279296}
+--- !u!1 &7822478277524902342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6030540252962988301}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6030540252962988301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822478277524902342}
+  m_LocalRotation: {x: -0.008473786, y: -0.029732296, z: -0.31286964, w: 0.9492928}
+  m_LocalPosition: {x: 35.595345, y: -4.5646453, z: -0.16395883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1867717573709019333}
+  - {fileID: 7691499089444903673}
+  m_Father: {fileID: 8925975564016564403}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.988154, y: -2.93356, z: -36.431656}
+--- !u!1 &7903477432599622283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4227385769124933513}
+  m_Layer: 0
+  m_Name: Cthulhu_L_WingSpan02c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4227385769124933513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7903477432599622283}
+  m_LocalRotation: {x: 0, y: -0, z: -0.08912266, w: 0.9960207}
+  m_LocalPosition: {x: -39.976837, y: -1.3322676e-14, z: 2.842171e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8673883542044156563}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.226273}
+--- !u!1 &8048646776766544319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4423525921521345464}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4423525921521345464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8048646776766544319}
+  m_LocalRotation: {x: 0.6801295, y: 0.19345249, z: 0.6275099, w: -0.32593143}
+  m_LocalPosition: {x: -15.525638, y: 16.460913, z: 23.515455}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6299277284862554342}
+  m_Father: {fileID: 44864224650978450}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -37.01138, y: 101.31107, z: -171.19353}
+--- !u!1 &8147696529235531646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2902228442585118930}
+  m_Layer: 0
+  m_Name: Cthulhu_R_ArmTentacle01a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2902228442585118930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8147696529235531646}
+  m_LocalRotation: {x: -0.16835229, y: -0.18005727, z: -0.14772959, w: 0.9578167}
+  m_LocalPosition: {x: 51.6683, y: 9.592067, z: 11.780415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4406946529407706459}
+  m_Father: {fileID: 7970967557624607159}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -22.067633, y: -18.573244, z: -13.883469}
+--- !u!1 &8148219557412659606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4804863487898089479}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan02b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4804863487898089479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8148219557412659606}
+  m_LocalRotation: {x: 0, y: 0, z: 0.19524595, w: 0.9807543}
+  m_LocalPosition: {x: 53.613914, y: 0.00015496287, z: -0.00005423594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 402622806987579194}
+  m_Father: {fileID: 3741323651819413399}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 22.518183}
+--- !u!1 &8154046658853485851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5290505413771339322}
+  m_Layer: 0
+  m_Name: Cthulhu_Lower_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5290505413771339322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154046658853485851}
+  m_LocalRotation: {x: 0.020361148, y: -0.004045432, z: -0.18457803, w: 0.98259866}
+  m_LocalPosition: {x: -10.558426, y: -4.440892e-16, z: -1.2767565e-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 804426665487776867}
+  - {fileID: 538902840706647987}
+  m_Father: {fileID: 7709963252388840987}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.2075956, y: -0.8868585, z: -25.602991}
+--- !u!1 &8258616363524468301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8290164664248945658}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FInger02c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8290164664248945658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8258616363524468301}
+  m_LocalRotation: {x: 0.016748786, y: 0.3971729, z: -0.038660467, w: 0.91677624}
+  m_LocalPosition: {x: -21.273561, y: -5.107026e-15, z: 4.2632564e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 712271681797236623}
+  m_Father: {fileID: 4033835796298315064}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 3.5212977, y: 46.745506, z: -3.3072631}
+--- !u!1 &8273358211365521323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4226157378367228801}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FaceTentacle04e
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4226157378367228801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8273358211365521323}
+  m_LocalRotation: {x: 0.9996478, y: 0.026539829, z: 1.625096e-18, w: 6.1210776e-17}
+  m_LocalPosition: {x: 18.94639, y: 0.1586139, z: 0.0000000033423504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5988715500443632727}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.037425e-15, y: 180, z: 176.95839}
+--- !u!1 &8281424422536404662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7098299932547339302}
+  m_Layer: 0
+  m_Name: CthulhuR_R_FaceTentacle01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7098299932547339302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8281424422536404662}
+  m_LocalRotation: {x: 0.977059, y: 0.21296884, z: 1.304058e-17, w: 5.982761e-17}
+  m_LocalPosition: {x: 13.689421, y: 0.000028104083, z: 2.6046}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6100548490759993040}
+  m_Father: {fileID: 3580111378030470983}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.086928785, y: -130.96384, z: 165.88905}
+--- !u!1 &8317042949987718762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567139647144846166}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Toe01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567139647144846166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8317042949987718762}
+  m_LocalRotation: {x: 0.7069544, y: 0.7069544, z: -0.014678958, w: -0.014678958}
+  m_LocalPosition: {x: 19.424414, y: -7.422204, z: 0.8674742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1867717573709019333}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -177.62099, z: 90}
+--- !u!1 &8401633585850235406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7709963252388840987}
+  - component: {fileID: 2995673717751861801}
+  m_Layer: 0
+  m_Name: Cthulhu_Root
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7709963252388840987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8401633585850235406}
+  m_LocalRotation: {x: 0.44226098, y: -0.53258854, z: -0.46101627, w: 0.55517447}
+  m_LocalPosition: {x: 0.00036146573, y: 1.2896706, z: -0.007274381}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children:
+  - {fileID: 5290505413771339322}
+  - {fileID: 2075631298722925515}
+  m_Father: {fileID: 3574184680216246979}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0.000013563368, y: -87.620995, z: -73.16966}
+--- !u!54 &2995673717751861801
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8401633585850235406}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
+--- !u!1 &8430250571829905305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828054661328805795}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Thumb01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &828054661328805795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8430250571829905305}
+  m_LocalRotation: {x: 0.08137716, y: 0.038942, z: -0.006828291, w: 0.99589896}
+  m_LocalPosition: {x: 14.060371, y: 8.5517, z: 1.8045894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5604393287482876188}
+  m_Father: {fileID: 178058085259721979}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 9.358925, y: 4.443998, z: -0.42173368}
+--- !u!1 &8459280511282909159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7159224271565482956}
+  m_Layer: 0
+  m_Name: Cthulhu_L_ArmTentacle01c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7159224271565482956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459280511282909159}
+  m_LocalRotation: {x: 0, y: 0, z: 0.080888666, w: 0.9967232}
+  m_LocalPosition: {x: -24.783337, y: -1.7763568e-15, z: 1.9095836e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3237036133621203180}
+  m_Father: {fileID: 1145266834811064315}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.279296}
+--- !u!1 &8469937905789030967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7090891572056556639}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Knee
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7090891572056556639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8469937905789030967}
+  m_LocalRotation: {x: -0.64647645, y: -0.29119575, z: -0.12121272, w: 0.6946804}
+  m_LocalPosition: {x: -50.4296, y: -2.971525e-14, z: 30.327444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3588072158115037700}
+  m_Father: {fileID: 8037710014435077829}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -74.99947, y: -100.59603, z: 54.845196}
+--- !u!1 &8628695313627962914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539406552084565112}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle02a
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539406552084565112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8628695313627962914}
+  m_LocalRotation: {x: 0.9824481, y: 0.186536, z: -1.1422036e-17, w: -6.01576e-17}
+  m_LocalPosition: {x: -6.7700996, y: -12.858685, z: -1.9298884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7432799007070584000}
+  m_Father: {fileID: 3038542684520819652}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -6.284202e-15, y: -180, z: 158.4986}
+--- !u!1 &8748814663234468506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 491565001609461974}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Hip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491565001609461974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8748814663234468506}
+  m_LocalRotation: {x: -0.2136426, y: 0.77187353, z: -0.59747934, w: -0.03983268}
+  m_LocalPosition: {x: 3.0650048, y: 1.4177152, z: 17.156157}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3934764963637564694}
+  m_Father: {fileID: 2075631298722925515}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 61.442554, y: 131.45503, z: -73.98805}
+--- !u!1 &8767839736499734006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8623270124739673948}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle03d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8623270124739673948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767839736499734006}
+  m_LocalRotation: {x: 0.9944188, y: 0.10550452, z: 6.4602884e-18, w: 6.089059e-17}
+  m_LocalPosition: {x: -24.550615, y: -2.6749327, z: -4.919049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4463347878417646447}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.6038737e-15, y: 180, z: 167.88751}
+--- !u!1 &8787864412541471290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8037710014435077829}
+  m_Layer: 0
+  m_Name: Cthulhu_L_Hip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8037710014435077829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787864412541471290}
+  m_LocalRotation: {x: -0.83810693, y: -0.094166815, z: -0.14409707, w: 0.51763445}
+  m_LocalPosition: {x: 3.0652769, y: 1.4178439, z: -17.15613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7090891572056556639}
+  m_Father: {fileID: 2075631298722925515}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -65.2774, y: -3.9990234, z: 158.00966}
+--- !u!1 &8869952465658688079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145266834811064315}
+  m_Layer: 0
+  m_Name: Cthulhu_L_ArmTentacle01b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1145266834811064315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869952465658688079}
+  m_LocalRotation: {x: -0.11607286, y: 0.8088255, z: 0.46915993, w: -0.33498865}
+  m_LocalPosition: {x: 15.650464, y: 7.164712, z: -15.819791}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7159224271565482956}
+  m_Father: {fileID: 5120965468584011036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -42.935204, y: -117.26078, z: -43.298645}
+--- !u!1 &8936984996082764926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6299277284862554342}
+  m_Layer: 0
+  m_Name: Cthulhu_R_Shoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6299277284862554342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936984996082764926}
+  m_LocalRotation: {x: 0, y: 0, z: 0.29083815, w: 0.95677227}
+  m_LocalPosition: {x: 21.169382, y: -0.00084391376, z: -2.842171e-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7970967557624607159}
+  m_Father: {fileID: 4423525921521345464}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 6.377845, y: -10.386887, z: 45.797985}
+--- !u!1 &8946339244709325550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2270165817875089092}
+  m_Layer: 0
+  m_Name: Cthulhu_R_WingSpan03b
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2270165817875089092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8946339244709325550}
+  m_LocalRotation: {x: 0.00999495, y: -0.037818514, z: 0.17886251, w: 0.9830962}
+  m_LocalPosition: {x: 56.544613, y: -0.00012584389, z: 0.00002895214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4595432394418301872}
+  m_Father: {fileID: 8289919248775608886}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 1.9014586, y: -4.0612025, z: 20.555553}
+--- !u!1 &9136642354558332296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7489525825412886785}
+  m_Layer: 0
+  m_Name: Cthulhu_Tail06
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7489525825412886785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9136642354558332296}
+  m_LocalRotation: {x: 0, y: -0, z: -0.0925682, w: 0.9957064}
+  m_LocalPosition: {x: -38.76888, y: 4.440892e-15, z: 1.0365628e-11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 680724260976546381}
+  m_Father: {fileID: 5764892002350930145}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -7.2328286, y: -8.830027, z: -19.568235}
+--- !u!1 &9145209579300331647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920427296861504020}
+  m_Layer: 0
+  m_Name: Cthulhu_L_FaceTentacle04d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920427296861504020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9145209579300331647}
+  m_LocalRotation: {x: 0.9978432, y: 0.06564259, z: -4.0194493e-18, w: -6.110027e-17}
+  m_LocalPosition: {x: -25.854082, y: -0.14697081, z: 4.3019433}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4957910969502098221}
+  m_Father: {fileID: 3706945631635606990}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 2.024606, y: 168.7928, z: 168.77339}
+--- !u!1 &9193226382632756435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8669407294795455367}
+  m_Layer: 0
+  m_Name: Cthulhu_R_FInger01d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8669407294795455367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9193226382632756435}
+  m_LocalRotation: {x: 0.011216679, y: -0.24351694, z: 0.92030555, w: -0.30595973}
+  m_LocalPosition: {x: 11.906309, y: 0.000525385, z: -0.0006980165}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2857109398153286204}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 26.190447, y: 10.898499, z: -140.6783}

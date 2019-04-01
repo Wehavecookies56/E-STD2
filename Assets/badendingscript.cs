@@ -10,12 +10,7 @@ public class badendingscript : MonoBehaviour
     public GameObject nodes;
     public GameObject door;
     public GameObject door2;
-    public Color fogColour;
-    public Color lightColour;
-    public GameObject dirLight;
-    public Transform lightPos;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +18,10 @@ public class badendingscript : MonoBehaviour
         //doors open
         //chaange skybox
         RenderSettings.skybox = redsky;
-        RenderSettings.fogColor = fogColour;
-        dirLight.transform.rotation = lightPos.rotation;
-        dirLight.GetComponent<Light>().color = lightColour;
         door.SetActive(false);
         door2.SetActive(false);
         StartCoroutine(waitThenSpek());
-        StartCoroutine(restartGame());
+        StartCoroutine(restartGame()); 
         
     }
 

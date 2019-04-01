@@ -17,7 +17,7 @@ public class soundManagerScript : MonoBehaviour
     public GameObject[] MeetingSounds;
 
     //demon sounds
-    public enum demonSounds { CONTRACT, BREAKME, IAMTHEFLOOR, INSIST, HA, THANKYOU, WHATINEED, RATS };
+    public enum demonSounds { CONTRACT, BREAKME, IAMTHEFLOOR, INSIST, HA, THANKYOU, WHATINEED, RATS, CTHULHUROAR };
     public GameObject[] demonAudio;
 
     //boy and priest
