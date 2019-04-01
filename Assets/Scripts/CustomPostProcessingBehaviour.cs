@@ -12,11 +12,13 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
 
     private PostProcessProfile ppp;
     private DepthOfField dof;
+    private Vignette vig;
 
     void Start()
     {
         ppp = GetComponent<PostProcessVolume>().profile;
         ppp.TryGetSettings(out dof);
+        ppp.TryGetSettings(out vig);
     }
     
     void Update()
@@ -36,5 +38,11 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
         else
             //..else, disable DOF effect to allow looking into the distance
             dof.active = false;
+    }
+
+    //Starting value = 0.325, range 0 - 1
+    internal void SetVignette(float _intensity)
+    {
+        vig.intensity.value =  _intensity;
     }
 }
