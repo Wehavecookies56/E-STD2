@@ -20,6 +20,10 @@ public class inventorySelectScript : MonoBehaviour
     public GameObject axePrefab;
     public GameObject featherUi;
 
+    private void OnDisable()
+    {
+        Cursor.visible = false;
+    }
 
     private void Update()
     {
@@ -34,12 +38,14 @@ public class inventorySelectScript : MonoBehaviour
                 {
                     //Not empty, controller temp[i] is connected
                     Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
                 }
                 else
                 {
                     //If it is empty, controller i is disconnected
                     //where i indicates the controller number
                     //Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
                     counter = -1;
                 }
             }
