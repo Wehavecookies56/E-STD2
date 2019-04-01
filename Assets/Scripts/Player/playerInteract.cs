@@ -66,9 +66,11 @@ public class playerInteract : MonoBehaviour {
             else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Black Box")) {
                 GameObject.Find("Basement Open").GetComponent<basementOpenEvent>().doEvent();
             }
-            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("armour"))
+            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Armour"))
             {
                 objectives.CompleteObjective(Objectives.ObjectivesEnum.InspectPiano);
+                if(objectives.IsObjectiveActive(Objectives.ObjectivesEnum.FindMirrorItem))
+                    objectives.CompleteObjective(Objectives.ObjectivesEnum.FindMirrorItem);
             }
             else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Key"))
             {
