@@ -69,6 +69,18 @@ public class Objectives : MonoBehaviour
         return false;
     }
 
+    public bool IsObjectiveActive(ObjectivesEnum o)
+    {
+        //check if objective on complete list
+        foreach (ObjectivesEnum oi in activeObjectives)
+        {
+            //return true if complete
+            if (o == oi) { return true; }
+        }
+        //return false if not complete
+        return false;
+    }
+
     public void ActivateObjective(ObjectivesEnum o)
     {
         //check if objective already added
