@@ -54,7 +54,6 @@ public class AIController : MonoBehaviour
             RaycastHit hit;
             Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, /*max dist to please overload*/100000f, playerLOSLayer, QueryTriggerInteraction.Ignore);
             //check if able to follow player directly or need to rely on pathfinding
-            Debug.Log(hit.collider.gameObject.name);
             if(hit.collider.gameObject == player)
             {
                 mover.WalkTowardsLocation(player.transform.position);
