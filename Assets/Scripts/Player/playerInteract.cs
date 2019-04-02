@@ -100,7 +100,8 @@ public class playerInteract : MonoBehaviour {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Morpheus")) {
                 npcTalk t = item.GetComponent<npcTalk>();
                 if (t.currentLine + 1 == t.lineCount) {
-                    item.GetComponent<AIController>().BeginPatrolling();
+                    //TODO item.GetComponent<AIController>().BeginPatrolling();
+                    item.GetComponent<AIController>().BeginFollowingPlayer(); //TODO testing following
                 }
                 t.playDialog((soundManagerScript.lawyerAndPriest)t.currentLine);
             }
