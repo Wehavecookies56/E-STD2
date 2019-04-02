@@ -120,7 +120,8 @@ public class playerInteract : MonoBehaviour
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Morpheus"))
             {
                 npcTalk t = item.GetComponent<npcTalk>();
-                if (t.currentLine + 1 == t.lineCount) {
+                if (t.currentLine + 1 == t.lineCount)
+                {
                     //TODO item.GetComponent<AIController>().BeginPatrolling();
                     item.GetComponent<AIController>().BeginFollowingPlayer(); //TODO testing following
                 }
@@ -157,106 +158,107 @@ public class playerInteract : MonoBehaviour
                 }
                 t.playDialog((soundManagerScript.boyAndPriest)t.currentLine);
             }
+        }
 
-            if (item.GetComponent<objectScript>().data.Type == ObjectType.TOUCH)
+        if (item.GetComponent<objectScript>().data.Type == ObjectType.TOUCH)
+        {
+
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Vase") || item.GetComponent<objectScript>().data.name.Equals("Plate"))
             {
-
-                if (item.GetComponent<objectScript>().data.ObjectName.Equals("Vase") || item.GetComponent<objectScript>().data.name.Equals("Plate"))
-                {
-                    item.GetComponent<breakVase>().Break();
-                }
-
-                if (item.GetComponent<objectScript>().data.ObjectName.Equals("mirror"))
-                {
-                    item.GetComponent<mirrorOnClick>().OnClick();
-                }
-
-                if (item.GetComponent<objectScript>().data.ObjectName.Equals("Skull"))
-                {
-                    playerData.INSTANCE.Sanity--;
-                    item.GetComponent<BoxCollider>().enabled = false;
-                }
-
-                if (item.GetComponent<objectScript>().data.ObjectName.Equals("Hanging man"))
-                {
-                    item.SetActive(false);
-                    playerData.INSTANCE.Sanity -= 2;
-                    playerData.INSTANCE.Health -= 1;
-                    GameObject.FindGameObjectWithTag("dust").transform.GetChild(0).gameObject.SetActive(true);
-                    //add coughthing sound 
-                }
-
-
+                item.GetComponent<breakVase>().Break();
             }
 
-            if (item.GetComponent<objectScript>().data.Type == ObjectType.BURN)
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("mirror"))
             {
-                if (item.GetComponent<tooltipOverride>().display)
-                {
-                    inv.GetComponent<inventorySelectScript>().dropBook();
-                    item.GetComponent<BookBurnTooltipScript>().goodEnding();
-                }
+                item.GetComponent<mirrorOnClick>().OnClick();
             }
 
-            if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Skull"))
             {
-                if (item.GetComponent<objectScript>().data.ObjectName.Equals("Curtains"))
-                {
-                    item.GetComponent<ShutterMovement>().ToggleState();
-                }
-                if (item.GetComponent<objectScript>().data.ObjectName.Equals("Door") || (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest")))
-                {
+                playerData.INSTANCE.Sanity--;
+                item.GetComponent<BoxCollider>().enabled = false;
+            }
 
-                    if (item.GetComponent<DoorRotate>().needskey)
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Hanging man"))
+            {
+                item.SetActive(false);
+                playerData.INSTANCE.Sanity -= 2;
+                playerData.INSTANCE.Health -= 1;
+                GameObject.FindGameObjectWithTag("dust").transform.GetChild(0).gameObject.SetActive(true);
+                //add coughthing sound 
+            }
+
+
+        }
+
+        if (item.GetComponent<objectScript>().data.Type == ObjectType.BURN)
+        {
+            if (item.GetComponent<tooltipOverride>().display)
+            {
+                inv.GetComponent<inventorySelectScript>().dropBook();
+                item.GetComponent<BookBurnTooltipScript>().goodEnding();
+            }
+        }
+
+        if (item.GetComponent<objectScript>().data.Type == ObjectType.OPEN)
+        {
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Curtains"))
+            {
+                item.GetComponent<ShutterMovement>().ToggleState();
+            }
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Door") || (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest")))
+            {
+
+                if (item.GetComponent<DoorRotate>().needskey)
+                {
+                    if (inv.GetComponent<inventorySelectScript>().isThereAKey() == true)
                     {
-                        if (inv.GetComponent<inventorySelectScript>().isThereAKey() == true)
-                        {
-                            item.GetComponent<DoorRotate>().opening = true;
-                            soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
-                            item.layer = 1 << LayerMask.NameToLayer("Default");
-                            item.GetComponent<BoxCollider>().isTrigger = true;
-                            inv.GetComponent<inventorySelectScript>().deleteKey();
-                        }
-                        else { objectives.ActivateObjective(Objectives.ObjectivesEnum.FindKey); }
+                        item.GetComponent<DoorRotate>().opening = true;
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
+                        item.layer = 1 << LayerMask.NameToLayer("Default");
+                        item.GetComponent<BoxCollider>().isTrigger = true;
+                        inv.GetComponent<inventorySelectScript>().deleteKey();
                     }
-                    else if (item.GetComponent<DoorRotate>().needsAxe)
+                    else { objectives.ActivateObjective(Objectives.ObjectivesEnum.FindKey); }
+                }
+                else if (item.GetComponent<DoorRotate>().needsAxe)
+                {
+                    if (inv.GetComponent<inventorySelectScript>().isThereAxe())
                     {
-                        if (inv.GetComponent<inventorySelectScript>().isThereAxe())
-                        {
-                            GameObject.FindGameObjectWithTag("CutsceneCamera").GetComponent<cutsceneHandler>().StartCutscene(GameObject.FindGameObjectWithTag("jhonnysDad"));
-                            soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.JHONNY, GameObject.FindGameObjectWithTag("Player").transform);
-                            soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.AXEIMPACT, item.transform);
-                            doorParts.SetActive(true);
-                            GameObject.FindGameObjectWithTag("jhonnyDoor").SetActive(false);
-                            objectives.CompleteObjective(Objectives.ObjectivesEnum.DestroyDoor);
-                        }
-                        else { objectives.ActivateObjective(Objectives.ObjectivesEnum.DestroyDoor); }
+                        GameObject.FindGameObjectWithTag("CutsceneCamera").GetComponent<cutsceneHandler>().StartCutscene(GameObject.FindGameObjectWithTag("jhonnysDad"));
+                        soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.JHONNY, GameObject.FindGameObjectWithTag("Player").transform);
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.AXEIMPACT, item.transform);
+                        doorParts.SetActive(true);
+                        GameObject.FindGameObjectWithTag("jhonnyDoor").SetActive(false);
+                        objectives.CompleteObjective(Objectives.ObjectivesEnum.DestroyDoor);
+                    }
+                    else { objectives.ActivateObjective(Objectives.ObjectivesEnum.DestroyDoor); }
+                }
+                else
+                {
+                    item.GetComponent<DoorRotate>().opening = true;
+                    if (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest"))
+                    {
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.CHESTOPEN, item.transform);
+                        objectives.ActivateObjective(Objectives.ObjectivesEnum.FlipCoin);
                     }
                     else
                     {
-                        item.GetComponent<DoorRotate>().opening = true;
-                        if (item.GetComponent<objectScript>().data.ObjectName.Equals("Chest"))
-                        {
-                            soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.CHESTOPEN, item.transform);
-                            objectives.ActivateObjective(Objectives.ObjectivesEnum.FlipCoin);
-                        }
-                        else
-                        {
-                            soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
-                        }
-
-                        item.layer = 1 << LayerMask.NameToLayer("Default");
-                        item.GetComponent<BoxCollider>().isTrigger = true;
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
                     }
-                }
-                else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Window"))
-                {
-                    item.GetComponent<windowOpenClose>().opening = true;
-                    soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.WINDOW, item.transform);
+
                     item.layer = 1 << LayerMask.NameToLayer("Default");
+                    item.GetComponent<BoxCollider>().isTrigger = true;
                 }
             }
+            else if (item.GetComponent<objectScript>().data.ObjectName.Equals("Window"))
+            {
+                item.GetComponent<windowOpenClose>().opening = true;
+                soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.WINDOW, item.transform);
+                item.layer = 1 << LayerMask.NameToLayer("Default");
+            }
         }
+        
 
     }
 }
