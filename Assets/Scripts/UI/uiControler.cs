@@ -28,9 +28,9 @@ public class uiControler : MonoBehaviour
 
     public GameObject playerCam;
 
-    private float defultVig = 0.325f;
-    private float maxSanity = 10;
-    private float effectMulti = 0.25f;
+    private const float defultVig = 0.325f;
+    private const float maxSanity = 10;
+    private const float effectMulti = 0.25f;
 
     public GameObject inputsMenu;
 
@@ -66,7 +66,9 @@ public class uiControler : MonoBehaviour
         sanityDrain.GetComponent<Image>().color = sanityColour;
         */
        
-        playerCam.GetComponent<CustomPostProcessingBehaviour>().SetVignette( defultVig + ((1 - (playerData.INSTANCE.Sanity / maxSanity)) * effectMulti));
+        //check if playercam is active
+        if (/*playerCam.GetComponent<CustomPostProcessingBehaviour>().hasBeenInitialised && */playerCam.activeSelf)
+            playerCam.GetComponent<CustomPostProcessingBehaviour>().SetVignette( defultVig + ((1 - (playerData.INSTANCE.Sanity / maxSanity)) * effectMulti));
 
     }
 
