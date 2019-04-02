@@ -26,6 +26,14 @@ public class uiControler : MonoBehaviour
     public GameObject contolerMenu;
     public GameObject inventory;
 
+    public GameObject playerCam;
+
+    private float defultVig = 0.325f;
+    private float maxSanity = 10;
+    private float effectMulti = 0.25f;
+
+    public GameObject inputsMenu;
+
     private void Start()
     {
         hurtPannelColour = getHurtPannel.GetComponent<Image>().color;
@@ -51,12 +59,14 @@ public class uiControler : MonoBehaviour
         //crazy ui
 
         /*
-        sanityColour.a = 0.6f - (playerData.INSTANCE.Sanity / 10);
+        sanityColour.a = 0.325f - (playerData.INSTANCE.Sanity / 10);
         sanityPannel.GetComponent<Image>().color = sanityColour;
         sanityColour = sanityDrain.GetComponent<Image>().color;
         sanityColour.a = 1 - (playerData.INSTANCE.Sanity / 10);
         sanityDrain.GetComponent<Image>().color = sanityColour;
         */
+       
+        playerCam.GetComponent<CustomPostProcessingBehaviour>().SetVignette( defultVig + ((1 - (playerData.INSTANCE.Sanity / maxSanity)) * effectMulti));
 
     }
 
@@ -120,7 +130,38 @@ public class uiControler : MonoBehaviour
         {
             //toggles image of the minimap state
             minimap.transform.GetChild(0).GetComponent<RawImage>().enabled = !minimap.transform.GetChild(0).GetComponent<RawImage>().enabled;
-        }       
+        }    
+        
+        if(Input.GetButtonDown("selectButton") || Input.GetKeyDown(KeyCode.C))
+        {
+            if (contolerMenu.activeSelf == false)
+            {
+                if (menu.activeSelf == false)
+                {
+                    if(inputsMenu.activeSelf == false)
+                    {
+                        inputsMenu.SetActive(true);
+                        Time.timeScale = 0;
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.SCROLLOPEN, gameObject.transform);
+                    }
+                    else
+                    {
+                        inputsMenu.SetActive(false);
+                        Time.timeScale = 1;
+                    }
+                }
+            }
+
+        }
+
+        if(Input.GetButtonDown("Fire3"))
+        {
+            Time.timeScale = 1;
+            if (contolerMenu.activeSelf == true) contolerMenu.SetActive(false);               
+            if (inputsMenu.activeSelf == true) inputsMenu.SetActive(false);              
+            if (menu.activeSelf == true) menu.SetActive(false);
+            if (inventory.activeSelf == true) inventory.SetActive(false);
+        }
     }
 
 }
