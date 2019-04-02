@@ -28,9 +28,9 @@ public class uiControler : MonoBehaviour
 
     public GameObject playerCam;
 
-    private float defultVig = 0.325f;
-    private float maxSanity = 10;
-    private float effectMulti = 0.25f;
+    private const float defultVig = 0.325f;
+    private const float maxSanity = 10;
+    private const float effectMulti = 0.25f;
 
     public GameObject inputsMenu;
 
@@ -66,16 +66,25 @@ public class uiControler : MonoBehaviour
         sanityDrain.GetComponent<Image>().color = sanityColour;
         */
        
-        playerCam.GetComponent<CustomPostProcessingBehaviour>().SetVignette( defultVig + ((1 - (playerData.INSTANCE.Sanity / maxSanity)) * effectMulti));
+        //check if playercam is active
+        if (/*playerCam.GetComponent<CustomPostProcessingBehaviour>().hasBeenInitialised && */playerCam.activeSelf)
+            playerCam.GetComponent<CustomPostProcessingBehaviour>().SetVignette( defultVig + ((1 - (playerData.INSTANCE.Sanity / maxSanity)) * effectMulti));
 
     }
 
 
     private void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel" /*escape key*/))
         {
-            if(menu.activeSelf == false)
+            //if in cutscene, skip cutscene and ignore input
+            if (GameObject.Find("CutsceneCamera").GetComponent<cutsceneHandler>().getIsInCutsceneMode())
+            {
+                GameObject.Find("CutsceneCamera").GetComponent<cutsceneHandler>().SkipCutscene();
+                return;
+            }
+
+            if (menu.activeSelf == false)
             {
                 menu.SetActive(true);
                 Time.timeScale = 0;

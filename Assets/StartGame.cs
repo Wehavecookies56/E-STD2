@@ -34,6 +34,7 @@ public class StartGame : MonoBehaviour
         {
             if (Input.anyKeyDown == true)
             {
+                player.transform.parent.GetComponent<PlayerMovement>().enabled = true;
                 door1.GetComponent<Animator>().enabled = true;
                 door2.GetComponent<Animator>().enabled = true;
                 text.GetComponent<Animator>().SetTrigger("go");
@@ -47,13 +48,15 @@ public class StartGame : MonoBehaviour
                 cutCam.GetComponent<cutsceneHandler>().StartCutscene(startPos);
             }
         }
-       
 
-        if(go)
+
+        if (go)
         {
+            if (!cutCam.GetComponent<cutsceneHandler>().getIsInCutsceneMode())
+                timer = 0;
+
             if (timer <= 0)
             {
-                player.transform.parent.GetComponent<PlayerMovement>().enabled = true;
                 go = false;
                 dot.SetActive(true);
                 minimap.SetActive(true);

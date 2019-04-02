@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
+    public GameObject player;
+    public float playerFollowPadding;
+    public LayerMask playerLOSLayer;
+
     private const float mansionMinX = -27.5f;
     private const float mansionMaxX = 41f;
     private const float mansionMinY = 0.75f;
@@ -13,7 +17,10 @@ public class AIController : MonoBehaviour
     private const float mansionMaxZ = -76f;
 
     //private data
-    private bool isPatrolling;
+    private bool isFollowingPlayer = false;
+    private bool isPatrolling = false;
+    private bool timeToCheckPathAgain = true;
+    private float minWaitBetweenPathfindingForFollowingTimer = 2.0f;
 
     //references
     private AIMovement mover;
@@ -35,8 +42,37 @@ public class AIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //of set to follow player
+        if (isFollowingPlayer)
+        {
+            //if close enough to the player, then don't try to follow
+            if(Vector3.Distance(transform.position, player.transform.position) < playerFollowPadding) { anim.SetFloat("movespeed", 0); return; }
+
+            //update animation
+            anim.SetFloat("movespeed", mover.speed * Time.deltaTime);
+
+            RaycastHit hit;
+            Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, /*max dist to please overload*/100000f, playerLOSLayer, QueryTriggerInteraction.Ignore);
+            //check if able to follow player directly or need to rely on pathfinding
+            if(hit.collider.gameObject == player)
+            {
+                mover.WalkTowardsLocation(player.transform.position);
+            }
+            else
+            {
+                //if allowed to run pathfinding again, rerun the algorithm
+                if (timeToCheckPathAgain)
+                {
+                    mover.GoToLocation(player.transform.position, playerLOSLayer);
+                    timeToCheckPathAgain = false;
+                    StartCoroutine(FollowPathfinderWaitTimer());
+                }
+                //walk towards whatever path is currently present
+                mover.WalkTowardsPath();
+            }
+        }
         //if there is a path to go to
-        if (mover.getMovementPath().Count > 0)
+        else if (mover.getMovementPath().Count > 0)
         {
             //walk along current path
             mover.WalkTowardsPath();
@@ -58,11 +94,30 @@ public class AIController : MonoBehaviour
     public void BeginPatrolling()
     {
         isPatrolling = true;
+        mover.ClearMovementPath();
     }
 
     public void StopPatrolling()
     {
         isPatrolling = false;
         mover.ClearMovementPath();
+    }
+
+    public void BeginFollowingPlayer()
+    {
+        isFollowingPlayer = true;
+        mover.ClearMovementPath();
+    }
+
+    public void StopFollowingPlayer()
+    {
+        isFollowingPlayer = false;
+        mover.ClearMovementPath();
+    }
+
+    private IEnumerator FollowPathfinderWaitTimer()
+    {
+        yield return new WaitForSeconds(minWaitBetweenPathfindingForFollowingTimer);
+        timeToCheckPathAgain = true;
     }
 }

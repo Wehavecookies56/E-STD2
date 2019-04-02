@@ -10,6 +10,8 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
     public float maxFocusDist;
     public LayerMask autoFocusLayerMask;
 
+    internal bool hasBeenInitialised = false;
+
     private PostProcessProfile ppp;
     private DepthOfField dof;
     private Vignette vig;
@@ -19,6 +21,7 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
         ppp = GetComponent<PostProcessVolume>().profile;
         ppp.TryGetSettings(out dof);
         ppp.TryGetSettings(out vig);
+        hasBeenInitialised = true;
     }
     
     void Update()
