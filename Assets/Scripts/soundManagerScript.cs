@@ -97,6 +97,20 @@ public class soundManagerScript : MonoBehaviour
         "(Rat noises)"
     };
 
+    List<string> basementMeetingSubtitles = new List<string> {
+        "Old Man: We need to kill the boy!",
+        "Morpheus: No we should destroy the book!"
+    };
+
+    List<string> chantSubtitles = new List<string> {
+        "Boy: Beneath the hunter's moon, they are unleashing all but soon",
+        "Boy: Bright blue light fire up the room, the legions are ready to bring your doom",
+        "Boy: The house at R'lyeh dead Cthulhu waits dreaming...",
+        "Boy: ...That's not dead, which can eternal lie, and with strange eons, even death may die!",
+        "Boy: Elder one, awaken from your ancient slumber, and answer my calling...",
+        "Boy: Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!!"
+    };
+
     private void Awake()
     {
         if (audioPlayer == null)
@@ -185,8 +199,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(MeetingSounds[(int)sound]);
         instance.transform.position = transform.position;
-       // subtitleObject.GetComponent<Text>().text = priestSubtitles[(int)sound];
-       // subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
+        subtitleObject.GetComponent<Text>().text = basementMeetingSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
@@ -194,8 +208,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(Chantaudio[(int)sound]);
         instance.transform.position = transform.position;
-        // subtitleObject.GetComponent<Text>().text = priestSubtitles[(int)sound];
-        // subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
+        subtitleObject.GetComponent<Text>().text = chantSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
