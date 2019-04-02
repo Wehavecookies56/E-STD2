@@ -121,7 +121,15 @@ public class playerInteract : MonoBehaviour {
                 }
                 t.playDialog((soundManagerScript.boyAndPriest)t.currentLine);
             }
-        }
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Devil")) {
+                npcTalk t = item.GetComponent<npcTalk>();
+                if (t.currentLine + 1 == t.lineCount)
+                {
+
+
+                }
+                t.playDialog((soundManagerScript.boyAndPriest)t.currentLine);
+            }
 
         if (item.GetComponent<objectScript>().data.Type == ObjectType.TOUCH) {
 
