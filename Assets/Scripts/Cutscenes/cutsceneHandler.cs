@@ -8,6 +8,7 @@ public class cutsceneHandler : MonoBehaviour
 {
     //camera attached to player object, needs to be disabled as the cutscene starts and re-enabled at the end
     public Camera playerCamera;
+    private PlayerMovement playerInput;
     //camera used for the cutscene, object that will be moved
     public Camera cutsceneCamera;
     //used to disable and enable the minimap during cutscenes
@@ -20,6 +21,12 @@ public class cutsceneHandler : MonoBehaviour
     private List<cutscenePoint> currentPoints = new List<cutscenePoint>();
     private float currentPointTime = 0f;
 
+    internal bool getIsInCutsceneMode() { return isInCutsceneMode; }
+
+    private void Start()
+    {
+        playerInput = playerCamera.GetComponentInParent<PlayerMovement>();
+    }
 
     private void Update()
     {
@@ -52,6 +59,7 @@ public class cutsceneHandler : MonoBehaviour
         {
             //disable cutscene mode
             ToggleMode();
+            return;
         }
 
         //add time to current point timer
@@ -107,8 +115,14 @@ public class cutsceneHandler : MonoBehaviour
     {
         isInCutsceneMode = !isInCutsceneMode;
         playerCamera.enabled = !playerCamera.enabled;
+        playerInput.enabled = !playerInput.enabled;
         cutsceneCamera.enabled = !cutsceneCamera.enabled;
         playerCamera.GetComponent<AudioListener>().enabled = !playerCamera.GetComponent<AudioListener>().enabled;
         cutsceneCamera.GetComponent<AudioListener>().enabled = !cutsceneCamera.GetComponent<AudioListener>().enabled;
+    }
+
+    internal void SkipCutscene()
+    {
+        currentPoints.Clear();
     }
 }

@@ -75,9 +75,16 @@ public class uiControler : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel" /*escape key*/))
         {
-            if(menu.activeSelf == false)
+            //if in cutscene, skip cutscene and ignore input
+            if (GameObject.Find("CutsceneCamera").GetComponent<cutsceneHandler>().getIsInCutsceneMode())
+            {
+                GameObject.Find("CutsceneCamera").GetComponent<cutsceneHandler>().SkipCutscene();
+                return;
+            }
+
+            if (menu.activeSelf == false)
             {
                 menu.SetActive(true);
                 Time.timeScale = 0;
