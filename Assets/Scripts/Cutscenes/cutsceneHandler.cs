@@ -14,6 +14,8 @@ public class cutsceneHandler : MonoBehaviour
     //used to disable and enable the minimap during cutscenes
     public RawImage minimap;
     public float colourChangeSpeed;
+    //flashlight handling
+    public GameObject flashlight;
     //tracks wether to run cutscene code or not in Update()
     private bool isInCutsceneMode = false;
 
@@ -119,6 +121,31 @@ public class cutsceneHandler : MonoBehaviour
         cutsceneCamera.enabled = !cutsceneCamera.enabled;
         playerCamera.GetComponent<AudioListener>().enabled = !playerCamera.GetComponent<AudioListener>().enabled;
         cutsceneCamera.GetComponent<AudioListener>().enabled = !cutsceneCamera.GetComponent<AudioListener>().enabled;
+        HandleFlashlight();
+    }
+
+    private void HandleFlashlight()
+    {
+        Flashlight test;
+        if (flashlight.GetComponent<Flashlight>().parent != null)
+            test = flashlight.GetComponent<Flashlight>();
+
+        if (flashlight.GetComponent<Flashlight>().parent == null)
+            return;
+
+        //if flashlight is following player or cutscene cam
+        //                                                                              |flashlight|          |script| |object to follow|      |player camera|   |GameObject|
+        if (flashlight.GetComponent<Flashlight>().parent == cutsceneCamera.gameObject || flashlight.GetComponent<Flashlight>().parent.gameObject.transform.parent.gameObject == playerCamera.gameObject)
+        {
+            if (isInCutsceneMode) //if in cutscene mode..
+            {
+                flashlight.GetComponent<Flashlight>().parent = cutsceneCamera.gameObject; //..move light to follow cutcam
+            }
+            else
+            {
+                flashlight.GetComponent<Flashlight>().parent = playerCamera.gameObject; //..else make it follow player
+            }
+        }
     }
 
     internal void SkipCutscene()

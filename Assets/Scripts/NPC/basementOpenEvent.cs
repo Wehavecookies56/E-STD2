@@ -16,6 +16,8 @@ public class basementOpenEvent : MonoBehaviour {
     public GameObject boyNewPos;
     public GameObject lawyerNewPos;
 
+    public GameObject cutsceneCollider;
+
     Animator oldManAnim;
     Animator boyAnim;
     Animator lawyerAnim;
@@ -45,5 +47,6 @@ public class basementOpenEvent : MonoBehaviour {
         oldManAnim.SetFloat("movespeed", 0);
         boyAnim.SetFloat("movespeed", 0);
         lawyerAnim.SetFloat("movespeed", 0);
+        cutsceneCollider.SetActive(true);
     }
 }

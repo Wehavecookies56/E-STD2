@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     float xMouse = 0f;
     float yMouse = 0f;
 
+    internal void SetPitch(float _pitch) { pitch = _pitch; }
+
     // Start is called before the first frame update
     void Start()
     {
