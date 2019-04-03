@@ -209,96 +209,13 @@ public class inventorySelectScript : MonoBehaviour
         }
         return false;
     }
-    /*
-    public bool isThereABook() {
-        for (int i = 0; i < slots.Length; i++) {
-            if (slots[i].transform.childCount != 0) {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("book")) {
-                    return true;
-                }
-            }
-
-        }
-
-        return false;
-    }
-
-    public bool isThereAKey()
+    public void deleteItem(items chosenItem)
     {
         for (int i = 0; i < slots.Length; i++)
         {
             if (slots[i].transform.childCount != 0)
             {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("key"))
-                {
-                    return true;
-                }
-            }
-            
-        }
-
-        return false;
-    }
-
-    public bool isThereArmour()
-    {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount != 0)
-            {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("armour"))
-                {
-                    return true;
-                }
-            }
-
-        }
-
-        return false;
-    }
-
-    public bool isThereAxe()
-    {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount != 0)
-            {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("axe"))
-                {
-                    return true;
-                }
-            }
-
-        }
-
-        return false;
-    }
-
-    public bool isThereFeather()
-    {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount != 0)
-            {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("feather"))
-                {
-                    return true;
-                }
-            }
-
-        }
-
-        return false;
-    }
-    */
-
-    public void deleteKey()
-    {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount != 0)
-            {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("key"))
+                if (slots[i].transform.GetChild(0).gameObject.CompareTag(itemNames[(int)chosenItem]))
                 {
                     Destroy(slots[i].transform.GetChild(0).gameObject);
 
@@ -312,60 +229,6 @@ public class inventorySelectScript : MonoBehaviour
                         slots[ii].GetComponent<Image>().sprite = notPressed;
                     }
 
-                    break;
-                }
-            }
-
-        }
-    }
-
-    public void deletefeather()
-    {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount != 0)
-            {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("feather"))
-                {
-                    Destroy(slots[i].transform.GetChild(0).gameObject);
-
-                    for (int ii = 0; ii < slots.Length; ii++)
-                    {
-                        if (slots[ii].transform.childCount != 0)
-                        {
-                            slots[ii].GetComponentInChildren<spinItem>().go = false;
-                        }
-
-                        slots[ii].GetComponent<Image>().sprite = notPressed;
-                    }
-
-                    featherUi.GetComponent<Animator>().SetTrigger("go");
-                    break;
-                }
-            }
-
-        }
-    }
-
-    public void deleteArmour()
-    {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (slots[i].transform.childCount != 0)
-            {
-                if (slots[i].transform.GetChild(0).gameObject.CompareTag("armour"))
-                {
-                    Destroy(slots[i].transform.GetChild(0).gameObject);
-
-                    for (int ii = 0; ii < slots.Length; ii++)
-                    {
-                        if (slots[ii].transform.childCount != 0)
-                        {
-                            slots[ii].GetComponentInChildren<spinItem>().go = false;
-                        }
-
-                        slots[ii].GetComponent<Image>().sprite = notPressed;
-                    }
                     break;
                 }
             }

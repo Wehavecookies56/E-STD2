@@ -44,7 +44,7 @@ public class mirrorOnClick : MonoBehaviour
         {
             go = true;
             objectives.CompleteObjective(Objectives.ObjectivesEnum.FindMirrorItem);
-            inventory.GetComponent<inventorySelectScript>().deleteArmour();
+            inventory.GetComponent<inventorySelectScript>().deleteItem(items.ARMOUR);
             
         }
         else

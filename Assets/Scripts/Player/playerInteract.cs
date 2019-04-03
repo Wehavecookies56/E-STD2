@@ -217,7 +217,7 @@ public class playerInteract : MonoBehaviour
                         soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
                         item.layer = 1 << LayerMask.NameToLayer("Default");
                         item.GetComponent<BoxCollider>().isTrigger = true;
-                        inv.GetComponent<inventorySelectScript>().deleteKey();
+                        inv.GetComponent<inventorySelectScript>().deleteItem(items.KEY);
                     }
                     else { objectives.ActivateObjective(Objectives.ObjectivesEnum.FindKey); }
                 }
