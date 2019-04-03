@@ -32,10 +32,6 @@ public class InventoryItemPickUp : MonoBehaviour
                     case "Book":
                         playerData.INSTANCE.Intelligence += 2;
                         break;
-
-                    case "blackBox":
-                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.SCREAM, transform);
-                        break;
                 }
                 break;
             }

@@ -47,6 +47,7 @@ public class basementOpenEvent : MonoBehaviour {
         oldManAnim.SetFloat("movespeed", 0);
         boyAnim.SetFloat("movespeed", 0);
         lawyerAnim.SetFloat("movespeed", 0);
+        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.SCREAM, transform);
         cutsceneCollider.SetActive(true);
     }
 }

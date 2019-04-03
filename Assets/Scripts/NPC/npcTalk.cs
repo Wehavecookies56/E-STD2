@@ -26,7 +26,7 @@ public class npcTalk : MonoBehaviour {
         nextLine();
     }
 
-    public void playDialog(soundManagerScript.demonSounds d) {
+    public void playDialog(soundManagerScript.demonSoundsTheater d) {
         soundManagerScript.audioPlayer.dialogPlay(d, transform);
         nextLine();
     }
@@ -62,6 +62,7 @@ public class npcTalk : MonoBehaviour {
             {
                 objectives.CompleteObjective(Objectives.ObjectivesEnum.TalkToLawyer);
             }
+            
 
         } else {
             currentLine++;

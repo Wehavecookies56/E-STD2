@@ -20,6 +20,10 @@ public class soundManagerScript : MonoBehaviour
     public enum demonSounds { CONTRACT, BREAKME, IAMTHEFLOOR, INSIST, HA, THANKYOU, WHATINEED, RATS, CTHULHUROAR };
     public GameObject[] demonAudio;
 
+    //thater
+    public enum demonSoundsTheater { CONTRACT, NO1, INSIST, NO2 };
+    public GameObject[] demonAudioTheater;
+
     //boy and priest
     public enum boyAndPriest { BOY1, PRIEST2, BOY2 };
     public GameObject[] boyPriestAudio;
@@ -210,6 +214,15 @@ public class soundManagerScript : MonoBehaviour
         instance.transform.position = transform.position;
         subtitleObject.GetComponent<Text>().text = chantSubtitles[(int)sound];
         subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
+        return instance;
+    }
+
+    public GameObject dialogPlay(demonSoundsTheater sound, Transform position)
+    {
+        GameObject instance = Instantiate(demonAudioTheater[(int)sound]);
+        instance.transform.position = transform.position;
+        //subtitleObject.GetComponent<Text>().text = chantSubtitles[(int)sound];
+        //subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
