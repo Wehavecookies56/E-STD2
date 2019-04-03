@@ -70,6 +70,9 @@ public class cutsceneHandler : MonoBehaviour
         //get a reference to the last point in the list
         cutscenePoint currentP = currentPoints[currentPoints.Count - 1];
 
+        //TODO DEBUG RAY DRAWING
+        Debug.DrawRay(cutsceneCamera.transform.position, currentP.pos - cutsceneCamera.transform.position);
+
         //move cutscene camera towards point
         cutsceneCamera.transform.position = Vector3.Lerp(cutsceneCamera.transform.position, currentP.pos, currentP.speed * Time.deltaTime);
         cutsceneCamera.transform.rotation = Quaternion.Lerp(cutsceneCamera.transform.rotation, currentP.transform.rotation, currentP.rotSpeed * Time.deltaTime);

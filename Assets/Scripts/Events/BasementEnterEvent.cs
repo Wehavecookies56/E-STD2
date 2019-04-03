@@ -24,6 +24,7 @@ public class BasementEnterEvent : MonoBehaviour
             player.transform.position = playerEndPos.position;
             player.transform.rotation = playerEndPos.rotation;
             player.GetComponent<PlayerMovement>().SetPitch(0);
+            GetComponent<BoxCollider>().enabled = false;
         }
     }
 }
