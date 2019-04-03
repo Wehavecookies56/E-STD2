@@ -34,7 +34,7 @@ public class InventoryItemPickUp : MonoBehaviour
                         break;
 
                     case "blackBox":
-                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.SCREAM, gameObject.transform);
+                        soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.SCREAM, transform);
                         break;
                 }
                 break;
