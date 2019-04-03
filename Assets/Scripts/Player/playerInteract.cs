@@ -211,19 +211,19 @@ public class playerInteract : MonoBehaviour
 
                 if (item.GetComponent<DoorRotate>().needskey)
                 {
-                    if (inv.GetComponent<inventorySelectScript>().isThereAKey() == true)
+                    if (inv.GetComponent<inventorySelectScript>().isThereA(items.KEY) == true)
                     {
                         item.GetComponent<DoorRotate>().opening = true;
                         soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.DOOROPEN, item.transform);
                         item.layer = 1 << LayerMask.NameToLayer("Default");
                         item.GetComponent<BoxCollider>().isTrigger = true;
-                        inv.GetComponent<inventorySelectScript>().deleteKey();
+                        inv.GetComponent<inventorySelectScript>().deleteItem(items.KEY);
                     }
                     else { objectives.ActivateObjective(Objectives.ObjectivesEnum.FindKey); }
                 }
                 else if (item.GetComponent<DoorRotate>().needsAxe)
                 {
-                    if (inv.GetComponent<inventorySelectScript>().isThereAxe())
+                    if (inv.GetComponent<inventorySelectScript>().isThereA(items.AXE))
                     {
                         GameObject.FindGameObjectWithTag("CutsceneCamera").GetComponent<cutsceneHandler>().StartCutscene(GameObject.FindGameObjectWithTag("jhonnysDad"));
                         soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.JHONNY, GameObject.FindGameObjectWithTag("Player").transform);
