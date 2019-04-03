@@ -40,7 +40,7 @@ public class mirrorOnClick : MonoBehaviour
 
     public void OnClick()
     {   
-        if(inventory.GetComponent<inventorySelectScript>().isThereArmour())
+        if(inventory.GetComponent<inventorySelectScript>().isThereA(items.ARMOUR))
         {
             go = true;
             objectives.CompleteObjective(Objectives.ObjectivesEnum.FindMirrorItem);

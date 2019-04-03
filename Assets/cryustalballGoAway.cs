@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class cryustalballGoAway : MonoBehaviour
 {
-    
+    private GameObject us;
+    private void Start()
+    {
+        us = gameObject.GetComponent<GameObject>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -19,9 +23,9 @@ public class cryustalballGoAway : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         Time.timeScale = 1;
-        GameObject.FindGameObjectWithTag("crystalBallLights").GetComponent<LightPlayerDetector>().enabled = true;
-        GameObject.FindGameObjectWithTag("crystalBallLights2").GetComponent<LightPlayerDetector>().enabled = true;
-        gameObject.SetActive(false);
+       // GameObject.FindGameObjectWithTag("crystalBallLights").GetComponent<LightPlayerDetector>().enabled = true;
+        //GameObject.FindGameObjectWithTag("crystalBallLights2").GetComponent<LightPlayerDetector>().enabled = true;
+        us.SetActive(false);
         //GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().alpha = 0;
         //GameObject.FindGameObjectWithTag("crystalballui").GetComponent<CanvasGroup>().blocksRaycasts = false;
     }

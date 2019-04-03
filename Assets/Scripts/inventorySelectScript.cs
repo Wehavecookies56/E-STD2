@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum items { AXE, KEY, ARMOUR, BOOK, CANDLE, FEATHER, BLACKBOX, CRYSTALBALL };
+
 public class inventorySelectScript : MonoBehaviour
 {
     public GameObject[] slots;
@@ -24,6 +26,9 @@ public class inventorySelectScript : MonoBehaviour
     {
         Cursor.visible = false;
     }
+
+   
+    private string[] itemNames = {"axe", "key", "book", "candle", "feather", "blackBox", "crystalBall" };
 
     private void Update()
     {
@@ -105,8 +110,9 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[counter].transform.GetChild(0).CompareTag("crystalBall"))
                     slots[counter].transform.GetChild(0).GetComponent<onCrystalBallClick>().onClick();
 
-         
-            }
+                 
+
+}
         }
 
         /*
@@ -189,6 +195,21 @@ public class inventorySelectScript : MonoBehaviour
         }
     }
 
+    public bool isThereA(items chosenItem)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].transform.childCount != 0)
+            {
+                if (slots[i].transform.GetChild(0).gameObject.CompareTag(itemNames[(int)chosenItem]))
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    /*
     public bool isThereABook() {
         for (int i = 0; i < slots.Length; i++) {
             if (slots[i].transform.childCount != 0) {
@@ -269,6 +290,7 @@ public class inventorySelectScript : MonoBehaviour
 
         return false;
     }
+    */
 
     public void deleteKey()
     {

@@ -15,7 +15,7 @@ public class BookBurnTooltipScript : MonoBehaviour {
     }
 
     void Update() {
-        GetComponent<tooltipOverride>().display = inv.GetComponent<inventorySelectScript>().isThereABook();
+        GetComponent<tooltipOverride>().display = inv.GetComponent<inventorySelectScript>().isThereA(items.BOOK);
     }
 
     public void goodEnding() {
