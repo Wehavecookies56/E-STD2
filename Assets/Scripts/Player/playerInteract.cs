@@ -156,7 +156,7 @@ public class playerInteract : MonoBehaviour
 
 
                 }
-                //t.playDialog((soundManagerScript.DemonSoundsTh)t.currentLine);
+                t.playDialog((soundManagerScript.demonSoundsTheater)t.currentLine);
             }
         }
 
