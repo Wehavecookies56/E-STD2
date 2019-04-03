@@ -28,7 +28,7 @@ public class inventorySelectScript : MonoBehaviour
     }
 
    
-    private string[] itemNames = {"axe", "key", "book", "candle", "feather", "blackBox", "crystalBall" };
+    private string[] itemNames = {"axe", "key","armour", "book", "candle", "feather", "blackBox", "crystalBall" };
 
     private void Update()
     {
