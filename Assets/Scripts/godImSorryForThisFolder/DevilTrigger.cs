@@ -5,7 +5,9 @@ using UnityEngine;
 public class DevilTrigger : MonoBehaviour
 {
     public GameObject Devil;
-    internal bool KeepGoing = false; 
+    internal bool KeepGoing = false;
+    public GameObject mainBlueFire;
+    public GameObject mainredFire;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,8 @@ public class DevilTrigger : MonoBehaviour
             // freave the players movement 
             //play devil walk anim
             //maybe sound 
+            mainBlueFire.SetActive(true);
+            mainredFire.SetActive(true);
             Devil.SetActive(true);
             KeepGoing = true;
 

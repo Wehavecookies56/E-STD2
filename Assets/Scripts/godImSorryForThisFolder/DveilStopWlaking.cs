@@ -6,6 +6,8 @@ public class DveilStopWlaking : MonoBehaviour
 {
     public GameObject Devil;
     public GameObject DevilTrigger ;
+    public GameObject mainBlueFire;
+    public GameObject mainredFire;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,8 @@ public class DveilStopWlaking : MonoBehaviour
         {
             Devil.GetComponent<Animator>().SetTrigger("EnterIdle");
             DevilTrigger.GetComponent<DevilTrigger>().KeepGoing = false;
-           
+            mainBlueFire.SetActive(false);
+            mainredFire.SetActive(false);
             Destroy(DevilTrigger);
             //disable walk anim
             //play idle anim
