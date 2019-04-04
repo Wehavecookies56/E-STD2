@@ -70,7 +70,7 @@ public class cutsceneHandler : MonoBehaviour
         //get a reference to the last point in the list
         cutscenePoint currentP = currentPoints[currentPoints.Count - 1];
 
-        //TODO DEBUG RAY DRAWING
+        //TODO DEBUG RAY DRAWING to the next node
         Debug.DrawRay(cutsceneCamera.transform.position, currentP.pos - cutsceneCamera.transform.position);
 
         //move cutscene camera towards point
