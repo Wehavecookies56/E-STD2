@@ -28,7 +28,7 @@ public class CustomPostProcessingBehaviour : MonoBehaviour
     {
         //fire a ray to get the distance to an object being looked at
         RaycastHit hit;
-        Physics.Raycast(transform.position, transform.forward, out hit, 100, autoFocusLayerMask);
+        Physics.Raycast(transform.position, transform.forward, out hit, 100, autoFocusLayerMask, QueryTriggerInteraction.Ignore);
         float dist = hit.distance;
         Debug.DrawRay(transform.position, transform.forward * dist);
         //make sure depth of field is active

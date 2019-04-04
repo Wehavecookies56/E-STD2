@@ -27,6 +27,7 @@ public class stopBoyPlaying : MonoBehaviour {
             if(startingRot - boy.transform.rotation.eulerAngles.y < 180 && startingRot - boy.transform.rotation.eulerAngles.y > 0)
             {
                 isRotating = false;
+                boy.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
     }
