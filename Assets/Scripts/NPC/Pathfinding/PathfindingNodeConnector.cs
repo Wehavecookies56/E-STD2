@@ -21,5 +21,17 @@ public class PathfindingNodeConnector : MonoBehaviour
 
         PathNetwork.GetComponent<Astar>().FindNodeWithID(node2.GetComponent<PathNode>().ID).adjacentNodes.Add(
             PathNetwork.GetComponent<Astar>().FindNodeWithID(node1.GetComponent<PathNode>().ID));
+
+
+
+        ////DEBUGGING VERSION
+        //Astar testRef = PathNetwork.GetComponent<Astar>();
+        //int ID1 = node1.GetComponent<PathNode>().ID;
+        //int ID2 = node2.GetComponent<PathNode>().ID;
+        //Astar.Node testNode1 = PathNetwork.GetComponent<Astar>().FindNodeWithID(ID1);
+        //Astar.Node testNode2 = PathNetwork.GetComponent<Astar>().FindNodeWithID(ID2);
+        //testNode1.adjacentNodes.Add(testNode2);
+        //testNode2.adjacentNodes.Add(testNode1);
+        ////DEBUGGING VERSION END
     }
 }
