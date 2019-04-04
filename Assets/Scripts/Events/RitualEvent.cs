@@ -78,7 +78,7 @@ public class RitualEvent : MonoBehaviour
             player.transform.position = playerEndPos.position;
             player.transform.rotation = playerEndPos.rotation;
             player.GetComponent<PlayerMovement>().SetPitch(0);
-            Destroy(gameObject);
+            Destroy(gameObject); //remove all ritual gameobjects
         }
     }
 
