@@ -90,4 +90,16 @@ public class ShutterMovement : MonoBehaviour
         transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y,
             (1 - transform.localScale.z) * objSize);
     }
+
+    internal bool isOpen()
+    {
+        if(state == State.Idle) //check that idle
+        {
+            if(transform.localScale.z == compressedScale) //check if currently compressed
+            {
+                return true; //return true if compressed/open
+            }
+        }
+        return false; //return false if "not compressed"/closed
+    }
 }
