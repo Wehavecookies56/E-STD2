@@ -9,6 +9,7 @@ public class Objectives : MonoBehaviour
 {
     public TextMeshProUGUI textBox;
     public Animator textNotification;
+    public GameObject journal;
 
     public enum ObjectivesEnum
     {
@@ -101,6 +102,8 @@ public class Objectives : MonoBehaviour
     private void NotifyPlayer()
     {
         textNotification.SetTrigger("Notify");
+        //make journal scroll out seb
+        journal.GetComponent<Animator>().SetTrigger("show");
     }
 
     private void DeactivateObjective(ObjectivesEnum o)

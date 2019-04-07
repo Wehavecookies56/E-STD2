@@ -8,8 +8,8 @@ public enum items { AXE, KEY, ARMOUR, BOOK, CANDLE, FEATHER, BLACKBOX, CRYSTALBA
 public class inventorySelectScript : MonoBehaviour
 {
     public GameObject[] slots;
-    [SerializeField]
-    private int counter = 0;
+   // [SerializeField]
+    private int counter = -1;
     private float timer;
     public float inputDeley;
     private bool complateMove = false;
@@ -43,6 +43,7 @@ public class inventorySelectScript : MonoBehaviour
                 {
                     //Not empty, controller temp[i] is connected
                     Cursor.lockState = CursorLockMode.Locked;
+                    counter = -1;
                     Cursor.visible = false;
                 }
                 else
@@ -112,21 +113,11 @@ public class inventorySelectScript : MonoBehaviour
 
                  
 
-}
+            }
         }
-
-        /*
-        if(Input.GetButtonDown("Fire3"))
-        {
-            Time.timeScale = 1;
-            soundManagerScript.audioPlayer.playOnce(soundManagerScript.UIsounds.BUTTONCLICKED, gameObject.transform);
-            //gameObject.SetActive(false);
-        }
-        */
-
         switchControl();
-
     }
+
     private void spinTheChild(int index)
     {
        
