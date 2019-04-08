@@ -19,7 +19,7 @@ public class playerInteract : MonoBehaviour
     public float distance = 500;
     public GameObject lastLookedAt;
     public Objectives objectives;
-
+    
     public LayerMask mask;
 
     [SerializeField]
@@ -153,7 +153,7 @@ public class playerInteract : MonoBehaviour
                 npcTalk t = item.GetComponent<npcTalk>();
                 if (t.currentLine + 1 == t.lineCount)
                 {
-
+                    item.GetComponent<DevilDeath>().RunScritpt = true;
 
                 }
                 t.playDialog((soundManagerScript.demonSoundsTheater)t.currentLine);
