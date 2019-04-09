@@ -15,6 +15,7 @@ public class basementOpenEvent : MonoBehaviour {
     public GameObject oldManNewPos;
     public GameObject boyNewPos;
     public GameObject lawyerNewPos;
+    public List<GameObject> doors;
 
     public GameObject cutsceneCollider;
 
@@ -47,6 +48,13 @@ public class basementOpenEvent : MonoBehaviour {
         oldManAnim.SetFloat("movespeed", 0);
         boyAnim.SetFloat("movespeed", 0);
         lawyerAnim.SetFloat("movespeed", 0);
+        //Open the living room doors
+        foreach (GameObject door in doors) {
+            if (door.GetComponent<DoorRotate>() != null) {
+                door.GetComponent<DoorRotate>().opening = true;
+                door.layer = 1 << 0;
+            }
+        }
         soundManagerScript.audioPlayer.playOnce(soundManagerScript.enviromentSounds.SCREAM, transform);
         cutsceneCollider.SetActive(true);
     }

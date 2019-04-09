@@ -15,6 +15,10 @@ public class RitualEvent : MonoBehaviour
     public Transform playerEndPos;
     public GameObject particles;
     public Image blackOverlay;
+    public GameObject trapdoor;
+    public Transform openPos;
+    public List<GameObject> doorsToOpen;
+    public GameObject inventory;
 
     public float stabbySpiritSpeed;
     public float fadeSpeed = 1;
@@ -77,6 +81,17 @@ public class RitualEvent : MonoBehaviour
             blackOverlay.color = new Color(0, 0, 0, 0); // make sure black out overlay is gone
             player.transform.position = playerEndPos.position;
             player.transform.rotation = playerEndPos.rotation;
+            //Open the basement trapdoor
+            trapdoor.transform.SetPositionAndRotation(openPos.position, openPos.rotation);
+            //Open the chapel doors
+            foreach (GameObject door in doorsToOpen) {
+                if (door.GetComponent<DoorRotate>() != null) {
+                    door.GetComponent<DoorRotate>().opening = true;
+                    door.layer = 1 << 0;
+                }
+            }
+            //Remove the book
+            inventory.GetComponent<inventorySelectScript>().dropBook();
             player.GetComponent<PlayerMovement>().SetPitch(0);
             Destroy(gameObject); //remove all ritual gameobjects
         }
