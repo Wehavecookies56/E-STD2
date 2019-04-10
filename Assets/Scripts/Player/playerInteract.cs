@@ -131,7 +131,7 @@ public class playerInteract : MonoBehaviour {
                 item.GetComponent<breakVase>().Break();
             }
 
-            if (item.GetComponent<objectScript>().data.ObjectName.Equals("mirror")) {
+            if (item.GetComponent<objectScript>().data.ObjectName.Equals("Mirror")) {
                 item.GetComponent<mirrorOnClick>().OnClick();
             }
 

@@ -41,12 +41,22 @@ public class basementOpenEvent : MonoBehaviour {
         oldManAI.enabled = false;
         boyAI.enabled = false;
         lawyerAI.enabled = false;
+        oldMan.GetComponent<npcTalk>().enabled = false;
+        boy.GetComponent<npcTalk>().enabled = false;
+        lawyer.GetComponent<npcTalk>().enabled = false;
+        oldMan.layer = 1 << 0;
+        boy.layer = 1 << 0;
+        lawyer.layer = 1 << 0;
+        oldMan.GetComponent<AIController>().enabled = false;
+        boy.GetComponent<AIController>().enabled = false;
+        lawyer.GetComponent<AIController>().enabled = false;
         trapDoor.transform.SetPositionAndRotation(trapDoorNewPos.transform.position, trapDoorNewPos.transform.rotation);
         oldMan.transform.SetPositionAndRotation(oldManNewPos.transform.position, oldManNewPos.transform.rotation);
         boy.transform.SetPositionAndRotation(boyNewPos.transform.position, boyNewPos.transform.rotation);
         lawyer.transform.SetPositionAndRotation(lawyerNewPos.transform.position, lawyerNewPos.transform.rotation);
         oldManAnim.SetFloat("movespeed", 0);
         boyAnim.SetFloat("movespeed", 0);
+        boyAnim.SetBool("running", false);
         lawyerAnim.SetFloat("movespeed", 0);
         //Open the living room doors
         foreach (GameObject door in doors) {

@@ -115,6 +115,13 @@ public class soundManagerScript : MonoBehaviour
         "Boy: Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!!"
     };
 
+    List<string> theaterSubtitles = new List<string> {
+        "Demon: Here a contract in exchange for your power.",
+        "Estder D. Donovan: No.",
+        "Demon: I insist!",
+        "Estder D. Donovan: No."
+    };
+
     private void Awake()
     {
         if (audioPlayer == null)
@@ -221,8 +228,8 @@ public class soundManagerScript : MonoBehaviour
     {
         GameObject instance = Instantiate(demonAudioTheater[(int)sound]);
         instance.transform.position = transform.position;
-        //subtitleObject.GetComponent<Text>().text = chantSubtitles[(int)sound];
-        //subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
+        subtitleObject.GetComponent<Text>().text = theaterSubtitles[(int)sound];
+        subtitleObject.GetComponent<subtitleHide>().lastPlayed = instance;
         return instance;
     }
 
