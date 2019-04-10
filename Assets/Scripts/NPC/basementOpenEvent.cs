@@ -19,6 +19,8 @@ public class basementOpenEvent : MonoBehaviour {
 
     public GameObject cutsceneCollider;
 
+    public Objectives objectives;
+
     Animator oldManAnim;
     Animator boyAnim;
     Animator lawyerAnim;
@@ -58,6 +60,7 @@ public class basementOpenEvent : MonoBehaviour {
         boyAnim.SetFloat("movespeed", 0);
         boyAnim.SetBool("running", false);
         lawyerAnim.SetFloat("movespeed", 0);
+        objectives.ActivateObjective(Objectives.ObjectivesEnum.CheckScream);
         //Open the living room doors
         foreach (GameObject door in doors) {
             if (door.GetComponent<DoorRotate>() != null) {

@@ -12,6 +12,8 @@ public class BasementEnterEvent : MonoBehaviour
     public GameObject trapdoor;
     public Transform closePos;
 
+    public Objectives objectives;
+
     // Update is called once per frame
     void Update()
     {
@@ -32,7 +34,10 @@ public class BasementEnterEvent : MonoBehaviour
     }
 
     private IEnumerator closeBasement() {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(20);
+        //Activate objective
+        objectives.CompleteObjective(Objectives.ObjectivesEnum.ExploreManor);
+        objectives.ActivateObjective(Objectives.ObjectivesEnum.ExploreBasement);
         //Close the basement trapdoor
         trapdoor.transform.SetPositionAndRotation(closePos.position, closePos.rotation);
     }
