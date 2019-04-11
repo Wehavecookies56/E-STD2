@@ -19,6 +19,7 @@ public class RitualEvent : MonoBehaviour
     public Transform openPos;
     public List<GameObject> doorsToOpen;
     public GameObject inventory;
+    public Objectives objectives;
 
     public float stabbySpiritSpeed;
     public float fadeSpeed = 1;
@@ -79,6 +80,8 @@ public class RitualEvent : MonoBehaviour
             //player can carry on playing
             FadeIn = false;
             blackOverlay.color = new Color(0, 0, 0, 0); // make sure black out overlay is gone
+            //set player position and camera
+            player.GetComponent<PlayerMovement>().SetPitch(0);
             player.transform.position = playerEndPos.position;
             player.transform.rotation = playerEndPos.rotation;
             //Open the basement trapdoor
@@ -92,7 +95,15 @@ public class RitualEvent : MonoBehaviour
             }
             //Remove the book
             inventory.GetComponent<inventorySelectScript>().dropBook();
-            player.GetComponent<PlayerMovement>().SetPitch(0);
+            //check that player activated ritual door objective, then complete it
+            if(objectives.IsObjectiveActive(Objectives.ObjectivesEnum.OpenRitualDoor))
+            {
+                objectives.CompleteObjective(Objectives.ObjectivesEnum.OpenRitualDoor);
+            }
+            //activate and complete other events
+            objectives.CompleteObjective(Objectives.ObjectivesEnum.ExploreBasement);
+            objectives.ActivateObjective(Objectives.ObjectivesEnum.FindWhatHappened);
+
             Destroy(gameObject); //remove all ritual gameobjects
         }
     }

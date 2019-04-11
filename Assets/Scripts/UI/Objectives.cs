@@ -14,6 +14,11 @@ public class Objectives : MonoBehaviour
     public enum ObjectivesEnum
     {
         ExploreManor,
+        CheckScream,
+        ExploreBasement,
+        FindWhatHappened,
+        FindBoyBook,
+        DestroyBook,
 
         TalkToOldMan,
         FindBoy,
@@ -39,6 +44,11 @@ public class Objectives : MonoBehaviour
     private string[] objStrings = new string[]
     {
         "Explore the Manor",
+        "Check where that scream came from",
+        "Explore the basement",
+        "Find out what happened",
+        "Find the boy and the book",
+        "Destroy the book, theres a furnace in the basement!",
 
         "Talk to the old scientist",
         "Find the boy",
@@ -53,7 +63,7 @@ public class Objectives : MonoBehaviour
         "Find a key for the locked door on ground floor",
 
         "Find a way to open the trap door",
-        "Find a way to open the signed door",
+        "Find a way to open the magic door",
 
         "Flip the coin in the chest"
     };
@@ -87,7 +97,7 @@ public class Objectives : MonoBehaviour
         //check if objective already added
         foreach (ObjectivesEnum oi in activeObjectives)
         {
-            if( o == oi ) { Debug.Log("Task \"" + objStrings[(int)o] + "\" already active!"); return; }
+            if( o == oi ) { /*Debug.Log("Task \"" + objStrings[(int)o] + "\" already active!");*/ return; }
         }
 
         //add objective to list of objectives
