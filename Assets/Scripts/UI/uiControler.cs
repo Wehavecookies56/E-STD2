@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class uiControler : MonoBehaviour
 {
     public GameObject deathPannel;
-
+    public GameObject journal;
     public GameObject getHurtPannel;
     public GameObject getHurtRed;
     private Color hurtPannelColour;
@@ -161,6 +161,18 @@ public class uiControler : MonoBehaviour
                 }
             }
 
+        }
+
+        //j to show journal
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            if (contolerMenu.activeSelf == false) 
+            if (inputsMenu.activeSelf == false) 
+            if (menu.activeSelf == false) 
+            if (inventory.activeSelf == false)
+               {
+                       journal.GetComponent<Animator>().SetTrigger("show");
+               }
         }
 
         if(Input.GetButtonDown("Fire3"))
