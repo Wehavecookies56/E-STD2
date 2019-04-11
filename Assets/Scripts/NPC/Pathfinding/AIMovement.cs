@@ -14,8 +14,6 @@ public class AIMovement : MonoBehaviour
 
     private List<GameObject> movementPath = new List<GameObject>();
 
-    private Rigidbody rb;
-
     public GameObject pathfinderGO;
     private Astar pathfinder;
 
@@ -24,8 +22,6 @@ public class AIMovement : MonoBehaviour
 
     void Start()
     {
-        //get reference to it's own rigidbody
-        rb = GetComponent<Rigidbody>();
         //get reference to the pathfinder object for the desired pathfinding net (specifying a different pathfinding object will result in the use of a different network of nodes, children of that object)
         pathfinder = pathfinderGO.GetComponent<Astar>();
 
@@ -80,7 +76,7 @@ public class AIMovement : MonoBehaviour
         //return if no movement path
         if(movementPath.Count == 0) { return; }
 
-        rb.MovePosition(Vector3.MoveTowards(rb.position, movementPath[0].transform.position, Time.deltaTime * speed));
+        transform.position = (Vector3.MoveTowards(transform.position, movementPath[0].transform.position, Time.deltaTime * speed));
         //lerp look at the next vector (not the most efficient way to do this but it works)
         //TODO transform.LookAt(movementPath[0].transform.position); OLD SOLUTION
         transform.LookAt(Vector3.Lerp(transform.position + transform.forward, new Vector3(movementPath[0].transform.position.x, transform.position.y, movementPath[0].transform.position.z), rotationSpeed * Time.deltaTime));
@@ -95,7 +91,7 @@ public class AIMovement : MonoBehaviour
 
     internal void WalkTowardsLocation(Vector3 pos)
     {
-        rb.MovePosition(Vector3.MoveTowards(rb.position, pos, Time.deltaTime * speed));
+        transform.position = (Vector3.MoveTowards(transform.position, pos, Time.deltaTime * speed));
         //lerp look at the next vector (not the most efficient way to do this but it works)
         //TODO transform.LookAt(movementPath[0].transform.position); OLD SOLUTION
         transform.LookAt(Vector3.Lerp(transform.position + transform.forward, new Vector3(pos.x, transform.position.y, pos.z), rotationSpeed * Time.deltaTime));
