@@ -25,7 +25,7 @@ public class AxeEvent : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Rope.GetComponent<Animator>().SetTrigger("RopeActive");
-           
+            Destroy(gameObject);
            
         }
     }

@@ -18,11 +18,13 @@ public class AxeHit : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            Rope.GetComponent<Animator>().SetTrigger("Hit");
+           // Rope.GetComponent<Animator>().SetBool("Hit", true);
             //enbale rigaed body
             GameObject myGameObject = new GameObject("Test Object");
             Rigidbody gameObjectsRigidBody = myGameObject.AddComponent<Rigidbody>();
