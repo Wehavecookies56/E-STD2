@@ -25,9 +25,8 @@ public class AxeEvent : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Rope.GetComponent<Animator>().SetTrigger("RopeActive");
-            // gameObject.GetComponent<Rigidbody>().
-            GameObject myGameObject = new GameObject("Test Object");
-            Rigidbody gameObjectsRigidBody = myGameObject.AddComponent<Rigidbody>();
+           
+           
         }
     }
 
