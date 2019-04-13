@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class creditsScript : MonoBehaviour
 {
@@ -49,7 +48,7 @@ public class creditsScript : MonoBehaviour
         mainCam.transform.rotation = camPos[counter].rotation;
         names[counter].SetActive(true);
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
         blackPannel.SetActive(false);
         blackPannel.SetActive(true);
 
@@ -58,6 +57,7 @@ public class creditsScript : MonoBehaviour
     private void Start()
     {
         StartCoroutine(switchCam(7));
+        Application.Quit();
     }
 
 
