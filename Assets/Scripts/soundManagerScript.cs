@@ -119,7 +119,8 @@ public class soundManagerScript : MonoBehaviour
         "Demon: Here a contract in exchange for your power.",
         "Estder D. Donovan: No.",
         "Demon: I insist!",
-        "Estder D. Donovan: No."
+        "Estder D. Donovan: No.",
+        "Estder D. Donovan: Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto."
     };
 
     private void Awake()
