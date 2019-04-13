@@ -24,6 +24,7 @@ public class creditsScript : MonoBehaviour
         names[counter].SetActive(true);
         blackPannel.SetActive(true);
         counter++;
+
         yield return new WaitForSeconds(time);
         blackPannel.SetActive(false);
         blackPannel.SetActive(true);
@@ -32,6 +33,7 @@ public class creditsScript : MonoBehaviour
         mainCam.transform.rotation = camPos[counter].rotation;
         names[counter].SetActive(true);
         counter++;
+
         yield return new WaitForSeconds(time);
         blackPannel.SetActive(false);
         blackPannel.SetActive(true);
@@ -40,6 +42,7 @@ public class creditsScript : MonoBehaviour
         mainCam.transform.rotation = camPos[counter].rotation;
         names[counter].SetActive(true);
         counter++;
+
         yield return new WaitForSeconds(time);
         blackPannel.SetActive(false);
         blackPannel.SetActive(true);

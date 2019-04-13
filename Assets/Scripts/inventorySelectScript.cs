@@ -8,6 +8,8 @@ public enum items { AXE, KEY, ARMOUR, BOOK, CANDLE, FEATHER, BLACKBOX, CRYSTALBA
 public class inventorySelectScript : MonoBehaviour
 {
     public GameObject[] slots;
+    public bool[] isFull;
+    public GameObject player;
    // [SerializeField]
     private int counter = -1;
     private float timer;
@@ -25,6 +27,7 @@ public class inventorySelectScript : MonoBehaviour
     private void OnDisable()
     {
         Cursor.visible = false;
+        isFull = player.GetComponent<inventoryManager>().isFull;
     }
 
    
@@ -209,6 +212,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag(itemNames[(int)chosenItem]))
                 {
                     Destroy(slots[i].transform.GetChild(0).gameObject);
+                    isFull[i] = false;
 
                     for (int ii = 0; ii < slots.Length; ii++)
                     {
@@ -236,6 +240,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag("axe"))
                 {
                     Destroy((slots[i].transform.GetChild(0).gameObject));
+                    isFull[i] = false;
                     GameObject player = GameObject.FindGameObjectWithTag("Player");
                     Vector3 pos = new Vector3(player.transform.position.x-3f, player.transform.position.y, player.transform.position.z);
                     GameObject newAxe = Instantiate(axePrefab, pos, Quaternion.identity); //drop le axe
@@ -259,6 +264,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag("book"))
                 {
                     Destroy((slots[i].transform.GetChild(0).gameObject));
+                    isFull[i] = false;
                     playerData.INSTANCE.Intelligence -= 2;
                     break;
                 }
