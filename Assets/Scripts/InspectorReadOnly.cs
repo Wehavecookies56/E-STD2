@@ -4,7 +4,7 @@ using System.Collections;
 
 
 public class ReadOnlyAttribute : PropertyAttribute { }
-
+#if UNITY_EDITOR
 [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
 public class ReadOnlyPropertyDrawer : PropertyDrawer
 {
@@ -15,3 +15,4 @@ public class ReadOnlyPropertyDrawer : PropertyDrawer
         GUI.enabled = true;
     }
 }
+#endif
