@@ -27,7 +27,7 @@ public class npcTalk : MonoBehaviour {
     }
 
     public void playDialog(soundManagerScript.demonSoundsTheater d) {
-        soundManagerScript.audioPlayer.dialogPlay(d, transform);
+        currentVoiceLine = soundManagerScript.audioPlayer.dialogPlay(d, transform);
         nextLine();
     }
 
