@@ -32,10 +32,7 @@ public class mirrorOnClick : MonoBehaviour
                 candle.GetComponent<Rigidbody>().freezeRotation = true;
                 go = false;
             }
-        }
-
-        
-        
+        }   
     }
 
     public void OnClick()
@@ -44,8 +41,7 @@ public class mirrorOnClick : MonoBehaviour
         {
             go = true;
             objectives.CompleteObjective(Objectives.ObjectivesEnum.FindMirrorItem);
-            inventory.GetComponent<inventorySelectScript>().deleteItem(items.ARMOUR);
-            
+            inventory.GetComponent<inventorySelectScript>().deleteItem(items.ARMOUR);        
         }
         else
         {
@@ -55,8 +51,7 @@ public class mirrorOnClick : MonoBehaviour
                 speak = false;
                 objectives.ActivateObjective(Objectives.ObjectivesEnum.FindMirrorItem);
                 StartCoroutine(resetSpeak());
-            }
-            
+            }         
         }
     }
 

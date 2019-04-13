@@ -21,7 +21,7 @@ public class soundManagerScript : MonoBehaviour
     public GameObject[] demonAudio;
 
     //thater
-    public enum demonSoundsTheater { CONTRACT, NO1, INSIST, NO2 };
+    public enum demonSoundsTheater { CONTRACT, NO1, INSIST, NO2, PRAR0E2 };
     public GameObject[] demonAudioTheater;
 
     //boy and priest

@@ -38,7 +38,6 @@ public class DevilDeath : MonoBehaviour
 
                     gameObject.GetComponent<Animator>().SetBool("melting", true);
                     StartCoroutine(realdeath());
-                   
 
                 }
                 else
