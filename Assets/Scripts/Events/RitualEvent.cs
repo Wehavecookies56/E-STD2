@@ -20,6 +20,10 @@ public class RitualEvent : MonoBehaviour
     public List<GameObject> doorsToOpen;
     public GameObject inventory;
     public Objectives objectives;
+    public GameObject oldMan;
+    public GameObject lawyer;
+    public GameObject moveOldManTo;
+    public GameObject moveLawyerTo;
 
     public float stabbySpiritSpeed;
     public float fadeSpeed = 1;
@@ -95,8 +99,22 @@ public class RitualEvent : MonoBehaviour
             }
             //Remove the book
             inventory.GetComponent<inventorySelectScript>().dropBook();
+
+            oldMan.transform.position = moveOldManTo.transform.position;
+            lawyer.transform.position = moveLawyerTo.transform.position;
+            oldMan.GetComponent<AIController>().enabled = true;
+            lawyer.GetComponent<AIController>().enabled = true;
+            oldMan.GetComponent<AIMovement>().enabled = true;
+            lawyer.GetComponent<AIMovement>().enabled = true;
+            oldMan.GetComponent<AIMovement>().pathfinderGO = GameObject.Find("PathfindingNetwork Basement");
+            lawyer.GetComponent<AIMovement>().pathfinderGO = GameObject.Find("PathfindingNetwork Basement");
+            oldMan.GetComponent<AIMovement>().UpdatePathfinder();
+            lawyer.GetComponent<AIMovement>().UpdatePathfinder();
+            //oldMan.GetComponent<AIController>().BeginPatrolling();
+            //lawyer.GetComponent<AIController>().BeginPatrolling();
+
             //check that player activated ritual door objective, then complete it
-            if(objectives.IsObjectiveActive(Objectives.ObjectivesEnum.OpenRitualDoor))
+            if (objectives.IsObjectiveActive(Objectives.ObjectivesEnum.OpenRitualDoor))
             {
                 objectives.CompleteObjective(Objectives.ObjectivesEnum.OpenRitualDoor);
             }

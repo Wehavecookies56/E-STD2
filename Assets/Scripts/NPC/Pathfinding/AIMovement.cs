@@ -22,12 +22,7 @@ public class AIMovement : MonoBehaviour
 
     void Start()
     {
-        //get reference to the pathfinder object for the desired pathfinding net (specifying a different pathfinding object will result in the use of a different network of nodes, children of that object)
-        pathfinder = pathfinderGO.GetComponent<Astar>();
-
-        //if start node and end node predefined in the inspector, calculate a path to go via them
-        if(startNode != null && endNode != null)
-            movementPath = pathfinder.FindShortestPath(startNode, endNode);
+        UpdatePathfinder();
 
         /*Test output
         Debug.Log("_____________");
@@ -35,6 +30,15 @@ public class AIMovement : MonoBehaviour
         {
             Debug.Log(item.name);
         }*/
+    }
+
+    public void UpdatePathfinder() {
+        //get reference to the pathfinder object for the desired pathfinding net (specifying a different pathfinding object will result in the use of a different network of nodes, children of that object)
+        pathfinder = pathfinderGO.GetComponent<Astar>();
+        
+        //if start node and end node predefined in the inspector, calculate a path to go via them
+        if (startNode != null && endNode != null)
+            movementPath = pathfinder.FindShortestPath(startNode, endNode);
     }
 
     //find a path from current position to target via nodes

@@ -146,7 +146,7 @@ public class cutsceneHandler : MonoBehaviour
             }
             else
             {
-                flashlight.GetComponent<Flashlight>().parent = playerCamera.gameObject; //..else make it follow player
+                flashlight.GetComponent<Flashlight>().parent = playerCamera.gameObject.transform.GetChild(1).gameObject; //..else make it follow player
             }
         }
     }
