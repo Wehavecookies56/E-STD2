@@ -23,8 +23,7 @@ public class StartGame : MonoBehaviour
         player.transform.parent.GetComponent<PlayerMovement>().enabled = false;
         Cursor.visible = false;
         dot.SetActive(false);
-        minimap.SetActive(false);
-       
+        minimap.SetActive(false); 
     }
 
     void Update()

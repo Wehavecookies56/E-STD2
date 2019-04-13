@@ -1,16 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class creditsScript : MonoBehaviour
 {
-    public GameObject cutCam;
-    public GameObject parentCutScean;
-    // Start is called before the first frame update
-    void Start()
+    public GameObject player;
+    public GameObject mainCam;
+    public Transform[] camPos;
+    public GameObject[] names;
+    public GameObject UI;
+    public GameObject blackPannel;
+    private int counter = 0;
+
+
+    IEnumerator switchCam(float time)
     {
-        cutCam.GetComponent<cutsceneHandler>().StartCutscene(parentCutScean);
+        UI.SetActive(false);
+        mainCam.transform.parent = null;
+        player.SetActive(false);
+        player.transform.position = camPos[counter].position;
+        mainCam.transform.position = camPos[counter].position;
+        mainCam.transform.rotation = camPos[counter].rotation;
+        names[counter].SetActive(true);
+        blackPannel.SetActive(true);
+        counter++;
+        yield return new WaitForSeconds(time);
+        blackPannel.SetActive(false);
+        blackPannel.SetActive(true);
+        player.transform.position = camPos[counter].position;
+        mainCam.transform.position = camPos[counter].position;
+        mainCam.transform.rotation = camPos[counter].rotation;
+        names[counter].SetActive(true);
+        counter++;
+        yield return new WaitForSeconds(time);
+        blackPannel.SetActive(false);
+        blackPannel.SetActive(true);
+        player.transform.position = camPos[counter].position;
+        mainCam.transform.position = camPos[counter].position;
+        mainCam.transform.rotation = camPos[counter].rotation;
+        names[counter].SetActive(true);
+        counter++;
+        yield return new WaitForSeconds(time);
+        blackPannel.SetActive(false);
+        blackPannel.SetActive(true);
+        player.transform.position = camPos[counter].position;
+        mainCam.transform.position = camPos[counter].position;
+        mainCam.transform.rotation = camPos[counter].rotation;
+        names[counter].SetActive(true);
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
     }
 
-    
+    private void Start()
+    {
+        StartCoroutine(switchCam(6));
+    }
+
+
+
 }

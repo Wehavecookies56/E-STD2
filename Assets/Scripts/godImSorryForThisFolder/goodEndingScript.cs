@@ -13,11 +13,14 @@ public class goodEndingScript : MonoBehaviour
     public GameObject door2;
     public GameObject weather;
     public Color fogColour;
+    public GameObject UI;
+    public GameObject credits;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        UI.SetActive(false);
         cutCam.GetComponent<cutsceneHandler>().StartCutscene(nodes);
         //doors open
         //chaange skybox
@@ -35,7 +38,9 @@ public class goodEndingScript : MonoBehaviour
     IEnumerator restartGame()
     {
         yield return new WaitForSeconds(15);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        cutCam.SetActive(false);
+        cutCam.SetActive(true);
+        credits.SetActive(true);
     }
 
     

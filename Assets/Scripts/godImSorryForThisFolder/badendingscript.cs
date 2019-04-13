@@ -14,10 +14,13 @@ public class badendingscript : MonoBehaviour
     public Color lightColour;
     public Transform lightPos;
     public GameObject dirLight;
-    
+    public GameObject UI;
+    public GameObject credits;
+
     // Start is called before the first frame update
     void Start()
     {
+        UI.SetActive(false);
         cutCam.GetComponent<cutsceneHandler>().StartCutscene(nodes);
         //doors open
         //chaange skybox
@@ -40,6 +43,6 @@ public class badendingscript : MonoBehaviour
     IEnumerator restartGame()
     {
         yield return new WaitForSeconds(30);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        credits.SetActive(true);
     }
 }
