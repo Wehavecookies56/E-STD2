@@ -50,12 +50,14 @@ public class creditsScript : MonoBehaviour
         names[counter].SetActive(true);
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        blackPannel.SetActive(false);
+        blackPannel.SetActive(true);
 
     }
 
     private void Start()
     {
-        StartCoroutine(switchCam(6));
+        StartCoroutine(switchCam(7));
     }
 
 

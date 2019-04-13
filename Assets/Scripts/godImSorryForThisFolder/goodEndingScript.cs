@@ -32,10 +32,15 @@ public class goodEndingScript : MonoBehaviour
         soundManagerScript.audioPlayer.dialogPlay(soundManagerScript.Priest.GOODENDING, transform);
         //turn off weather
         weather.SetActive(false);
-        StartCoroutine(restartGame());
+       
     }
 
-    IEnumerator restartGame()
+    private void Update()
+    {
+        StartCoroutine(restartGameGood());
+    }
+
+    IEnumerator restartGameGood()
     {
         yield return new WaitForSeconds(15);
         cutCam.SetActive(false);
