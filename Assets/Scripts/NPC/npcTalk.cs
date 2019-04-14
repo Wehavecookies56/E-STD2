@@ -6,6 +6,7 @@ using UnityEngine;
 public class npcTalk : MonoBehaviour {
     public int currentLine = 0;
     public int lineCount = 1;
+ 
     public Objectives objectives;
 
     public bool finished = false;

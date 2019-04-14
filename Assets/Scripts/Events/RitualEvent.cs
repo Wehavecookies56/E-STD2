@@ -24,6 +24,7 @@ public class RitualEvent : MonoBehaviour
     public GameObject lawyer;
     public GameObject moveOldManTo;
     public GameObject moveLawyerTo;
+    public GameObject incinerator;
 
     public float stabbySpiritSpeed;
     public float fadeSpeed = 1;
@@ -110,6 +111,14 @@ public class RitualEvent : MonoBehaviour
             lawyer.GetComponent<AIMovement>().pathfinderGO = GameObject.Find("PathfindingNetwork Basement");
             oldMan.GetComponent<AIMovement>().UpdatePathfinder();
             lawyer.GetComponent<AIMovement>().UpdatePathfinder();
+            oldMan.layer = 11 << 0;
+            lawyer.layer = 11 << 0;
+            oldMan.AddComponent<basementTalk>();
+            oldMan.GetComponent<basementTalk>().voiceline = soundManagerScript.basemnetMeetingSounds.OLDMAN1;
+            lawyer.AddComponent<basementTalk>();
+            lawyer.GetComponent<basementTalk>().voiceline = soundManagerScript.basemnetMeetingSounds.LAWYER2;
+            incinerator.layer = 11 << 0;
+            GameObject.Find("Boy summon cthulhu event").GetComponent<boyChapelScript>().moveToChapel();
             //oldMan.GetComponent<AIController>().BeginPatrolling();
             //lawyer.GetComponent<AIController>().BeginPatrolling();
 

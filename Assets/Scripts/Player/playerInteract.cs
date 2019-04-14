@@ -92,18 +92,30 @@ public class playerInteract : MonoBehaviour {
         if (item.GetComponent<objectScript>().data.Type == ObjectType.TALK) {
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Morpheus")) {
                 npcTalk t = item.GetComponent<npcTalk>();
-                if (t.currentLine + 1 == t.lineCount) {
-                    //TODO item.GetComponent<AIController>().BeginPatrolling();
-                    item.GetComponent<AIController>().BeginFollowingPlayer(); //TODO testing following
+                if (t.enabled) {
+                    if (t.currentLine + 1 == t.lineCount) {
+                        //TODO item.GetComponent<AIController>().BeginPatrolling();
+                        item.GetComponent<AIController>().BeginFollowingPlayer(); //TODO testing following
+                    }
+                    t.playDialog((soundManagerScript.lawyerAndPriest)t.currentLine);
+                } else {
+                    if (item.GetComponent<basementTalk>() != null) {
+                        item.GetComponent<basementTalk>().playDialog();
+                    }
                 }
-                t.playDialog((soundManagerScript.lawyerAndPriest)t.currentLine);
             }
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Old Man")) {
                 npcTalk t = item.GetComponent<npcTalk>();
-                if (t.currentLine + 1 == t.lineCount) {
-                    item.GetComponent<AIController>().BeginPatrolling();
+                if (t.enabled) {
+                    if (t.currentLine + 1 == t.lineCount) {
+                        item.GetComponent<AIController>().BeginPatrolling();
+                    }
+                    t.playDialog((soundManagerScript.oldManAndPriest)t.currentLine);
+                } else {
+                    if (item.GetComponent<basementTalk>() != null) {
+                        item.GetComponent<basementTalk>().playDialog();
+                    }
                 }
-                t.playDialog((soundManagerScript.oldManAndPriest)t.currentLine);
             }
 
             if (item.GetComponent<objectScript>().data.ObjectName.Equals("Boy")) {
