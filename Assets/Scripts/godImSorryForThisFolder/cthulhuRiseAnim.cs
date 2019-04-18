@@ -21,6 +21,8 @@ public class cthulhuRiseAnim : MonoBehaviour
         else
         {
             testThulu.transform.parent = null;
+            testThulu.GetComponent<Rigidbody>().isKinematic = false; //make cthulhu dynamic
+            testThulu.GetComponent<AIController>().BeginFollowingPlayer(); //start following the player
             gameObject.SetActive(false);
         }
     }

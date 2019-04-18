@@ -9,6 +9,10 @@ public class AIController : MonoBehaviour
     public float playerFollowPadding;
     public LayerMask playerLOSLayer;
 
+    //for better raycasting
+    public float pivotHeightOffset = 0;
+    protected Vector3 heightOffset;
+
     private const float mansionMinX = -27.5f;
     private const float mansionMaxX = 41f;
     private const float mansionMinY = 0.75f;
@@ -17,14 +21,14 @@ public class AIController : MonoBehaviour
     private const float mansionMaxZ = -76f;
 
     //private data
-    private bool isFollowingPlayer = false;
-    private bool isPatrolling = false;
-    private bool timeToCheckPathAgain = true;
-    private float minWaitBetweenPathfindingForFollowingTimer = 2.0f;
+    protected bool isFollowingPlayer = false;
+    protected bool isPatrolling = false;
+    protected bool timeToCheckPathAgain = true;
+    protected float minWaitBetweenPathfindingForFollowingTimer = 2.0f;
 
     //references
-    private AIMovement mover;
-    private Animator anim;
+    protected AIMovement mover;
+    protected Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +41,8 @@ public class AIController : MonoBehaviour
         anim = GetComponent<Animator>();
         //check if was retrieved
         Debug.Assert(anim);
+        //create a vector3 offset from float
+        heightOffset = new Vector3(0, pivotHeightOffset, 0);
     }
 
     // Update is called once per frame
@@ -45,14 +51,16 @@ public class AIController : MonoBehaviour
         //of set to follow player
         if (isFollowingPlayer)
         {
+            heightOffset = new Vector3(0, pivotHeightOffset, 0);
             //if close enough to the player, then don't try to follow
-            if(Vector3.Distance(transform.position, player.transform.position) < playerFollowPadding) { anim.SetFloat("movespeed", 0); return; }
+            if(Vector3.Distance(transform.position + heightOffset, player.transform.position) < playerFollowPadding) { anim.SetFloat("movespeed", 0); return; }
 
             //update animation
-            anim.SetFloat("movespeed", mover.speed * Time.deltaTime);
+            anim.SetFloat("movespeed", mover.speed);
+
 
             RaycastHit hit;
-            Physics.Raycast(transform.position, (player.transform.position - transform.position), out hit, /*max dist to please overload*/100000f, playerLOSLayer, QueryTriggerInteraction.Ignore);
+            Physics.Raycast(transform.position + heightOffset, (player.transform.position - (transform.position + heightOffset)), out hit, /*max dist to please overload*/100000f, playerLOSLayer, QueryTriggerInteraction.Ignore);
             //check if able to follow player directly or need to rely on pathfinding
             if(hit.collider.gameObject == player)
             {
@@ -115,7 +123,7 @@ public class AIController : MonoBehaviour
         mover.ClearMovementPath();
     }
 
-    private IEnumerator FollowPathfinderWaitTimer()
+    protected IEnumerator FollowPathfinderWaitTimer()
     {
         yield return new WaitForSeconds(minWaitBetweenPathfindingForFollowingTimer);
         timeToCheckPathAgain = true;
