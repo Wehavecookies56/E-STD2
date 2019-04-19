@@ -264,7 +264,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag("book"))
                 {
                     Destroy((slots[i].transform.GetChild(0).gameObject));
-                    isFull[i] = false;
+                   // isFull[i] = false;
                     playerData.INSTANCE.Intelligence -= 2;
                     break;
                 }
