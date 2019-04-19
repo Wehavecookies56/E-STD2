@@ -30,7 +30,10 @@ public class uiControler : MonoBehaviour
 
     private const float defultVig = 0.325f;
     private const float maxSanity = 10;
-    private const float effectMulti = 0.25f;
+    private const float effectMulti = 0.5f;
+
+    public GameObject testThuhu;
+    public GameObject badending;
 
     public GameObject inputsMenu;
 
@@ -46,8 +49,16 @@ public class uiControler : MonoBehaviour
         //you died screen
         if (playerData.INSTANCE.Health <= 0)
         {
-            deathPannel.SetActive(true);
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().enabled = false;
+            if(testThuhu.activeSelf == true)
+            {
+                badending.SetActive(true);
+            }
+            else
+            {
+                deathPannel.SetActive(true);
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().enabled = false;
+            }
+            
         }
 
         //hurt ui
