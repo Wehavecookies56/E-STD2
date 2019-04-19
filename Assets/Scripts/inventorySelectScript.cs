@@ -59,6 +59,7 @@ public class inventorySelectScript : MonoBehaviour
                 }
             }
         }
+        
 
         if (Input.GetAxis("JoystickDpadY") < -0.3f)
         {

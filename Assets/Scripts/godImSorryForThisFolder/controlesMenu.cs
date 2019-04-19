@@ -33,6 +33,9 @@ public class controlesMenu : MonoBehaviour
                 }
             }
         }
-
+        else
+        {
+            Cursor.visible = true;
+        }       
     }
 }

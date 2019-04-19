@@ -25,6 +25,10 @@ public class mainMenuButtons : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            Cursor.visible = true;
+        }
     }
 
     public void returnButton()
