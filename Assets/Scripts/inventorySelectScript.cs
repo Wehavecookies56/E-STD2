@@ -62,8 +62,7 @@ public class inventorySelectScript : MonoBehaviour
         
 
         if (Input.GetAxis("JoystickDpadY") < -0.3f)
-        {
-            
+        {       
             if (complateMove == false)
             {
                 counter++;
@@ -213,7 +212,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag(itemNames[(int)chosenItem]))
                 {
                     Destroy(slots[i].transform.GetChild(0).gameObject);
-                    isFull[i] = false;
+                    player.GetComponent<inventoryManager>().isFull[i] = false;
 
                     for (int ii = 0; ii < slots.Length; ii++)
                     {
@@ -265,7 +264,7 @@ public class inventorySelectScript : MonoBehaviour
                 if (slots[i].transform.GetChild(0).gameObject.CompareTag("book"))
                 {
                     Destroy((slots[i].transform.GetChild(0).gameObject));
-                    isFull[i] = false;
+                   // isFull[i] = false;
                     playerData.INSTANCE.Intelligence -= 2;
                     break;
                 }

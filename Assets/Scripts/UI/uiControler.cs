@@ -52,6 +52,7 @@ public class uiControler : MonoBehaviour
             if(testThuhu.activeSelf == true)
             {
                 badending.SetActive(true);
+                testThuhu.SetActive(false);
             }
             else
             {

@@ -35,7 +35,8 @@ public class controlesMenu : MonoBehaviour
         }
         else
         {
-            Cursor.visible = true;
+            keyboard.SetActive(true);
+            controller.SetActive(false);
         }       
     }
 }
