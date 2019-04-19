@@ -94,8 +94,8 @@ public class playerInteract : MonoBehaviour {
                 npcTalk t = item.GetComponent<npcTalk>();
                 if (t.enabled) {
                     if (t.currentLine + 1 == t.lineCount) {
-                        //TODO item.GetComponent<AIController>().BeginPatrolling();
-                        item.GetComponent<AIController>().BeginFollowingPlayer(); //TODO testing following
+                        item.GetComponent<AIController>().BeginPatrolling();
+                        //item.GetComponent<AIController>().BeginFollowingPlayer(); //TODO testing following
                     }
                     t.playDialog((soundManagerScript.lawyerAndPriest)t.currentLine);
                 } else {

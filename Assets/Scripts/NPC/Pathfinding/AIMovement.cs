@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class AIMovement : MonoBehaviour
 {
+    private float manorFloorLevel = -2.0f;
+
     public float speed;
     public float rotationSpeed = 1.0f;
 
@@ -12,9 +14,15 @@ public class AIMovement : MonoBehaviour
     public GameObject endNode;
     public float pathfindingNodeContactPadding;
 
-    private List<GameObject> movementPath = new List<GameObject>();
+    public GameObject manorNodeInBasement;
+    public GameObject basementNodeInManor;
+
+    [ReadOnly]
+    public List<GameObject> movementPath = new List<GameObject>();
 
     public GameObject pathfinderGO;
+    public Astar ManorPathfindingNetwork;
+    public Astar BasementPathfindingNetwork;
     private Astar pathfinder;
 
     //getters
@@ -44,11 +52,31 @@ public class AIMovement : MonoBehaviour
     //find a path from current position to target via nodes
     internal void GoToLocation(Vector3 target, LayerMask LOSLayer = default)
     {
+        //check for which network to use
+        
+        if(transform.position.y > manorFloorLevel)
+        {
+            pathfinder = ManorPathfindingNetwork;
+        }
+        else
+        {
+            pathfinder = BasementPathfindingNetwork;
+        }
+
         startNode = pathfinder.FindNearestNode(transform.position);
         endNode = pathfinder.FindNearestNode(target);
 
+        if (target.y < manorFloorLevel && transform.position.y > manorFloorLevel)
+        {
+            endNode = manorNodeInBasement;
+        }
+        else if (target.y > manorFloorLevel && transform.position.y < manorFloorLevel)
+        {
+            endNode = basementNodeInManor;
+        }
+
         //if already following a path..
-        if(movementPath.Count > 0)
+        if (movementPath.Count > 0)
         {
             //..and the path is to the same destination as new target destination..
             if(movementPath[movementPath.Count-1] == endNode /*&& movementPath.Count > 1*/)
@@ -92,13 +120,16 @@ public class AIMovement : MonoBehaviour
         //return if no movement path
         if(movementPath.Count == 0) { return; }
 
+        //debug to show where NPC going
+        Debug.DrawRay(transform.position, movementPath[0].transform.position - transform.position);
+
         transform.position = (Vector3.MoveTowards(transform.position, movementPath[0].transform.position, Time.deltaTime * speed));
         //lerp look at the next vector (not the most efficient way to do this but it works)
         //TODO transform.LookAt(movementPath[0].transform.position); OLD SOLUTION
         transform.LookAt(Vector3.Lerp(transform.position + transform.forward, new Vector3(movementPath[0].transform.position.x, transform.position.y, movementPath[0].transform.position.z), rotationSpeed * Time.deltaTime));
 
         //check if the node has been reached
-        if (Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(movementPath[0].transform.position.x, 0, movementPath[0].transform.position.z)) < pathfindingNodeContactPadding)
+        if (Vector3.Distance(new Vector3(transform.position.x, transform.position.y, transform.position.z), new Vector3(movementPath[0].transform.position.x, movementPath[0].transform.position.y, movementPath[0].transform.position.z)) < pathfindingNodeContactPadding)
         {
             //remove the node to start moving towards the next one
             movementPath.RemoveAt(0);
