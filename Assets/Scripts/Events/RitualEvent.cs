@@ -67,6 +67,8 @@ public class RitualEvent : MonoBehaviour
             //particles begin emitting
             particles.SetActive(true);
             particleEmit = false;
+            //fix the ritual sound cutting out by making it follow player
+            //GameObject.Find("ritual(Clone)").transform.parent = player.transform;
         }
         if (FadeOut)
         {
@@ -144,6 +146,7 @@ public class RitualEvent : MonoBehaviour
                 hasBegun = true;
                 cutCam.GetComponent<cutsceneHandler>().StartCutscene(ritualCutscene);
                 GetComponent<BoxCollider>().enabled = false;
+                GameObject.Find("soundManager").GetComponent<soundManagerScript>().playOnce(soundManagerScript.enviromentSounds.RITUAL, stabbySpiritTargetPos);
                 StartCoroutine(eventTimers());
             }
         }
