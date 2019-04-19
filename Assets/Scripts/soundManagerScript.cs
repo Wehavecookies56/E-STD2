@@ -267,7 +267,7 @@ public class soundManagerScript : MonoBehaviour
 
     public void setSanityAudioVolume()
     {
-        sanityAudio.GetComponent<AudioSource>().volume = 0.6f - (playerData.INSTANCE.Sanity / 10);
+        sanityAudio.GetComponent<AudioSource>().volume = 1 - (playerData.INSTANCE.Sanity / 10);
     }
     
 
