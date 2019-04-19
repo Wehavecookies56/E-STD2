@@ -29,7 +29,7 @@ public class AxeHit : MonoBehaviour
             GameObject myGameObject = new GameObject("Test Object");
             Rigidbody gameObjectsRigidBody = myGameObject.AddComponent<Rigidbody>();
             playerData.INSTANCE.Health -= 1; //hurt player
-
+            Destroy(GetComponent<AxeHit>());
             //disable script
         }
     }
