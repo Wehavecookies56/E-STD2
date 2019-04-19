@@ -20,6 +20,8 @@ public class RitualRoomDoor : MonoBehaviour
         {
             realDoor.SetActive (true);
             FakeDoor.SetActive(false);
+            GameObject.Find("soundManager").GetComponent<soundManagerScript>().playOnce(soundManagerScript.enviromentSounds.MAGICDOORUNLOCK, GameObject.FindGameObjectWithTag("Player").transform); //play sound
+            Destroy(gameObject); //to prevent spawning more sounds
         }
         
     }
