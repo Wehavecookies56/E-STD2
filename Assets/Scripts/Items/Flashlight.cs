@@ -53,7 +53,7 @@ public class Flashlight : MonoBehaviour
             }
 
             //move to the parents position
-            transform.position = parent.transform.position;
+            transform.position = Vector3.Lerp(transform.position, parent.transform.position, 20f * Time.deltaTime);
 
             //lerp rotate towards the parents orientation
             transform.rotation = Quaternion.Euler(
