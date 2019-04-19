@@ -51,17 +51,29 @@ public class AIMovement : MonoBehaviour
         if(movementPath.Count > 0)
         {
             //..and the path is to the same destination as new target destination..
-            if(movementPath[movementPath.Count-1] == endNode && movementPath.Count > 1)
+            if(movementPath[movementPath.Count-1] == endNode /*&& movementPath.Count > 1*/)
             {
-                //..check that the agent even needs to go to the first node or can go straight to second, if so, calculate path from second node instead
-                RaycastHit hit;
-                Physics.Raycast(transform.position, (movementPath[1].transform.position - transform.position), out hit, LOSLayer);
-                if (hit.collider.gameObject == movementPath[1])
+                if (movementPath.Count > 1) //if more than one node in path, check if can skip to second node
                 {
-                    startNode = movementPath[1];
+                    //add a temporary collider to the path node
+                    SphereCollider tempCol = movementPath[1].AddComponent<SphereCollider>();
+                    tempCol.radius = 0.25f;
+                    //..check that the agent even needs to go to the first node or can go straight to second, if so, calculate path from second node instead
+                    RaycastHit hit;
+                    Physics.Raycast(transform.position, (movementPath[1].transform.position - transform.position), out hit, LOSLayer);
+                    if (hit.collider == tempCol)
+                    {
+                        startNode = movementPath[1];
+                    }
+                    //otherwise continue from the same node
+                    else startNode = movementPath[0];
+                    //delete temporary collider
+                    Destroy(tempCol);
                 }
-                //otherwise continue from the same node
-                else startNode = movementPath[0];
+                else //otherwise follow the same path
+                {
+                    return;
+                }
             }
         }
 

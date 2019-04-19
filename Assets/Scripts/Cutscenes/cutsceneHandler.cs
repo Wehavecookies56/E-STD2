@@ -125,7 +125,8 @@ public class cutsceneHandler : MonoBehaviour
         playerCamera.GetComponent<AudioListener>().enabled = !playerCamera.GetComponent<AudioListener>().enabled;
         cutsceneCamera.GetComponent<AudioListener>().enabled = !cutsceneCamera.GetComponent<AudioListener>().enabled;
         HandleFlashlight();
-        playerCamera.transform.parent.GetChild(3/*footstep sound*/).GetComponent<AudioSource>().volume = 0f; //prevents footstep sounds in cutscenes
+        if(playerCamera.transform.parent.childCount > 3) //null check to prevent errors on first cutscene before footstep sound is created
+            playerCamera.transform.parent.GetChild(3/*footstep sound*/).GetComponent<AudioSource>().volume = 0f; //prevents footstep sounds in cutscenes
     }
 
     private void HandleFlashlight()
