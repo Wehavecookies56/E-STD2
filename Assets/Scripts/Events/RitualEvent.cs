@@ -103,6 +103,10 @@ public class RitualEvent : MonoBehaviour
             //Remove the book
             inventory.GetComponent<inventorySelectScript>().dropBook();
 
+            //Make sure ritual audio is not playing
+            if(GameObject.Find("ritual(Clone)") != null)
+                Destroy(GameObject.Find("ritual(Clone)"));
+
             oldMan.transform.position = moveOldManTo.transform.position;
             lawyer.transform.position = moveLawyerTo.transform.position;
             oldMan.GetComponent<AIController>().enabled = true;
