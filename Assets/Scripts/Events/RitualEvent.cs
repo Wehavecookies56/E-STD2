@@ -22,6 +22,7 @@ public class RitualEvent : MonoBehaviour
     public Objectives objectives;
     public GameObject oldMan;
     public GameObject lawyer;
+    public GameObject boy;
     public GameObject moveOldManTo;
     public GameObject moveLawyerTo;
     public GameObject incinerator;
@@ -106,6 +107,11 @@ public class RitualEvent : MonoBehaviour
             //Make sure ritual audio is not playing
             if(GameObject.Find("ritual(Clone)") != null)
                 Destroy(GameObject.Find("ritual(Clone)"));
+
+            //clear NPC patrols to fix error
+            lawyer.GetComponent<AIMovement>().movementPath.Clear();
+            oldMan.GetComponent<AIMovement>().movementPath.Clear();
+            boy.GetComponent<AIMovement>().movementPath.Clear();
 
             oldMan.transform.position = moveOldManTo.transform.position;
             lawyer.transform.position = moveLawyerTo.transform.position;
