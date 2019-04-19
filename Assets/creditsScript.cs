@@ -54,13 +54,14 @@ public class creditsScript : MonoBehaviour
         
         blackPannel.SetActive(false);
         blackPannel.SetActive(true);
+        Application.Quit();
 
     }
 
     private void Start()
     {
         StartCoroutine(switchCam(7));
-        Application.Quit();
+       
     }
 
 
